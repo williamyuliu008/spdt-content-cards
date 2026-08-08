@@ -1,0 +1,325 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "card-v1.3.schema.json",
+  "title": "SPDT-004 知识卡片格式规范",
+  "description": "知识卡片 v1.3 格式。向后兼容 v1.2（card_id + type + tags + front + back），向前扩展 concepts[] + sources[] + materials{} + metadata{}。",
+  "version": "1.3",
+  "last_updated": "2026-08-08",
+
+  "type": "array",
+  "items": { "$ref": "#/$defs/Card" },
+
+  "$defs": {
+
+    "Card": {
+      "type": "object",
+      "required": ["card_id", "type"],
+
+      "properties": {
+
+        "card_id": {
+          "type": "string",
+          "description": "全库唯一标识符。格式：{PREFIX}_{TYPE}_{序号}，例如 EP01_NODE_001",
+          "examples": ["古史_CAUSE_001", "EP01_NODE_001", "CAFA_NODE_003"],
+          "pattern": "^[A-Za-z0-9_]+$"
+        },
+
+        "type": {
+          "type": "string",
+          "description": "卡片骨架类型，决定其在 Skill 链中的角色",
+          "enum": [
+            "node",
+            "strategy_cause",
+            "strategy_impact",
+            "strategy_turning",
+            "chain"
+          ],
+          "examples": ["node", "strategy_cause", "strategy_impact", "strategy_turning", "chain"]
+        },
+
+        "front": {
+          "type": "string",
+          "description": "标题/问题行。格式：{类型标签} + 内容摘要，例如【节点】平原太守颜真卿的抉择困境。允许为空字符串（纯推理卡片）",
+          "minLength": 0
+        },
+
+        "back": {
+          "type": "string",
+          "description": "正文核心内容。必须通过原子性检验（不含超过1个因为/所以/同时/并且）；必须通过自足性检验（独立可读）；长度 ≥ 30字",
+          "minLength": 30
+        },
+
+        "concepts": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "概念检索标签。用于跨包语义检索，回答"这张卡讲了什么核心概念"。格式：核心概念字符串，无#前缀。示例：安史之乱、藩镇割据、颜真卿、祭侄文稿",
+          "examples": [["安史之乱", "藩镇割据"], ["颜真卿", "篆籀笔法"]],
+          "default": []
+        },
+
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "分类标签。用于结构化过滤，回答"这张卡属于哪类"。格式：层级式标签，用/分隔，无#前缀。顶层分类：domain（领域）/content（内容细分）/strategy（策略类型）/narrative（叙事特征）/考频",
+          "examples": [
+            ["domain/历史", "content/战争", "strategy/cause", "narrative/cause-effect"],
+            ["domain/书法", "考频/⭐⭐⭐", "decision_point"]
+          ],
+          "default": []
+        },
+
+        "sources": {
+          "type": "array",
+          "description": "来源可溯。每张卡片至少1条来源。可信度：literary（高）> academic（中高）> 转述/通俗（中）> ai_generated（低，需 verified_by）",
+          "items": { "$ref": "#/$defs/Source" },
+          "default": []
+        },
+
+        "materials": {
+          "type": "object",
+          "description": "叙事素材层。用于支撑叙事类 Skill 和输出。缺少此层的卡片为辅助卡（不可用于角色扮演/场景还原类 Skill）。可空对象 {}",
+          "properties": {
+            "quote": {
+              "type": "string",
+              "description": "原文/史料/人物原话引用。学术来源：逐字保留原文；叙事来源：人物对话或场景描写；可为空字符串",
+              "examples": [
+                "《旧唐书·颜真卿传》：\"禄山反，简兵弑 por 依据，大夫仗义骂贼，死之。\"",
+                "乾元元年九月，颜真卿：\"贼臣不救，孤城围逼，父陷子死，巢倾卵覆。\""
+              ],
+              "default": ""
+            },
+            "scene": {
+              "type": "string",
+              "description": "场景/叙事描写。包含时间/地点/动作/对话的具象化描述，为叙事类 Skill 提供画面素材。可为空字符串",
+              "examples": [
+                "天宝十四载十二月，平原郡太守府。夜。颜真卿独坐灯下，使者立于堂前，等待答复。",
+                "乾元元年九月，蒲州。颜真卿手执狼毫，墨汁与泪水交融于纸面。"
+              ],
+              "default": ""
+            },
+            "data": {
+              "type": "string",
+              "description": "数据/量化支撑。用于学术类/分析类卡片，补充原文中的数字、比率、排名等信息。可为空字符串",
+              "examples": ["颜氏一门三十余口遇难", "平原郡守兵六千，安禄山叛军数万", "《祭侄文稿》被誉为天下第二行书"],
+              "default": ""
+            }
+          },
+          "default": {}
+        },
+
+        "metadata": {
+          "type": "object",
+          "description": "元数据。记录卡片的管理信息。",
+          "properties": {
+
+            "chain_id": {
+              "type": "string",
+              "description": "所属叙事链ID。格式：CHAIN_{主题}_{序号}，例如 CHAIN_安史之乱_01、CHAIN_颜真卿",
+              "examples": ["CHAIN_安史之乱_01", "CHAIN_墨骨山河_Ep01"],
+              "default": ""
+            },
+
+            "version": {
+              "type": "string",
+              "description": "版本号。major=back内容变更，minor=metadata/tags/materials补充。格式：v{major}.{minor}",
+              "pattern": "^v\\d+\\.\\d+$",
+              "examples": ["v1.0", "v2.1"],
+              "default": "v1.0"
+            },
+
+            "inferred": {
+              "type": "boolean",
+              "description": "back 内容是否包含提炼者的推断而非来源直接陈述。推断必须标注，读者可据此判断置信度",
+              "default": false
+            },
+
+            "created_at": {
+              "type": "string",
+              "description": "创建时间。ISO 8601 格式：YYYY-MM-DD 或 YYYY-MM-DDTHH:MM:SS",
+              "examples": ["2026-08-08", "2026-08-08T14:30:00"],
+              "default": ""
+            },
+
+            "updated_at": {
+              "type": "string",
+              "description": "最后更新时间。同上格式",
+              "examples": ["2026-08-08", "2026-08-08T14:30:00"],
+              "default": ""
+            },
+
+            "created_by": {
+              "type": "string",
+              "description": "创建者。格式：human（人工）/ ai_{model_id}（AI辅助，例如 ai_deepseek-v4-flash）",
+              "examples": ["human", "ai_deepseek-v4-flash"],
+              "default": ""
+            },
+
+            "changelog": {
+              "type": "array",
+              "description": "变更日志。每次版本变更（version递增）时追加一条记录",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "version": { "type": "string" },
+                  "date": { "type": "string" },
+                  "change": { "type": "string" }
+                }
+              },
+              "default": []
+            },
+
+            "note": {
+              "type": "string",
+              "description": "备注。用于记录提炼者的判断依据、争议点、或不纳入 SOP 2 的原因。可为空字符串",
+              "default": ""
+            }
+          },
+          "default": {}
+        }
+      },
+
+      "additionalProperties": false
+    },
+
+    "Source": {
+      "type": "object",
+      "required": ["type"],
+      "discriminator": {
+        "propertyName": "type",
+        "mapping": {
+          "literary": "#/$defs/LiterarySource",
+          "academic": "#/$defs/AcademicSource",
+          "ai_generated": "#/$defs/AIGeneratedSource"
+        }
+      },
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["literary", "academic", "ai_generated"]
+        }
+      }
+    },
+
+    "LiterarySource": {
+      "allOf": [
+        { "required": ["type"] },
+        {
+          "properties": {
+            "type": { "const": "literary" }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+
+    "AcademicSource": {
+      "allOf": [
+        { "required": ["type"] },
+        {
+          "properties": {
+            "type": { "const": "academic" }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+
+    "AIGeneratedSource": {
+      "allOf": [
+        { "required": ["type", "verified_by"] },
+        {
+          "properties": {
+            "type": { "const": "ai_generated" },
+            "verified_by": {
+              "type": "array",
+              "description": "审计依据。至少2个独立来源才能将 ai_generated 卡片升为标准卡",
+              "items": { "type": "string" },
+              "minItems": 1
+            },
+            "note": {
+              "type": "string",
+              "description": "生成说明。例如：基于《旧唐书》和《颜真卿年谱》综合推断",
+              "default": ""
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    }
+  },
+
+  "card_type_definitions": {
+    "node": {
+      "description": "事实锚点。记录有时间/地点/人物的具体事件。back必须有至少1个时间锚点+1个行为主体",
+      "back_min_length": 80,
+      "materials_recommended": ["scene", "data"]
+    },
+    "strategy_cause": {
+      "description": "原因分析。解释"为什么会这样"。back通常以"因为…"或"…的原因"开头",
+      "back_min_length": 100,
+      "materials_recommended": ["quote"]
+    },
+    "strategy_impact": {
+      "description": "影响分析。陈述"产生了什么后果"。back通常以"结果/导致/产生了"开头",
+      "back_min_length": 100,
+      "materials_recommended": ["quote", "data"]
+    },
+    "strategy_turning": {
+      "description": "转折结构。记录两难抉择或叙事反转。back必须呈现AB选项对比和最终选择",
+      "back_min_length": 150,
+      "materials_recommended": ["quote", "scene"]
+    },
+    "chain": {
+      "description": "叙事链描述。用于顶层链卡（描述整条chain的主线），back仅20-50字",
+      "back_min_length": 20,
+      "materials_recommended": []
+    }
+  },
+
+  "migration": {
+    "from_version": "1.2",
+    "to_version": "1.3",
+    "required_migrations": [
+      {
+        "field": "concepts[]",
+        "action": "add_empty_array_if_missing",
+        "description": "若无 concepts[]，初始化为空数组 []"
+      },
+      {
+        "field": "sources[]",
+        "action": "add_empty_array_if_missing",
+        "description": "若无 sources[]，初始化为空数组 []"
+      },
+      {
+        "field": "materials{}",
+        "action": "add_empty_object_if_missing",
+        "description": "若无 materials{}，初始化为 {}。若存在 materials.scene（旧格式），迁移到 materials.scene"
+      },
+      {
+        "field": "metadata{}",
+        "action": "add_default_object",
+        "description": "若无 metadata{}，初始化为 {version: 'v1.0'}"
+      }
+    ],
+    "examples": {
+      "before": {
+        "card_id": "EP01_NODE_001",
+        "type": "node",
+        "tags": ["#历史/唐/安史之乱"],
+        "front": "【节点】平原太守颜真卿的抉择困境",
+        "back": "天宝十四载（755年）十二月..."
+      },
+      "after": {
+        "card_id": "EP01_NODE_001",
+        "type": "node",
+        "tags": ["#历史/唐/安史之乱"],
+        "front": "【节点】平原太守颜真卿的抉择困境",
+        "back": "天宝十四载（755年）十二月...",
+        "concepts": ["安史之乱", "颜真卿"],
+        "sources": [{ "type": "ai_generated", "verified_by": ["《旧唐书·颜真卿传》"], "note": "基于史料综合" }],
+        "materials": { "quote": "", "scene": "", "data": "" },
+        "metadata": { "version": "v1.0", "inferred": false }
+      }
+    }
+  }
+}

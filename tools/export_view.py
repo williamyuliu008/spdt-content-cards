@@ -327,11 +327,66 @@ def export_stats(cards: list) -> dict:
     }
 
 
+def export_anki_tsv(cards: list, concepts: list | None, tags: list | None) -> dict:
+    """
+    Anki TSV 格式导出。
+
+    Anki 导入格式（TSV，UTF-8，制表符分隔）：
+      第一列 = Front
+      第二列 = Back
+      第三列+ = Tags（多个标签用空格分隔）
+
+    用法：File → Import → 选择 .tsv 文件，选择 "Allow HTML in fields"
+
+    如果 --out 以 .tsv 结尾，直接输出 TSV 文件（而非 JSON）。
+    """
+    filtered = filter_cards(cards, concepts, tags)
+
+    def trim_back(text: str, limit: int = 100) -> str:
+        if len(text) <= limit:
+            return text
+        for sep in "。！？；":
+            idx = text[:limit].rfind(sep)
+            if idx > limit * 0.6:
+                return text[:idx + 1]
+        return text[:limit] + "…"
+
+    def make_tags(c: dict) -> str:
+        """合并 tags + concepts + type + batch，用空格分隔，Anki 接受 HTML。"""
+        parts = []
+        for t in c.get("tags", []):
+            parts.append(t.lstrip("#").replace("/", "_"))
+        for co in c.get("concepts", []):
+            parts.append(f"concept:{co}")
+        parts.append(f"type:{c.get('type', '')}")
+        parts.append(f"batch:{c.get('_batch', '')}")
+        freq_tags = [t for t in c.get("tags", []) if "考频" in t]
+        parts.extend([t.lstrip("#").replace("/", "_") for t in freq_tags])
+        return " ".join(parts)
+
+    rows = []
+    for c in filtered:
+        front = c.get("front", "").replace("\t", " ")
+        back = trim_back(c.get("back", "")).replace("\t", " ")
+        tag_str = make_tags(c)
+        rows.append(f"{front}\t{back}\t{tag_str}")
+
+    return {
+        "scenario": "anki_tsv",
+        "exported_at": TODAY,
+        "total_cards": len(rows),
+        "filter_concepts": concepts or [],
+        "filter_tags": tags or [],
+        "tsv_rows": rows,
+    }
+
+
 # ── CLI ─────────────────────────────────────────────────────────────
 
 SCENARIOS = {
     "writing": export_writing,
     "exam": export_exam,
+    "anki": export_anki_tsv,
     "graph": export_graph,
     "stats": export_stats,
 }
@@ -341,7 +396,7 @@ def main():
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument("--scenario", required=True,
-                        choices=["writing", "exam", "graph", "stats"],
+                        choices=["writing", "exam", "anki", "graph", "stats"],
                         help="导出场景：writing=写作素材池, exam=考点卡包, graph=知识图谱, stats=统计报告")
     parser.add_argument("--concepts", help="逗号分隔的概念列表")
     parser.add_argument("--tags", help="逗号分隔的标签列表")
@@ -371,12 +426,23 @@ def main():
         result = export_writing(filtered, concepts, tags)
     elif args.scenario == "exam":
         result = export_exam(filtered, concepts, tags)
+    elif args.scenario == "anki":
+        result = export_anki_tsv(filtered, concepts, tags)
     elif args.scenario == "graph":
         result = export_graph(filtered, concepts, tags)
 
     # 写入
     out_path = Path(args.out)
     out_path.parent.mkdir(exist_ok=True, parents=True)
+
+    if args.scenario == "anki" and str(out_path).endswith(".tsv"):
+        # TSV 格式直接写（UTF-8 无 BOM，Anki 兼容）
+        with open(out_path, "w", encoding="utf-8") as f:
+            f.write("\n".join(result.get("tsv_rows", [])))
+        print(f"已导出 TSV：{out_path}（{result['total_cards']} 张卡片）")
+        print(f"  导入提示：Anki → File → Import → 选择此文件 → 勾选 'Allow HTML in fields'")
+        return
+
     with open(out_path, "w", encoding="utf-8", newline="\n") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
 
