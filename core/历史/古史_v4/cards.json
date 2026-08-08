@@ -1,0 +1,2135 @@
+{
+  "schema_version": "1.1",
+  "pack_id": "古史_v4_全18链卡片包",
+  "pack_title": "帝国的崩塌",
+  "domain": "高考历史",
+  "series": "帝国的崩塌",
+  "total_cards": 133,
+  "total_chains": 17,
+  "generated_at": "2026-08-07T13:04:00",
+  "generated_by": "migrate_cards_to_v1.py",
+  "cards": [
+    {
+      "card_id": "H_W4_世界近代_01_01",
+      "type": "node",
+      "front": "[CHAIN_世界近代_01] 帝国主义扩张矛盾",
+      "back": "19世纪末，列强瓜分完毕殖民地市场，后发工业国（德）要求重新分配，与先发国（英法）形成结构性矛盾\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_01",
+      "ep": 1,
+      "source": "帝国的崩塌",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/经济",
+        "#content/意识形态",
+        "#content/亚非拉"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_01_02",
+      "type": "node",
+      "front": "[CHAIN_世界近代_01] 同盟体系锁链效应",
+      "back": "三国同盟（德奥意）vs 三国协约（英法俄），A国被攻击则B国必须参战，局部冲突自动放大为全面战争\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_01",
+      "ep": 1,
+      "source": "帝国的崩塌",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/政制",
+        "#content/战争",
+        "#content/社会"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_01_03",
+      "type": "node",
+      "front": "[CHAIN_世界近代_01] 工业化武器的毁灭力",
+      "back": "机枪、毒气、坦克、远程火炮——武器杀伤力远超人类战术思想进化，堑壕战导致极高伤亡\n\n【★★★★考点】",
+      "chain_id": "CHAIN_世界近代_01",
+      "ep": 1,
+      "source": "帝国的崩塌",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/战争",
+        "#content/社会"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_01_04",
+      "type": "node",
+      "front": "[CHAIN_世界近代_01] 美国的参战转折",
+      "back": "1917年威尔逊对德宣战，无限制潜艇战和齐默尔曼电报是直接原因，美国工业产能改变了战争平衡\n\n【★★★★考点】",
+      "chain_id": "CHAIN_世界近代_01",
+      "ep": 1,
+      "source": "帝国的崩塌",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/人物",
+        "#content/战争",
+        "#content/经济"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_01_05",
+      "type": "node",
+      "front": "[CHAIN_世界近代_01] 堑壕战与消耗战",
+      "back": "西线战场双方挖掘堑壕，以机枪和铁丝网封锁中间地带，凡尔登战役单日法军伤亡5万人\n\n【★★★考点】",
+      "chain_id": "CHAIN_世界近代_01",
+      "ep": 1,
+      "source": "帝国的崩塌",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/战争",
+        "#content/社会"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界近代_01_01",
+      "type": "strategy_cause",
+      "front": "[CHAIN_世界近代_01] 一战爆发链\n为什么发生？",
+      "back": "帝国主义扩张导致列强矛盾不可调和，同盟体系将局部冲突放大为全面战争，萨拉热窝事件只是导火索\n\n【口诀】记成一首小诗：同盟锁链绑欧洲，工业武器血成河，萨拉热窝一声响，帝国崩塌换新天",
+      "chain_id": "CHAIN_世界近代_01",
+      "ep": 1,
+      "source": "帝国的崩塌",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/cause"
+      ]
+    },
+    {
+      "card_id": "L_W4_世界近代_01",
+      "type": "chain",
+      "front": "【链卡】CHAIN_世界近代_01 一战爆发链",
+      "back": "类型：原因类\n\n关键节点：\n• 帝国主义扩张矛盾\n• 同盟体系锁链效应\n• 工业化武器的毁灭力\n• 美国的参战转折\n• 堑壕战与消耗战\n\n理解一战的爆发，核心是三个关键词：帝国主义扩张（根本原因）、同盟体系（放大机制）、萨拉热窝（直接导火索）",
+      "chain_id": "CHAIN_世界近代_01",
+      "ep": 1,
+      "source": "帝国的崩塌",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#meta/chain"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_02_01",
+      "type": "node",
+      "front": "[CHAIN_世界近代_02] 《凡尔赛和约》",
+      "back": "1919年签订，德国承担战争责任（战争罪责条款），割让阿尔萨斯-洛林给法国，失去所有海外殖民地，陆军限制在10万人\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_02",
+      "ep": 1,
+      "source": "帝国的崩塌",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/战争",
+        "#content/意识形态",
+        "#content/亚非拉"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_02_02",
+      "type": "node",
+      "front": "[CHAIN_世界近代_02] 威尔逊十四点原则",
+      "back": "美国总统威尔逊提出：民族自决、公开外交、集体安全（国际联盟）、航海自由等，是一战后国际秩序的道德基础\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_02",
+      "ep": 1,
+      "source": "帝国的崩塌",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/政制",
+        "#content/人物",
+        "#content/社会"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_02_03",
+      "type": "node",
+      "front": "[CHAIN_世界近代_02] 赔款与经济创伤",
+      "back": "德国被迫支付巨额战争赔款（1921年确定1320亿金马克），导致1920年代初德国恶性通货膨胀，1923年马克兑美元汇率达到1万亿:1\n\n【★★★★考点】",
+      "chain_id": "CHAIN_世界近代_02",
+      "ep": 1,
+      "source": "帝国的崩塌",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/战争",
+        "#content/经济"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_02_04",
+      "type": "node",
+      "front": "[CHAIN_世界近代_02] 复仇主义与纳粹土壤",
+      "back": "《凡尔赛和约》的屈辱条款被德国民族主义者长期宣传利用，成为纳粹党动员民众、挑战现有秩序的核心意识形态\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_02",
+      "ep": 1,
+      "source": "帝国的崩塌",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/意识形态",
+        "#content/社会"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_02_05",
+      "type": "node",
+      "front": "[CHAIN_世界近代_02] 国联的空转",
+      "back": "国际联盟（League of Nations）是威尔逊集体安全理念的产物，但美国未加入（国会拒绝），国联没有强制执行权力，逐渐沦为大国博弈的装饰品\n\n【★★★考点】",
+      "chain_id": "CHAIN_世界近代_02",
+      "ep": 1,
+      "source": "帝国的崩塌",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/政制",
+        "#content/人物",
+        "#content/国际关系",
+        "#content/制度"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界近代_02_02",
+      "type": "strategy_impact",
+      "front": "[CHAIN_世界近代_02] 凡尔赛体系链\n产生了什么后果？",
+      "back": "德国屈辱与复仇主义并存，为纳粹崛起埋下伏笔；民族自决原则催生东欧民族国家；但体系脆弱，无法维持长期和平",
+      "chain_id": "CHAIN_世界近代_02",
+      "ep": 1,
+      "source": "帝国的崩塌",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/impact"
+      ]
+    },
+    {
+      "card_id": "L_W4_世界近代_02",
+      "type": "chain",
+      "front": "【链卡】CHAIN_世界近代_02 凡尔赛体系链",
+      "back": "类型：影响类\n\n关键节点：\n• 《凡尔赛和约》\n• 威尔逊十四点原则\n• 赔款与经济创伤\n• 复仇主义与纳粹土壤\n• 国联的空转\n\n凡尔赛体系的核心矛盾：惩罚德国（复仇主义埋下二战种子）+ 民族自决（产生新国家）= 不稳定的战后秩序",
+      "chain_id": "CHAIN_世界近代_02",
+      "ep": 1,
+      "source": "帝国的崩塌",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#meta/chain"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_03_01",
+      "type": "node",
+      "front": "[CHAIN_世界近代_03] 一战催化俄国革命",
+      "back": "一战将俄国经济推向崩溃：工业停顿、粮食短缺、前线惨败（1915年俄军伤亡超过500万），社会矛盾在战争压力下急剧爆发\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_03",
+      "ep": 1,
+      "source": "帝国的崩塌",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/战争",
+        "#content/经济",
+        "#content/社会"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_03_02",
+      "type": "node",
+      "front": "[CHAIN_世界近代_03] 二月革命",
+      "back": "1917年3月（俄历2月），彼得格勒工人罢工引发革命，沙皇尼古拉二世退位，临时政府建立。革命未解决土地、面包、和平问题\n\n【★★★★考点】",
+      "chain_id": "CHAIN_世界近代_03",
+      "ep": 1,
+      "source": "帝国的崩塌",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/意识形态"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_03_03",
+      "type": "node",
+      "front": "[CHAIN_世界近代_03] 布尔什维克夺权",
+      "back": "1917年11月7日（俄历10月），列宁指挥布尔什维克武装力量（赤卫队）占领冬宫，推翻临时政府，建立苏维埃政权\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_03",
+      "ep": 1,
+      "source": "帝国的崩塌",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/人物",
+        "#content/战争",
+        "#content/意识形态"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_03_04",
+      "type": "node",
+      "front": "[CHAIN_世界近代_03] 《布列斯特-立陶夫斯克和约》",
+      "back": "1918年3月，苏俄与德国单独媾和，割让乌克兰、白俄罗斯、波罗的海三国大片领土，退出第一次世界大战——列宁称其为'革命的退却'\n\n【★★★考点】",
+      "chain_id": "CHAIN_世界近代_03",
+      "ep": 1,
+      "source": "帝国的崩塌",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/人物",
+        "#content/意识形态"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_03_05",
+      "type": "node",
+      "front": "[CHAIN_世界近代_03] 共产主义的全球影响",
+      "back": "十月革命输出的革命意识形态深刻影响了中国（中共成立）、越南、朝鲜、东欧——共产主义成为20世纪冷战的一方主角\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_03",
+      "ep": 1,
+      "source": "帝国的崩塌",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/意识形态",
+        "#content/国际关系",
+        "#content/亚非拉"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界近代_03_01",
+      "type": "strategy_cause",
+      "front": "[CHAIN_世界近代_03] 十月革命链\n为什么发生？",
+      "back": "一战加速了俄国社会矛盾，一战的经济崩溃 + 布尔什维克组织能力 = 革命时机成熟\n\n【口诀】【口诀】战时崩溃临时政府，列宁一怒布尔什维克；布列斯特卖地换和平，革命红旗飘起来",
+      "chain_id": "CHAIN_世界近代_03",
+      "ep": 1,
+      "source": "帝国的崩塌",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/cause"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界近代_03_02",
+      "type": "strategy_impact",
+      "front": "[CHAIN_世界近代_03] 十月革命链\n产生了什么后果？",
+      "back": "人类历史上第一个社会主义国家诞生，共产主义成为20世纪最强力的意识形态力量，深刻影响了中国革命和冷战格局",
+      "chain_id": "CHAIN_世界近代_03",
+      "ep": 1,
+      "source": "帝国的崩塌",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/impact"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界近代_03_03",
+      "type": "strategy_turning",
+      "front": "[CHAIN_世界近代_03] 十月革命链\n变革的关键转折点是什么？",
+      "back": "十月革命 = 一战的意外产物（列宁回国）+ 布尔什维克武装起义 + 《布列斯特和约》换取退出战争",
+      "chain_id": "CHAIN_世界近代_03",
+      "ep": 1,
+      "source": "帝国的崩塌",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/turning"
+      ]
+    },
+    {
+      "card_id": "L_W4_世界近代_03",
+      "type": "chain",
+      "front": "【链卡】CHAIN_世界近代_03 十月革命链",
+      "back": "类型：变革类\n\n关键节点：\n• 一战催化俄国革命\n• 二月革命\n• 布尔什维克夺权\n• 《布列斯特-立陶夫斯克和约》\n• 共产主义的全球影响\n\n十月革命 = 一战的意外产物（列宁回国）+ 布尔什维克武装起义 + 《布列斯特和约》换取退出战争",
+      "chain_id": "CHAIN_世界近代_03",
+      "ep": 1,
+      "source": "帝国的崩塌",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#meta/chain"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_04_01",
+      "type": "node",
+      "front": "[CHAIN_世界近代_04] 新经济政策（NEP）",
+      "back": "1921-1928年列宁的退让政策：允许小规模私营商业和农业自由市场，换取经济恢复和政治稳定——被斯大林废除\n\n【★★★★考点】",
+      "chain_id": "CHAIN_世界近代_04",
+      "ep": 2,
+      "source": "赤旗与铁幕的升起",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/人物",
+        "#content/经济"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_04_02",
+      "type": "node",
+      "front": "[CHAIN_世界近代_04] 一国建成社会主义",
+      "back": "1924年列宁逝世后，斯大林确立的理论：苏联可以在资本主义包围中单独建成社会主义，不需要世界革命同时爆发\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_04",
+      "ep": 2,
+      "source": "赤旗与铁幕的升起",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/人物",
+        "#content/经济",
+        "#content/意识形态",
+        "#content/社会"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_04_03",
+      "type": "node",
+      "front": "[CHAIN_世界近代_04] 五年计划",
+      "back": "1928年起，斯大林启动第一个五年计划，以国家指令方式配置资源，优先发展重工业和国防工业，实现了快速工业化\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_04",
+      "ep": 2,
+      "source": "赤旗与铁幕的升起",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/人物",
+        "#content/经济",
+        "#content/制度"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_04_04",
+      "type": "node",
+      "front": "[CHAIN_世界近代_04] 农业集体化",
+      "back": "1929年起强制推行集体农庄，消灭富农阶层，导致农业生产大幅下降，乌克兰大饥荒（1932-33年）约300-700万人死亡\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_04",
+      "ep": 2,
+      "source": "赤旗与铁幕的升起",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/制度",
+        "#content/社会"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_04_05",
+      "type": "node",
+      "front": "[CHAIN_世界近代_04] 大清洗",
+      "back": "1936-1938年，斯大林以「肃清反革命」为名，发动大规模政治迫害，约100万人被处决，数百万人被关押，党政军干部大批被清洗\n\n【★★★★考点】",
+      "chain_id": "CHAIN_世界近代_04",
+      "ep": 2,
+      "source": "赤旗与铁幕的升起",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/人物",
+        "#content/意识形态"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界近代_04_01",
+      "type": "strategy_cause",
+      "front": "[CHAIN_世界近代_04] 苏维埃制度链\n为什么发生？",
+      "back": "俄国在一战中的崩溃 + 布尔什维克的组织能力 = 苏维埃政权的建立\n\n【口诀】【口诀】五年计划冲工业，农民集体喂工厂，斯大林模式效率高，代价是人命填",
+      "chain_id": "CHAIN_世界近代_04",
+      "ep": 2,
+      "source": "赤旗与铁幕的升起",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/cause"
+      ]
+    },
+    {
+      "card_id": "L_W4_世界近代_04",
+      "type": "chain",
+      "front": "【链卡】CHAIN_世界近代_04 苏维埃制度链",
+      "back": "类型：制度类\n\n关键节点：\n• 新经济政策（NEP）\n• 一国建成社会主义\n• 五年计划\n• 农业集体化\n• 大清洗\n\n苏维埃制度 = 计划经济（一党制经济）+ 重工业化优先 + 农业集体化，三个支柱缺一不可",
+      "chain_id": "CHAIN_世界近代_04",
+      "ep": 2,
+      "source": "赤旗与铁幕的升起",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#meta/chain"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_05_01",
+      "type": "node",
+      "front": "[CHAIN_世界近代_05] 大萧条成因",
+      "back": "信贷消费过度扩张、生产能力相对过剩、股票市场严重泡沫（杠杆高达10:1）、农业长期萧条——多个因素叠加触发系统性崩溃\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_05",
+      "ep": 2,
+      "source": "赤旗与铁幕的升起",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/经济"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_05_02",
+      "type": "node",
+      "front": "[CHAIN_世界近代_05] 大萧条影响",
+      "back": "美国失业率从3%飙升至25%（约1500万人失业），5000家银行倒闭，全球贸易萎缩60%，德国失业率超30%——极端的社会苦难是法西斯上台的土壤\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_05",
+      "ep": 2,
+      "source": "赤旗与铁幕的升起",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/经济",
+        "#content/意识形态",
+        "#content/社会"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_05_03",
+      "type": "node",
+      "front": "[CHAIN_世界近代_05] 凯恩斯革命",
+      "back": "英国经济学家凯恩斯提出：市场有效需求不足导致大萧条，政府应该通过财政支出（赤字预算）刺激需求；这是宏观经济学的诞生\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_05",
+      "ep": 2,
+      "source": "赤旗与铁幕的升起",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/经济"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_05_04",
+      "type": "node",
+      "front": "[CHAIN_世界近代_05] 罗斯福百日新政",
+      "back": "1933年罗斯福执政头100天：银行紧急状态→工业复兴法（NRA）→农业调整法→民用工程局（CCC）→田纳西河流域管理局（TVA）\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_05",
+      "ep": 2,
+      "source": "赤旗与铁幕的升起",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/人物",
+        "#content/经济",
+        "#content/制度"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_05_05",
+      "type": "node",
+      "front": "[CHAIN_世界近代_05] 社会保障法（1935）",
+      "back": "美国历史上第一部联邦社会保险法，建立养老和失业保险制度，奠定了现代福利国家的基础\n\n【★★★★考点】",
+      "chain_id": "CHAIN_世界近代_05",
+      "ep": 2,
+      "source": "赤旗与铁幕的升起",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/制度",
+        "#content/社会"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界近代_05_01",
+      "type": "strategy_cause",
+      "front": "[CHAIN_世界近代_05] 大萧条与凯恩斯主义链\n为什么发生？",
+      "back": "1920年代美国信贷消费泡沫 + 生产过剩 + 股市投机 = 1929年崩盘触发大萧条\n\n【口诀】【口诀】股市崩、银行倒、失业飙、红旗飘——罗斯福三把火：新政火、基建火、社保火",
+      "chain_id": "CHAIN_世界近代_05",
+      "ep": 2,
+      "source": "赤旗与铁幕的升起",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/cause"
+      ]
+    },
+    {
+      "card_id": "L_W4_世界近代_05",
+      "type": "chain",
+      "front": "【链卡】CHAIN_世界近代_05 大萧条与凯恩斯主义链",
+      "back": "类型：原因类\n\n关键节点：\n• 大萧条成因\n• 大萧条影响\n• 凯恩斯革命\n• 罗斯福百日新政\n• 社会保障法（1935）\n\n大萧条 → 自由市场失灵 → 凯恩斯主义（国家干预）→ 罗斯福新政（社保+基建+监管）→ 现代福利国家",
+      "chain_id": "CHAIN_世界近代_05",
+      "ep": 2,
+      "source": "赤旗与铁幕的升起",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#meta/chain"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_06_01",
+      "type": "node",
+      "front": "[CHAIN_世界近代_06] 法西斯主义的本质",
+      "back": "极端民族主义 + 反民主 + 反共产主义 + 强人政治 + 国家控制经济——核心是以国家名义动员全民意志，以非常规手段实现民族复兴\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_06",
+      "ep": 2,
+      "source": "赤旗与铁幕的升起",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/经济",
+        "#content/意识形态",
+        "#content/制度",
+        "#content/社会"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_06_02",
+      "type": "node",
+      "front": "[CHAIN_世界近代_06] 纳粹夺权路径",
+      "back": "纳粹党通过民主选举（1932年成为国会第一大党）获得政权，然后利用'授权法案'废除民主机制——用民主的选票埋葬民主\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_06",
+      "ep": 2,
+      "source": "赤旗与铁幕的升起",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/意识形态",
+        "#content/制度"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_06_03",
+      "type": "node",
+      "front": "[CHAIN_世界近代_06] 经济危机与社会绝望",
+      "back": "大萧条重创德国（失业率超30%，超600万人失业），中产阶级储蓄蒸发，极端政治获得了大量绝望者的支持\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_06",
+      "ep": 2,
+      "source": "赤旗与铁幕的升起",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/经济",
+        "#content/社会"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_06_04",
+      "type": "node",
+      "front": "[CHAIN_世界近代_06] 《凡尔赛和约》的双重效果",
+      "back": "德国的民族屈辱感成为纳粹动员的核心工具：'复兴德意志'的许诺，正好对应了民众对战后贫困和失业的不满\n\n【★★★★考点】",
+      "chain_id": "CHAIN_世界近代_06",
+      "ep": 2,
+      "source": "赤旗与铁幕的升起",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/意识形态",
+        "#content/社会"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_06_05",
+      "type": "node",
+      "front": "[CHAIN_世界近代_06] 军国日本侵华",
+      "back": "日本在1929年大萧条后加快侵华步伐：1931年九一八事变（侵占东北）→1937年七七事变（全面侵华），试图通过对外战争转移国内矛盾\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_06",
+      "ep": 2,
+      "source": "赤旗与铁幕的升起",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/战争",
+        "#content/经济"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界近代_06_01",
+      "type": "strategy_cause",
+      "front": "[CHAIN_世界近代_06] 法西斯崛起链\n为什么发生？",
+      "back": "大萧条的经济崩溃 + 《凡尔赛和约》的民族屈辱 + 民主制度的无力感 = 法西斯极端主义土壤\n\n【口诀】【口诀】大萧条逼人疯狂，凡尔赛条约火上浇油，希特勒墨索里尼趁虚而入",
+      "chain_id": "CHAIN_世界近代_06",
+      "ep": 2,
+      "source": "赤旗与铁幕的升起",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/cause"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界近代_06_02",
+      "type": "strategy_impact",
+      "front": "[CHAIN_世界近代_06] 法西斯崛起链\n产生了什么后果？",
+      "back": "纳粹德国和军国日本发动第二次世界大战，造成7000万人死亡，深刻改变了20世纪人类历史",
+      "chain_id": "CHAIN_世界近代_06",
+      "ep": 2,
+      "source": "赤旗与铁幕的升起",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/impact"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界近代_06_03",
+      "type": "strategy_turning",
+      "front": "[CHAIN_世界近代_06] 法西斯崛起链\n变革的关键转折点是什么？",
+      "back": "法西斯崛起 = 经济危机（绝望） + 民族主义（仇恨出口） + 强人政治（秩序许诺） + 民主脆弱性（利用议会夺权）",
+      "chain_id": "CHAIN_世界近代_06",
+      "ep": 2,
+      "source": "赤旗与铁幕的升起",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/turning"
+      ]
+    },
+    {
+      "card_id": "L_W4_世界近代_06",
+      "type": "chain",
+      "front": "【链卡】CHAIN_世界近代_06 法西斯崛起链",
+      "back": "类型：变革类\n\n关键节点：\n• 法西斯主义的本质\n• 纳粹夺权路径\n• 经济危机与社会绝望\n• 《凡尔赛和约》的双重效果\n• 军国日本侵华\n\n法西斯崛起 = 经济危机（绝望） + 民族主义（仇恨出口） + 强人政治（秩序许诺） + 民主脆弱性（利用议会夺权）",
+      "chain_id": "CHAIN_世界近代_06",
+      "ep": 2,
+      "source": "赤旗与铁幕的升起",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#meta/chain"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_07_01",
+      "type": "node",
+      "front": "[CHAIN_世界近代_07] 闪电战（Blitzkrieg）",
+      "back": "德国发明的全新战术：坦克集群快速突破 + 俯冲轰炸机摧毁指挥系统 + 摩托化步兵跟进，在6周内击败法国\n\n【★★★★考点】",
+      "chain_id": "CHAIN_世界近代_07",
+      "ep": 3,
+      "source": "大十字",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/战争"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_07_02",
+      "type": "node",
+      "front": "[CHAIN_世界近代_07] 绥靖政策",
+      "back": "英法在1930年代对德国扩张采取的让步政策（慕尼黑协定1938年），试图通过让步维护和平，结果反而加速了战争\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_07",
+      "ep": 3,
+      "source": "大十字",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/战争"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_07_03",
+      "type": "node",
+      "front": "[CHAIN_世界近代_07] 巴巴罗萨行动",
+      "back": "1941年6月22日德国入侵苏联，330万德军分三路进攻，苏联初期损失惨重（俘虏超过300万），但最终以空间换时间拖垮德国\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_07",
+      "ep": 3,
+      "source": "大十字",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/战争"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_07_04",
+      "type": "node",
+      "front": "[CHAIN_世界近代_07] 珍珠港偷袭",
+      "back": "1941年12月7日日本偷袭珍珠港，击沉4艘战列舰，美军伤亡2400人，直接导致美国参战，二战真正成为全球战争\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_07",
+      "ep": 3,
+      "source": "大十字",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/战争",
+        "#content/社会"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_07_05",
+      "type": "node",
+      "front": "[CHAIN_世界近代_07] 诺曼底登陆（D-Day）",
+      "back": "1944年6月6日盟军在法国诺曼底登陆，15.6万人参与，开辟欧洲第二战场，是人类历史上规模最大的两栖登陆作战\n\n【★★★★考点】",
+      "chain_id": "CHAIN_世界近代_07",
+      "ep": 3,
+      "source": "大十字",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/战争"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界近代_07_01",
+      "type": "strategy_cause",
+      "front": "[CHAIN_世界近代_07] 二战爆发与扩大链\n为什么发生？",
+      "back": "绥靖政策失败 → 德国吞并奥地利/捷克 → 《慕尼黑协定》助长野心 → 英法对德宣战但无力阻止 → 日本侵华触发太平洋战场\n\n【口诀】【口诀】绥靖养虎虎成患，巴巴罗萨双线战，珍珠港开美国门，广岛一弹定乾坤",
+      "chain_id": "CHAIN_世界近代_07",
+      "ep": 3,
+      "source": "大十字",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/cause"
+      ]
+    },
+    {
+      "card_id": "L_W4_世界近代_07",
+      "type": "chain",
+      "front": "【链卡】CHAIN_世界近代_07 二战爆发与扩大链",
+      "back": "类型：原因类\n\n关键节点：\n• 闪电战（Blitzkrieg）\n• 绥靖政策\n• 巴巴罗萨行动\n• 珍珠港偷袭\n• 诺曼底登陆（D-Day）\n\n二战的爆发逻辑：经济危机（法西斯土壤）→ 绥靖政策（错失阻止机会）→ 大国博弈（互不信任）→ 闪击波兰（战争爆发）",
+      "chain_id": "CHAIN_世界近代_07",
+      "ep": 3,
+      "source": "大十字",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#meta/chain"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_08_01",
+      "type": "node",
+      "front": "[CHAIN_世界近代_08] 三巨头同盟",
+      "back": "罗斯福（美国）、斯大林（苏联）、丘吉尔（英国）从1943年德黑兰会议到1945年雅尔塔会议，协商战后世界安排，核心是势力范围划分\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_08",
+      "ep": 3,
+      "source": "大十字",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/政制",
+        "#content/人物"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_08_02",
+      "type": "node",
+      "front": "[CHAIN_世界近代_08] 雅尔塔体系",
+      "back": "1945年2月雅尔塔会议安排：德国分区占领、联合国安理会常任理事国否决权、苏联获得日本北方四岛和中国东北的势力范围——这是冷战格局的直接来源\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_08",
+      "ep": 3,
+      "source": "大十字",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/政制",
+        "#content/战争",
+        "#content/国际关系",
+        "#content/亚非拉"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_08_03",
+      "type": "node",
+      "front": "[CHAIN_世界近代_08] 联合国成立",
+      "back": "1945年10月联合国成立，取代失败的国联，核心机构是安理会（5个常任理事国有否决权），设计上借鉴了国联的教训，但核心矛盾依然存在\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_08",
+      "ep": 3,
+      "source": "大十字",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/政制"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_08_04",
+      "type": "node",
+      "front": "[CHAIN_世界近代_08] 布雷顿森林体系",
+      "back": "1944年44国在布雷顿森林会议建立：美元与黄金挂钩（35美元=1盎司）、其他货币与美元挂钩 → IMF+世界银行 → 战后经济秩序\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_08",
+      "ep": 3,
+      "source": "大十字",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/经济"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_08_05",
+      "type": "node",
+      "front": "[CHAIN_世界近代_08] 原子弹改变历史",
+      "back": "1945年8月广岛、长崎两颗原子弹，造成约20万人伤亡，迫使日本投降，但也开启了人类核时代——核武器成为大国博弈的最终筹码\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_08",
+      "ep": 3,
+      "source": "大十字",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/战争",
+        "#content/国际关系",
+        "#content/社会"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界近代_08_01",
+      "type": "strategy_cause",
+      "front": "[CHAIN_世界近代_08] 反法西斯同盟链\n为什么发生？",
+      "back": "共同的敌人（法西斯）让曾经的对手（美英苏中）走到一起，形成了人类历史上最广泛的国际联盟\n\n【口诀】【口诀】雅尔塔三巨头：罗斯福要联合国，斯大林要势力范围，丘吉尔要帝国——战后秩序三国演义",
+      "chain_id": "CHAIN_世界近代_08",
+      "ep": 3,
+      "source": "大十字",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/cause"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界近代_08_02",
+      "type": "strategy_impact",
+      "front": "[CHAIN_世界近代_08] 反法西斯同盟链\n产生了什么后果？",
+      "back": "雅尔塔体系奠定了战后两极格局，联合国成立，布雷顿森林体系建立——二战的战后安排比一战成功得多",
+      "chain_id": "CHAIN_世界近代_08",
+      "ep": 3,
+      "source": "大十字",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/impact"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界近代_08_03",
+      "type": "strategy_turning",
+      "front": "[CHAIN_世界近代_08] 反法西斯同盟链\n变革的关键转折点是什么？",
+      "back": "同盟的逻辑：意识形态分歧让位给生存威胁——这是现实主义国际关系的经典案例",
+      "chain_id": "CHAIN_世界近代_08",
+      "ep": 3,
+      "source": "大十字",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/turning"
+      ]
+    },
+    {
+      "card_id": "L_W4_世界近代_08",
+      "type": "chain",
+      "front": "【链卡】CHAIN_世界近代_08 反法西斯同盟链",
+      "back": "类型：变革类\n\n关键节点：\n• 三巨头同盟\n• 雅尔塔体系\n• 联合国成立\n• 布雷顿森林体系\n• 原子弹改变历史\n\n同盟的逻辑：意识形态分歧让位给生存威胁——这是现实主义国际关系的经典案例",
+      "chain_id": "CHAIN_世界近代_08",
+      "ep": 3,
+      "source": "大十字",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#meta/chain"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_09_01",
+      "type": "node",
+      "front": "[CHAIN_世界近代_09] 十四年抗战",
+      "back": "中国抗日战争从1931年九一八事变算起，到1945年日本投降，持续十四年——是二战中持续时间最长的战场之一\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_09",
+      "ep": 3,
+      "source": "大十字",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/战争",
+        "#content/亚非拉"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_09_02",
+      "type": "node",
+      "front": "[CHAIN_世界近代_09] 正面战场与敌后战场",
+      "back": "国军主导正面战场（淞沪会战、武汉会战等），共军开辟敌后战场（百团大战），两大战场相互配合，形成了中国抗战的基本格局\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_09",
+      "ep": 3,
+      "source": "大十字",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/战争",
+        "#content/亚非拉"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_09_03",
+      "type": "node",
+      "front": "[CHAIN_世界近代_09] 中国战场牵制日军主力",
+      "back": "在整个二战期间，日本陆军主力（约70%）被牵制在中国战场，使其无法全力投入太平洋和东南亚战场——这是中国对盟军最重要的战略贡献\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_09",
+      "ep": 3,
+      "source": "大十字",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/战争",
+        "#content/亚非拉"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_09_04",
+      "type": "node",
+      "front": "[CHAIN_世界近代_09] 开罗会议与大国地位",
+      "back": "1943年11月，中美英三国首脑在开罗会议，蒋介石参会并发表《开罗宣言》（日本窃取的中国领土必须归还），这是中国以大国身份参与国际决策的开始\n\n【★★★★考点】",
+      "chain_id": "CHAIN_世界近代_09",
+      "ep": 3,
+      "source": "大十字",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/政制",
+        "#content/人物",
+        "#content/国际关系",
+        "#content/亚非拉"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界近代_09_05",
+      "type": "node",
+      "front": "[CHAIN_世界近代_09] 抗战代价与大国地位",
+      "back": "中国在二战中军民伤亡超过3500万人（其中平民约1800万），直接经济损失超过1000亿美元——这是用血换来的联合国安理会常任理事国席位\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界近代_09",
+      "ep": 3,
+      "source": "大十字",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/政制",
+        "#content/战争",
+        "#content/经济",
+        "#content/社会",
+        "#content/亚非拉"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界近代_09_02",
+      "type": "strategy_impact",
+      "front": "[CHAIN_世界近代_09] 中国抗战与世界链\n产生了什么后果？",
+      "back": "中国抗战是二战的重要组成部分，中国由此获得联合国安理会常任理事国席位，但这也是3500万人的生命代价换来的",
+      "chain_id": "CHAIN_世界近代_09",
+      "ep": 3,
+      "source": "大十字",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/impact"
+      ]
+    },
+    {
+      "card_id": "L_W4_世界近代_09",
+      "type": "chain",
+      "front": "【链卡】CHAIN_世界近代_09 中国抗战与世界链",
+      "back": "类型：影响类\n\n关键节点：\n• 十四年抗战\n• 正面战场与敌后战场\n• 中国战场牵制日军主力\n• 开罗会议与大国地位\n• 抗战代价与大国地位\n\n中国抗战的意义：不是盟军的配角，而是独立的主战场——没有中国的坚持，美国在太平洋的代价会成倍增加",
+      "chain_id": "CHAIN_世界近代_09",
+      "ep": 3,
+      "source": "大十字",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#meta/chain"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_01_01",
+      "type": "node",
+      "front": "[CHAIN_世界现代_01] 铁幕演说",
+      "back": "1946年3月丘吉尔在威斯敏斯特学院发表演说：'从波罗的海到亚得里亚海，铁幕已经降临欧洲'——这是冷战最有力的符号化表达\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_01",
+      "ep": 4,
+      "source": "冷战铁幕",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/人物",
+        "#content/国际关系"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_01_02",
+      "type": "node",
+      "front": "[CHAIN_世界现代_01] 杜鲁门主义",
+      "back": "1947年3月杜鲁门宣布美国将'一切方式'对抗共产主义扩张，标志着美国放弃孤立主义，开启全球遏制战略\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_01",
+      "ep": 4,
+      "source": "冷战铁幕",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/人物",
+        "#content/意识形态",
+        "#content/国际关系"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_01_03",
+      "type": "node",
+      "front": "[CHAIN_世界现代_01] 马歇尔计划",
+      "back": "1947年6月美国国务卿马歇尔提出：向欧洲提供130亿美元援助重建经济（相当于今天的1300亿美元），条件是接受美国商品和市场开放——既救了欧洲，也扩大了美国影响力\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_01",
+      "ep": 4,
+      "source": "冷战铁幕",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/人物",
+        "#content/经济"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_01_04",
+      "type": "node",
+      "front": "[CHAIN_世界现代_01] 北约与华约",
+      "back": "NATO（1949）和华约（1955）的成立，标志着两极军事同盟在欧洲正式确立，德国分裂成为冷战的象征\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_01",
+      "ep": 4,
+      "source": "冷战铁幕",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/政制",
+        "#content/战争",
+        "#content/国际关系"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_01_05",
+      "type": "node",
+      "front": "[CHAIN_世界现代_01] 遏制战略",
+      "back": "乔治·凯南（1946年'长电报'）提出：苏联对西方有本能的不信任，美国必须'遏制'苏联扩张但不直接战争——这是美国冷战战略的理论基础\n\n【★★★★考点】",
+      "chain_id": "CHAIN_世界现代_01",
+      "ep": 4,
+      "source": "冷战铁幕",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/战争",
+        "#content/国际关系"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界现代_01_01",
+      "type": "strategy_cause",
+      "front": "[CHAIN_世界现代_01] 冷战起源链\n为什么发生？",
+      "back": "意识形态根本对立（自由民主 vs 共产主义）+ 地缘战略竞争（势力范围争夺）+ 二战后的权力真空 = 冷战不可避免\n\n【口诀】【口诀】铁幕落下两极分，意识形态争正统，遏制战略锁苏联——丘吉尔开了第一枪",
+      "chain_id": "CHAIN_世界现代_01",
+      "ep": 4,
+      "source": "冷战铁幕",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/cause"
+      ]
+    },
+    {
+      "card_id": "L_W4_世界现代_01",
+      "type": "chain",
+      "front": "【链卡】CHAIN_世界现代_01 冷战起源链",
+      "back": "类型：原因类\n\n关键节点：\n• 铁幕演说\n• 杜鲁门主义\n• 马歇尔计划\n• 北约与华约\n• 遏制战略\n\n冷战起源 = 意识形态对立（道不同）+ 势力范围竞争（利不利）+ 权力真空（战后无秩序）+ 领导人误判（丘吉尔铁幕演说 + 杜鲁门主义）",
+      "chain_id": "CHAIN_世界现代_01",
+      "ep": 4,
+      "source": "冷战铁幕",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#meta/chain"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_02_01",
+      "type": "node",
+      "front": "[CHAIN_世界现代_02] MAD（相互确保毁灭）",
+      "back": "核恐怖平衡的核心逻辑：美苏各自拥有超过2000枚核弹头，任何一方发动核攻击，对方都有足够核力量进行毁灭性报复——先发制人等于集体自杀\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_02",
+      "ep": 4,
+      "source": "冷战铁幕",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/战争"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_02_02",
+      "type": "node",
+      "front": "[CHAIN_世界现代_02] 古巴导弹危机（1962）",
+      "back": "1962年10月，核战争边缘13天——赫鲁晓夫秘密在古巴部署核导弹，被美国发现并实施海上封锁，肯尼迪展示强硬，赫鲁晓夫最终退让\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_02",
+      "ep": 4,
+      "source": "冷战铁幕",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/人物",
+        "#content/战争"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_02_03",
+      "type": "node",
+      "front": "[CHAIN_世界现代_02] 代理人战争：越战",
+      "back": "1955-1975年，美国直接介入越南（最多时55万美军），试图阻止共产党统一越南，最终1975年北越统一，战争失败——是美国历史上最惨重的军事失败之一\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_02",
+      "ep": 4,
+      "source": "冷战铁幕",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/战争"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_02_04",
+      "type": "node",
+      "front": "[CHAIN_世界现代_02] 代理人战争：阿富汗（苏阿战争）",
+      "back": "1979-1989年，苏联入侵阿富汗，美国和巴基斯坦支持的阿富汗圣战者进行抵抗，消耗了苏联大量资源——是美国成功运用'大国代理人战争'策略的经典案例\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_02",
+      "ep": 4,
+      "source": "冷战铁幕",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/战争",
+        "#content/国际关系",
+        "#content/亚非拉"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_02_05",
+      "type": "node",
+      "front": "[CHAIN_世界现代_02] 军备竞赛",
+      "back": "美苏在核武器（洲际弹道导弹、潜射导弹、分导式多弹头）、太空（人造卫星、阿波罗登月）、常规武器领域全面竞争，拖累了双方经济发展——这是苏联最终失败的重要原因之一\n\n【★★★★考点】",
+      "chain_id": "CHAIN_世界现代_02",
+      "ep": 4,
+      "source": "冷战铁幕",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/战争",
+        "#content/经济"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界现代_02_02",
+      "type": "strategy_impact",
+      "front": "[CHAIN_世界现代_02] 核平衡与代理人战争链\n产生了什么后果？",
+      "back": "代理人战争消耗了双方资源（越战拖垮美国，阿富汗战争拖垮苏联），核平衡维持了恐怖和平",
+      "chain_id": "CHAIN_世界现代_02",
+      "ep": 4,
+      "source": "冷战铁幕",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/impact"
+      ]
+    },
+    {
+      "card_id": "L_W4_世界现代_02",
+      "type": "chain",
+      "front": "【链卡】CHAIN_世界现代_02 核平衡与代理人战争链",
+      "back": "类型：影响类\n\n关键节点：\n• MAD（相互确保毁灭）\n• 古巴导弹危机（1962）\n• 代理人战争：越战\n• 代理人战争：阿富汗（苏阿战争）\n• 军备竞赛\n\n核平衡 = MAD（相互确保毁灭）+ 热线 + 核不扩散机制（NPT）；代理人战争 = 双方在第三方的间接博弈",
+      "chain_id": "CHAIN_世界现代_02",
+      "ep": 4,
+      "source": "冷战铁幕",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#meta/chain"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_03_01",
+      "type": "node",
+      "front": "[CHAIN_世界现代_03] 体制僵化",
+      "back": "苏联的计划经济在1960-70年代后增速放缓，科技竞争力下降（信息技术革命中落后），消费品严重短缺，民众生活质量停滞\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_03",
+      "ep": 4,
+      "source": "冷战铁幕",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/经济",
+        "#content/意识形态",
+        "#content/科技",
+        "#content/制度",
+        "#content/社会"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_03_02",
+      "type": "node",
+      "front": "[CHAIN_世界现代_03] 阿富汗战争消耗",
+      "back": "1979-1989年阿富汗战争，苏联投入150亿美元、5万士兵伤亡（其中1.5万死亡），政治成本和经济负担双重打击戈尔巴乔夫改革信心\n\n【★★★★考点】",
+      "chain_id": "CHAIN_世界现代_03",
+      "ep": 4,
+      "source": "冷战铁幕",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/人物",
+        "#content/战争",
+        "#content/经济",
+        "#content/制度",
+        "#content/社会"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_03_03",
+      "type": "node",
+      "front": "[CHAIN_世界现代_03] 戈尔巴乔夫改革",
+      "back": "1985年上台后推出'重建'（经济改革）和'公开性'（政治开放），改革目标是激活体制而非改变体制，但打开的阀门无法再关上\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_03",
+      "ep": 4,
+      "source": "冷战铁幕",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/经济",
+        "#content/制度"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_03_04",
+      "type": "node",
+      "front": "[CHAIN_世界现代_03] 1989：东欧剧变",
+      "back": "1989年波兰团结工会执政 → 匈牙利开放边境 → 柏林墙倒塌 → 捷克斯洛伐克天鹅绒革命 → 罗马尼亚齐奥塞斯库被处决——东欧阵营在一年内土崩瓦解\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_03",
+      "ep": 4,
+      "source": "冷战铁幕",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/意识形态",
+        "#content/制度",
+        "#content/社会"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_03_05",
+      "type": "node",
+      "front": "[CHAIN_世界现代_03] 1991年苏联解体",
+      "back": "1991年8·19政变失败后，戈尔巴乔夫失去权力。12月25日辞职，12月26日苏联正式解散。15个加盟共和国独立，俄罗斯联邦独立。叶利钦成为俄罗斯首任总统\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_03",
+      "ep": 4,
+      "source": "冷战铁幕",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/政制",
+        "#content/人物",
+        "#content/制度"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界现代_03_01",
+      "type": "strategy_cause",
+      "front": "[CHAIN_世界现代_03] 苏联解体链\n为什么发生？",
+      "back": "经济体制僵化 + 军备竞赛负担 + 民族矛盾积累 + 戈尔巴乔夫改革失控 = 1991年体制崩溃\n\n【口诀】【口诀】计划经济和竞赛拖垮了自己，公开性改革打开了嘴巴，民族独立点燃了导火索，1991红旗落地",
+      "chain_id": "CHAIN_世界现代_03",
+      "ep": 4,
+      "source": "冷战铁幕",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/cause"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界现代_03_02",
+      "type": "strategy_impact",
+      "front": "[CHAIN_世界现代_03] 苏联解体链\n产生了什么后果？",
+      "back": "冷战结束，两极格局终结，美国成为唯一超级大国，世界进入'单极时刻'——但也开启了民族主义回归和多极化进程",
+      "chain_id": "CHAIN_世界现代_03",
+      "ep": 4,
+      "source": "冷战铁幕",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/impact"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界现代_03_03",
+      "type": "strategy_turning",
+      "front": "[CHAIN_世界现代_03] 苏联解体链\n变革的关键转折点是什么？",
+      "back": "苏联解体 = 经济体制失败（计划经济vs市场）+ 政治改革失控（公开性打开了潘多拉盒子）+ 民族矛盾爆发（15个加盟共和国独立）+ 领导人判断失误",
+      "chain_id": "CHAIN_世界现代_03",
+      "ep": 4,
+      "source": "冷战铁幕",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/turning"
+      ]
+    },
+    {
+      "card_id": "L_W4_世界现代_03",
+      "type": "chain",
+      "front": "【链卡】CHAIN_世界现代_03 苏联解体链",
+      "back": "类型：变革类\n\n关键节点：\n• 体制僵化\n• 阿富汗战争消耗\n• 戈尔巴乔夫改革\n• 1989：东欧剧变\n• 1991年苏联解体\n\n苏联解体 = 经济体制失败（计划经济vs市场）+ 政治改革失控（公开性打开了潘多拉盒子）+ 民族矛盾爆发（15个加盟共和国独立）+ 领导人判断失误",
+      "chain_id": "CHAIN_世界现代_03",
+      "ep": 4,
+      "source": "冷战铁幕",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#meta/chain"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_04_01",
+      "type": "node",
+      "front": "[CHAIN_世界现代_04] 印度独立（1947）",
+      "back": "1947年印度独立（2.5亿人口），同时分裂为印巴两国，宗教冲突造成大规模人口迁移和死亡——南亚次大陆的独立是殖民体系瓦解的标志性事件\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_04",
+      "ep": 5,
+      "source": "帝国的黄昏",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/政制",
+        "#content/意识形态",
+        "#content/社会",
+        "#content/亚非拉"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_04_02",
+      "type": "node",
+      "front": "[CHAIN_世界现代_04] 万隆会议（1955）",
+      "back": "29个亚非国家在万隆召开会议，周恩来提出'求同存异'原则，成为第三世界国家合作的重要平台——亚非会议是'不结盟运动'的思想先声\n\n【★★★★考点】",
+      "chain_id": "CHAIN_世界现代_04",
+      "ep": 5,
+      "source": "帝国的黄昏",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/政制",
+        "#content/亚非拉"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_04_03",
+      "type": "node",
+      "front": "[CHAIN_世界现代_04] 不结盟运动（1961）",
+      "back": "25个创始成员国（不加入美苏任何一方），到1980年代扩展至120个成员国，是第三世界国家在国际政治中维护独立自主的重要外交工具\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_04",
+      "ep": 5,
+      "source": "帝国的黄昏",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/政制",
+        "#content/亚非拉"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_04_04",
+      "type": "node",
+      "front": "[CHAIN_世界现代_04] 非洲独立浪潮（1960年代）",
+      "back": "1960年被称为'非洲年'，17个非洲国家独立；到1970年代，几乎所有非洲殖民地都获得了独立\n\n【★★★★考点】",
+      "chain_id": "CHAIN_世界现代_04",
+      "ep": 5,
+      "source": "帝国的黄昏",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/政制",
+        "#content/意识形态",
+        "#content/亚非拉"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_04_05",
+      "type": "node",
+      "front": "[CHAIN_世界现代_04] 殖民边界遗留问题",
+      "back": "殖民者在撤退时按管理便利划定的边界（非洲60%的边界是直线），不考虑民族、宗教、部落分布，成为当代非洲冲突的重要根源\n\n【★★★★考点】",
+      "chain_id": "CHAIN_世界现代_04",
+      "ep": 5,
+      "source": "帝国的黄昏",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/意识形态",
+        "#content/社会",
+        "#content/亚非拉"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界现代_04_01",
+      "type": "strategy_cause",
+      "front": "[CHAIN_世界现代_04] 去殖民化链\n为什么发生？",
+      "back": "二战削弱宗主国 + 民族主义全球传播 + 美苏两极格局对第三世界的争夺 = 殖民帝国快速瓦解\n\n【口诀】【口诀】二战耗尽了宗主国，民族主义传遍了亚非拉，美苏各怀鬼胎争第三世界",
+      "chain_id": "CHAIN_世界现代_04",
+      "ep": 5,
+      "source": "帝国的黄昏",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/cause"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界现代_04_02",
+      "type": "strategy_impact",
+      "front": "[CHAIN_世界现代_04] 去殖民化链\n产生了什么后果？",
+      "back": "约90个国家在1945-1975年间独立，殖民体系彻底瓦解，第三世界成为国际政治的重要力量",
+      "chain_id": "CHAIN_世界现代_04",
+      "ep": 5,
+      "source": "帝国的黄昏",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/impact"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界现代_04_03",
+      "type": "strategy_turning",
+      "front": "[CHAIN_世界现代_04] 去殖民化链\n变革的关键转折点是什么？",
+      "back": "去殖民化 = 宗主国实力消耗（二战） + 民族自决理念传播 + 美苏战略争夺（都想拉拢第三世界）",
+      "chain_id": "CHAIN_世界现代_04",
+      "ep": 5,
+      "source": "帝国的黄昏",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/turning"
+      ]
+    },
+    {
+      "card_id": "L_W4_世界现代_04",
+      "type": "chain",
+      "front": "【链卡】CHAIN_世界现代_04 去殖民化链",
+      "back": "类型：变革类\n\n关键节点：\n• 印度独立（1947）\n• 万隆会议（1955）\n• 不结盟运动（1961）\n• 非洲独立浪潮（1960年代）\n• 殖民边界遗留问题\n\n去殖民化 = 宗主国实力消耗（二战） + 民族自决理念传播 + 美苏战略争夺（都想拉拢第三世界）",
+      "chain_id": "CHAIN_世界现代_04",
+      "ep": 5,
+      "source": "帝国的黄昏",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#meta/chain"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_05_01",
+      "type": "node",
+      "front": "[CHAIN_世界现代_05] 一边倒（1949-1960）",
+      "back": "1949年新中国成立，毛泽东宣布'一边倒'外交政策，倒向苏联一边，获得苏联156项工业援助项目（奠定了中国工业化的基础）\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_05",
+      "ep": 5,
+      "source": "帝国的黄昏",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/政制",
+        "#content/人物",
+        "#content/经济",
+        "#content/亚非拉"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_05_02",
+      "type": "node",
+      "front": "[CHAIN_世界现代_05] 中苏分裂（1960-1970）",
+      "back": "意识形态分歧（苏联要走修正主义路线）+ 地缘利益冲突（长波电台、联合舰队争议）= 1960年代中苏关系彻底破裂，两国在边境陈兵百万\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_05",
+      "ep": 5,
+      "source": "帝国的黄昏",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/政制",
+        "#content/意识形态",
+        "#content/社会"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_05_03",
+      "type": "node",
+      "front": "[CHAIN_世界现代_05] 乒乓外交（1971）",
+      "back": "1971年4月，日本世乒赛期间，美国选手误上中国队的巴士，中国邀请美国队访华——这打开了中美关系正常化的大门，被国际媒体称为'小球转动大球'\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_05",
+      "ep": 5,
+      "source": "帝国的黄昏",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/政制",
+        "#content/亚非拉"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_05_04",
+      "type": "node",
+      "front": "[CHAIN_世界现代_05] 尼克松访华（1972）",
+      "back": "1972年2月尼克松访华，中美发表《上海公报》，关系开始正常化——这是冷战史上最具戏剧性的外交逆转：美国主动向中国伸出手\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_05",
+      "ep": 5,
+      "source": "帝国的黄昏",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/政制",
+        "#content/人物",
+        "#content/国际关系",
+        "#content/亚非拉"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_05_05",
+      "type": "node",
+      "front": "[CHAIN_世界现代_05] 改革开放与国际空间",
+      "back": "1978年改革开放 + 1979年中美建交 + 2001年加入WTO = 中国逐步融入全球经济体系，获得快速发展的外部空间\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_05",
+      "ep": 5,
+      "source": "帝国的黄昏",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/政制",
+        "#content/经济",
+        "#content/制度",
+        "#content/亚非拉"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界现代_05_01",
+      "type": "strategy_cause",
+      "front": "[CHAIN_世界现代_05] 中国外交突围链\n为什么发生？",
+      "back": "一边倒（1949-1960s）→ 中苏分裂（1960s-1970s）→ 联美制苏（1970s-1980s）→ 独立自主（1980s至今）\n\n【口诀】【口诀】一边倒靠苏联，中苏分裂自己干，乒乓外交破僵局，改革开放换新天",
+      "chain_id": "CHAIN_世界现代_05",
+      "ep": 5,
+      "source": "帝国的黄昏",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/cause"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界现代_05_02",
+      "type": "strategy_impact",
+      "front": "[CHAIN_世界现代_05] 中国外交突围链\n产生了什么后果？",
+      "back": "中国从被排斥到1971年重返联合国，到1979年中美建交，到今天成为全球性大国，每一步都是在两极格局的缝隙中精准计算的结果",
+      "chain_id": "CHAIN_世界现代_05",
+      "ep": 5,
+      "source": "帝国的黄昏",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/impact"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界现代_05_03",
+      "type": "strategy_turning",
+      "front": "[CHAIN_世界现代_05] 中国外交突围链\n变革的关键转折点是什么？",
+      "back": "中国外交 = 独立自主（核心）+ 利用两极矛盾（策略）+ 经营第三世界（基础）+ 融入全球经济（路径）",
+      "chain_id": "CHAIN_世界现代_05",
+      "ep": 5,
+      "source": "帝国的黄昏",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/turning"
+      ]
+    },
+    {
+      "card_id": "L_W4_世界现代_05",
+      "type": "chain",
+      "front": "【链卡】CHAIN_世界现代_05 中国外交突围链",
+      "back": "类型：变革类\n\n关键节点：\n• 一边倒（1949-1960）\n• 中苏分裂（1960-1970）\n• 乒乓外交（1971）\n• 尼克松访华（1972）\n• 改革开放与国际空间\n\n中国外交 = 独立自主（核心）+ 利用两极矛盾（策略）+ 经营第三世界（基础）+ 融入全球经济（路径）",
+      "chain_id": "CHAIN_世界现代_05",
+      "ep": 5,
+      "source": "帝国的黄昏",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#meta/chain"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_06_01",
+      "type": "node",
+      "front": "[CHAIN_世界现代_06] 历史终结论（1992）",
+      "back": "福山在《历史的终结》中宣称：自由民主制是人类最后一种政治形态，因为已经没有其他竞争者了——这个判断在2020年代被广泛质疑\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_06",
+      "ep": 6,
+      "source": "新战国时代",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/制度"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_06_02",
+      "type": "node",
+      "front": "[CHAIN_世界现代_06] 新自由主义全球化",
+      "back": "1990-2008年，以华盛顿共识（自由化、私有化、稳定化）为指导的全球化进程加速，跨国公司主导全球供应链，跨国金融资本流动空前活跃\n\n【★★★★考点】",
+      "chain_id": "CHAIN_世界现代_06",
+      "ep": 6,
+      "source": "新战国时代",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/经济"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_06_03",
+      "type": "node",
+      "front": "[CHAIN_世界现代_06] 全球化的输家",
+      "back": "全球化的红利分配极不均匀：跨国资本和高端技术人才是最大赢家；发达国家的蓝领工人和发展中国家的底层劳动者，在全球化中受损——2016年民粹主义浪潮是对这一不平等的反弹\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_06",
+      "ep": 6,
+      "source": "新战国时代",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/经济",
+        "#content/意识形态",
+        "#content/科技",
+        "#content/社会",
+        "#content/亚非拉"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_06_04",
+      "type": "node",
+      "front": "[CHAIN_世界现代_06] 2008年金融危机",
+      "back": "华尔街金融创新（次级贷款、CDO、CDS）制造了巨大的金融泡沫；2008年泡沫破裂引发全球金融海啸，重创西方经济，暴露了新自由主义全球化的系统性风险\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_06",
+      "ep": 6,
+      "source": "新战国时代",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/经济",
+        "#content/意识形态"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_06_05",
+      "type": "node",
+      "front": "[CHAIN_世界现代_06] 美国霸权的动摇",
+      "back": "2008年后，美国金融体系遭受重创，政府大规模救市（纳税人买单），而华尔街高管仍然领取高额奖金——'占领华尔街'运动反映了美国国内对精英阶层的深层不满\n\n【★★★★考点】",
+      "chain_id": "CHAIN_世界现代_06",
+      "ep": 6,
+      "source": "新战国时代",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/战争",
+        "#content/经济"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界现代_06_01",
+      "type": "strategy_cause",
+      "front": "[CHAIN_世界现代_06] 单极时刻链\n为什么发生？",
+      "back": "苏联解体 + 军事技术优势 + 经济主导（布雷顿森林体系）+ 意识形态真空 = 美国单极霸权\n\n【口诀】【口诀】1991单极称霸，2001中国入WTO，2008金融危机打破神话，2010中国超日，2020多极已成",
+      "chain_id": "CHAIN_世界现代_06",
+      "ep": 6,
+      "source": "新战国时代",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/cause"
+      ]
+    },
+    {
+      "card_id": "L_W4_世界现代_06",
+      "type": "chain",
+      "front": "【链卡】CHAIN_世界现代_06 单极时刻链",
+      "back": "类型：原因类\n\n关键节点：\n• 历史终结论（1992）\n• 新自由主义全球化\n• 全球化的输家\n• 2008年金融危机\n• 美国霸权的动摇\n\n单极时刻 = 苏联解体（对手消失）+ 军事绝对优势 + 经济规则制定者（WTO/IMF/世界银行）+ 意识形态真空（历史的终结）",
+      "chain_id": "CHAIN_世界现代_06",
+      "ep": 6,
+      "source": "新战国时代",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#meta/chain"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_07_01",
+      "type": "node",
+      "front": "[CHAIN_世界现代_07] 改革开放（1978）",
+      "back": "邓小平启动改革开放：农村土地承包制（释放农民）+ 特区引入外资 + 价格双轨制 = 中国经济开始起飞\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_07",
+      "ep": 6,
+      "source": "新战国时代",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/人物",
+        "#content/经济",
+        "#content/制度",
+        "#content/亚非拉"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_07_02",
+      "type": "node",
+      "front": "[CHAIN_世界现代_07] 人口红利与制造业崛起",
+      "back": "中国拥有约9亿劳动力人口（相当于全部发达国家之和），庞大的廉价劳动力吸引了全球制造业转移，中国在2010年代成为'世界工厂'\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_07",
+      "ep": 6,
+      "source": "新战国时代",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/科技",
+        "#content/社会",
+        "#content/亚非拉"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_07_03",
+      "type": "node",
+      "front": "[CHAIN_世界现代_07] 中国加入WTO（2001）",
+      "back": "入世后中国出口激增，外汇储备从2001年的2000亿美元增至2014年的4万亿美元（全球第一）；中国在10年内成为全球最大出口国\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_07",
+      "ep": 6,
+      "source": "新战国时代",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/经济",
+        "#content/亚非拉"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_07_04",
+      "type": "node",
+      "front": "[CHAIN_世界现代_07] 一带一路倡议（2013）",
+      "back": "通过基础设施投资（公路、铁路、港口、能源管道）扩大中国在亚非欧的影响力，是中国从'融入'到'塑造'国际体系的标志性战略\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_07",
+      "ep": 6,
+      "source": "新战国时代",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/政制",
+        "#content/亚非拉"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_07_05",
+      "type": "node",
+      "front": "[CHAIN_世界现代_07] 科技追赶",
+      "back": "中国在5G（华为）、AI（百度/商汤）、新能源（宁德时代/比亚迪）、高铁等领域达到或接近世界领先水平；但半导体（芯片）、航空发动机等关键领域仍受制于美国技术封锁\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_07",
+      "ep": 6,
+      "source": "新战国时代",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/科技",
+        "#content/亚非拉"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界现代_07_01",
+      "type": "strategy_cause",
+      "front": "[CHAIN_世界现代_07] 中国崛起链\n为什么发生？",
+      "back": "改革开放（制度变革）+ 人口红利（廉价劳动力）+ 外资技术转移 + 国家主导产业政策 = 人类史上最快最大规模的工业化\n\n【口诀】【口诀】1978改革开放，2001加入WTO，2010超日成第二，2013一带一路，2018科技突围",
+      "chain_id": "CHAIN_世界现代_07",
+      "ep": 6,
+      "source": "新战国时代",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/cause"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界现代_07_02",
+      "type": "strategy_impact",
+      "front": "[CHAIN_世界现代_07] 中国崛起链\n产生了什么后果？",
+      "back": "中国崛起打破了'民主才能发展'的铁律，成为21世纪最重要的地缘政治事件，深刻改变了全球权力格局和产业链分布",
+      "chain_id": "CHAIN_世界现代_07",
+      "ep": 6,
+      "source": "新战国时代",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/impact"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界现代_07_03",
+      "type": "strategy_turning",
+      "front": "[CHAIN_世界现代_07] 中国崛起链\n变革的关键转折点是什么？",
+      "back": "中国崛起 = 改革开放（融入全球化）+ 人口规模优势 + 国家主导产业政策（选择性保护+竞争）+ 技术追赶战略",
+      "chain_id": "CHAIN_世界现代_07",
+      "ep": 6,
+      "source": "新战国时代",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/turning"
+      ]
+    },
+    {
+      "card_id": "L_W4_世界现代_07",
+      "type": "chain",
+      "front": "【链卡】CHAIN_世界现代_07 中国崛起链",
+      "back": "类型：变革类\n\n关键节点：\n• 改革开放（1978）\n• 人口红利与制造业崛起\n• 中国加入WTO（2001）\n• 一带一路倡议（2013）\n• 科技追赶\n\n中国崛起 = 改革开放（融入全球化）+ 人口规模优势 + 国家主导产业政策（选择性保护+竞争）+ 技术追赶战略",
+      "chain_id": "CHAIN_世界现代_07",
+      "ep": 6,
+      "source": "新战国时代",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#meta/chain"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_08_01",
+      "type": "node",
+      "front": "[CHAIN_世界现代_08] WTO危机",
+      "back": "美国自2017年起阻挠WTO上诉机构法官任命（需所有成员同意），导致争端解决机制实际停摆；这意味着全球贸易规则的最大执行机构陷入瘫痪\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_08",
+      "ep": 6,
+      "source": "新战国时代",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/经济"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_08_02",
+      "type": "node",
+      "front": "[CHAIN_世界现代_08] 供应链重构",
+      "back": "新冠疫情暴露了全球供应链的脆弱性；美国推动'友岸外包'（friendshoring）和'近岸外包'（nearshoring），减少对中国供应链的依赖；中国推动'双循环'（国内大循环为主体+国际国内双循环）\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_08",
+      "ep": 6,
+      "source": "新战国时代",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/政制",
+        "#content/亚非拉"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_08_03",
+      "type": "node",
+      "front": "[CHAIN_世界现代_08] 气候博弈",
+      "back": "碳中和目标（中美欧2060/2050/2060年）成为大国博弈的新维度：谁先完成能源转型，谁就拥有清洁能源技术和产业的主导权\n\n【★★★★考点】",
+      "chain_id": "CHAIN_世界现代_08",
+      "ep": 6,
+      "source": "新战国时代",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/科技",
+        "#content/国际关系"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_08_04",
+      "type": "node",
+      "front": "[CHAIN_世界现代_08] 数字主权竞争",
+      "back": "5G（华为vs西方阵营）、AI治理（数据主权vs数据自由流动）、平台监管（中国的互联网防火墙vs西方互联网开放）——数字领域的规则竞争，正在成为大国博弈的新前沿\n\n【★★★★考点】",
+      "chain_id": "CHAIN_世界现代_08",
+      "ep": 6,
+      "source": "新战国时代",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/科技",
+        "#content/国际关系",
+        "#content/亚非拉"
+      ]
+    },
+    {
+      "card_id": "H_W4_世界现代_08_05",
+      "type": "node",
+      "front": "[CHAIN_世界现代_08] 百年未有之大变局",
+      "back": "中国官方对当前国际格局的定性：权力东移（亚洲崛起）+ 意识形态竞争回归 + 技术革命重塑权力基础 + 治理危机加剧——四重变革叠加，构成'百年未有之大变局'\n\n【★★★★★考点】",
+      "chain_id": "CHAIN_世界现代_08",
+      "ep": 6,
+      "source": "新战国时代",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#content/政制",
+        "#content/意识形态",
+        "#content/科技",
+        "#content/亚非拉"
+      ]
+    },
+    {
+      "card_id": "S_W4_世界现代_08_02",
+      "type": "strategy_impact",
+      "front": "[CHAIN_世界现代_08] 全球治理重构链\n产生了什么后果？",
+      "back": "WTO上诉机构停摆、联合国改革争议、数字主权竞争、气候博弈——大国竞争正在重新定义全球治理的规则",
+      "chain_id": "CHAIN_世界现代_08",
+      "ep": 6,
+      "source": "新战国时代",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#strategy/impact"
+      ]
+    },
+    {
+      "card_id": "L_W4_世界现代_08",
+      "type": "chain",
+      "front": "【链卡】CHAIN_世界现代_08 全球治理重构链",
+      "back": "类型：影响类\n\n关键节点：\n• WTO危机\n• 供应链重构\n• 气候博弈\n• 数字主权竞争\n• 百年未有之大变局\n\n全球治理重构 = 大国博弈（规则制定权）+ 供应链安全（产业链自主）+ 气候目标（能源转型竞争）+ 数字治理（数据主权）",
+      "chain_id": "CHAIN_世界现代_08",
+      "ep": 6,
+      "source": "新战国时代",
+      "maturity": "RAW",
+      "created_at": 1786073521,
+      "updated_at": 1786073521,
+      "tags": [
+        "#meta/chain"
+      ]
+    }
+  ]
+}

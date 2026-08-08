@@ -1,0 +1,140 @@
+[
+  {
+    "card_id": "CAFA_impact_01",
+    "type": "strategy_impact",
+    "front": "楷书对后世书法（行书/草书）产生了什么影响？",
+    "back": "楷书确立的笔画规范和结构法则，成为行书与草书演变的基石。唐楷的法度严谨，倒逼行书在'法'与'意'之间寻找平衡，最终催生了'尚意'书风的自觉追求",
+    "chain_id": "CAFA_chain_楷书源流",
+    "ep": 1,
+    "source": "CAFA书法校考知识库",
+    "maturity": "STABLE",
+    "created_at": 1723046400,
+    "updated_at": 1723046400,
+    "tags": [
+      "#strategy/impact",
+      "#content/书法技法",
+      "#domain/cafa"
+    ],
+    "materials": {
+      "quote": "",
+      "scene": "",
+      "data": ""
+    },
+    "export_tags": [
+      "适合_论述题_楷书影响",
+      "适合_面试口述_书法史串联",
+      "适合_书写实践_理论支撑"
+    ],
+    "concepts": [
+      "cafa",
+      "impact",
+      "书法",
+      "书法技法",
+      "技法"
+    ],
+    "sources": [],
+    "metadata": {
+      "chain_id": "",
+      "version": "v1.0",
+      "inferred": false,
+      "created_at": "2026-08-08",
+      "updated_at": "2026-08-08",
+      "created_by": "",
+      "changelog": [],
+      "note": ""
+    }
+  },
+  {
+    "card_id": "CAFA_impact_02",
+    "type": "strategy_impact",
+    "front": "颜真卿楷书对后世忠烈书风产生了什么影响？",
+    "back": "颜真卿以忠烈之名冠书法之名——他既是平定安史之乱的名臣，也是唐代楷书的巅峰代表。其书法被后世赋予了'忠义'的人格象征，颜体成为历代忠烈之士寄托家国情怀的精神载体",
+    "chain_id": "CAFA_chain_楷书源流",
+    "ep": 2,
+    "source": "CAFA书法校考知识库",
+    "maturity": "STABLE",
+    "created_at": 1723046400,
+    "updated_at": 1723046400,
+    "tags": [
+      "#strategy/impact",
+      "#content/书法人物",
+      "#content/书法美学",
+      "#domain/cafa"
+    ],
+    "materials": {
+      "quote": "",
+      "scene": "",
+      "data": ""
+    },
+    "export_tags": [
+      "适合_论述题_书品即人品",
+      "适合_面试口述_颜体传承",
+      "适合_书写实践_颜体基础"
+    ],
+    "concepts": [
+      "cafa",
+      "impact",
+      "书法",
+      "书法人物",
+      "书法美学"
+    ],
+    "sources": [],
+    "metadata": {
+      "chain_id": "",
+      "version": "v1.0",
+      "inferred": false,
+      "created_at": "2026-08-08",
+      "updated_at": "2026-08-08",
+      "created_by": "",
+      "changelog": [],
+      "note": ""
+    }
+  },
+  {
+    "card_id": "CAFA_impact_03",
+    "type": "strategy_impact",
+    "front": "唐代楷书巅峰对宋代尚意书风产生了什么影响？",
+    "back": "唐楷的极致法度，构成了宋代书家的'压迫感'——苏轼、米芾等人正是在反叛唐楷规范的过程中，找到了'尚意'书风的突破口。从这个意义上说，尚意是对唐楷的辩证超越",
+    "chain_id": "CAFA_chain_楷书源流",
+    "ep": 3,
+    "source": "CAFA书法校考知识库",
+    "maturity": "STABLE",
+    "created_at": 1723046400,
+    "updated_at": 1723046400,
+    "tags": [
+      "#strategy/impact",
+      "#content/书法美学",
+      "#content/书法技法",
+      "#domain/cafa"
+    ],
+    "materials": {
+      "quote": "",
+      "scene": "",
+      "data": ""
+    },
+    "export_tags": [
+      "适合_论述题_唐楷与宋意",
+      "适合_面试口述_尚意三大家",
+      "适合_书写实践_宋四家风格对比"
+    ],
+    "concepts": [
+      "cafa",
+      "impact",
+      "书法",
+      "书法技法",
+      "书法美学",
+      "技法"
+    ],
+    "sources": [],
+    "metadata": {
+      "chain_id": "",
+      "version": "v1.0",
+      "inferred": false,
+      "created_at": "2026-08-08",
+      "updated_at": "2026-08-08",
+      "created_by": "",
+      "changelog": [],
+      "note": ""
+    }
+  }
+]

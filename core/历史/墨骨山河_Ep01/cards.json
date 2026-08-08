@@ -1,0 +1,265 @@
+[
+  {
+    "card_id": "EP01_NODE_001",
+    "type": "node",
+    "tags": [
+      "#历史/唐/安史之乱",
+      "#历史/地理/平原郡",
+      "#书法/唐/颜真卿"
+    ],
+    "front": "【节点】平原太守颜真卿的抉择困境",
+    "back": "天宝十四载（755年）十二月，安禄山叛军已过黄河。颜真卿守平原郡，手中只有六千士兵，敌我悬殊。城外安禄山使者已至第三日，是守是逃，性命攸关。",
+    "concepts": [
+      "书法",
+      "唐朝",
+      "地理",
+      "安史之乱",
+      "平原郡",
+      "颜真卿"
+    ],
+    "sources": [],
+    "materials": {
+      "quote": "",
+      "scene": "",
+      "data": ""
+    },
+    "metadata": {
+      "chain_id": "",
+      "version": "v1.0",
+      "inferred": false,
+      "created_at": "2026-08-08",
+      "updated_at": "2026-08-08",
+      "created_by": "",
+      "changelog": [],
+      "note": ""
+    }
+  },
+  {
+    "card_id": "EP01_STRATEGY_CAUSE_001",
+    "type": "strategy_cause",
+    "tags": [
+      "#历史/唐/安史之乱",
+      "#决策/守城"
+    ],
+    "front": "【原因】为何河北诸郡望风披靡，唯平原郡坚守？",
+    "back": "河北诸郡太守多为安禄山旧部或受其威逼利诱，望风投降。颜真卿之所以坚守，原因有三：一、平原郡位置偏东，未受最初冲击；二、颜氏家族在河北根基深厚，有号召力；三、颜真卿本人忠义为先，早知退无可退。",
+    "concepts": [
+      "决策",
+      "唐朝",
+      "守城",
+      "安史之乱"
+    ],
+    "sources": [],
+    "materials": {
+      "quote": "",
+      "scene": "",
+      "data": ""
+    },
+    "metadata": {
+      "chain_id": "",
+      "version": "v1.0",
+      "inferred": false,
+      "created_at": "2026-08-08",
+      "updated_at": "2026-08-08",
+      "created_by": "",
+      "changelog": [],
+      "note": ""
+    }
+  },
+  {
+    "card_id": "EP01_STRATEGY_CAUSE_002",
+    "type": "strategy_cause",
+    "tags": [
+      "#历史/唐/藩镇割据",
+      "#决策/制度背景"
+    ],
+    "front": "【原因】唐玄宗为何轻视安禄山造反的预警？",
+    "back": "唐玄宗对安禄山的信任建立在二十年的恩宠之上，且安禄山以忠顺形象示人。此外，中央对藩镇将领的监察体制已严重弱化，信息传递受阻，玄宗无法获得真实情报。",
+    "concepts": [
+      "决策",
+      "制度",
+      "制度背景",
+      "唐朝",
+      "藩镇割据"
+    ],
+    "sources": [],
+    "materials": {
+      "quote": "",
+      "scene": "",
+      "data": ""
+    },
+    "metadata": {
+      "chain_id": "",
+      "version": "v1.0",
+      "inferred": false,
+      "created_at": "2026-08-08",
+      "updated_at": "2026-08-08",
+      "created_by": "",
+      "changelog": [],
+      "note": ""
+    }
+  },
+  {
+    "card_id": "EP01_STRATEGY_TURNING_001",
+    "type": "strategy_turning",
+    "tags": [
+      "#decision_point",
+      "#历史/唐/安史之乱",
+      "#书法/唐/颜真卿"
+    ],
+    "front": "【转折】天宝十四载十二月：颜真卿的最后通牒",
+    "back": "颜真卿面临两难：选项A——坚守平原，以六千对数万，必败无疑；选项B——弃城南逃，留有用之身，但他将成为弃民于贼的罪人。最终他选择死守，并诛杀安禄山使者以明志。",
+    "concepts": [
+      "decision_point",
+      "书法",
+      "唐朝",
+      "安史之乱",
+      "颜真卿"
+    ],
+    "sources": [],
+    "materials": {
+      "quote": "",
+      "scene": "",
+      "data": ""
+    },
+    "metadata": {
+      "chain_id": "",
+      "version": "v1.0",
+      "inferred": false,
+      "created_at": "2026-08-08",
+      "updated_at": "2026-08-08",
+      "created_by": "",
+      "changelog": [],
+      "note": ""
+    }
+  },
+  {
+    "card_id": "EP01_NODE_002",
+    "type": "node",
+    "tags": [
+      "#历史/唐/颜杲卿",
+      "#历史/唐/颜季明"
+    ],
+    "front": "【节点】常山之难：颜氏家族的毁灭",
+    "back": "天宝十五载正月，叛军攻破常山郡（颜杲卿守），颜杲卿、颜季明父子被俘后骂贼殉国。颜氏一门三十余口遇难，仅颜真卿等数人幸存。消息传至平原，已是数月之后。",
+    "concepts": [
+      "唐朝",
+      "颜季明",
+      "颜杲卿"
+    ],
+    "sources": [],
+    "materials": {
+      "quote": "",
+      "scene": "",
+      "data": ""
+    },
+    "metadata": {
+      "chain_id": "",
+      "version": "v1.0",
+      "inferred": false,
+      "created_at": "2026-08-08",
+      "updated_at": "2026-08-08",
+      "created_by": "",
+      "changelog": [],
+      "note": ""
+    }
+  },
+  {
+    "card_id": "EP01_STRATEGY_IMPACT_001",
+    "type": "strategy_impact",
+    "tags": [
+      "#书法/唐/祭侄文稿",
+      "#历史/影响/唐代书法"
+    ],
+    "front": "【影响】乾元元年九月：《祭侄文稿》如何诞生？",
+    "back": "乾元元年（758年）九月，颜真卿任蒲州刺史时得知侄子颜季明遗骸下落，在极度悲痛中写下《祭侄文稿》。此作被称为天下第二行书，其涂改、墨色变化被后世解读为技法即情感的极致表达。",
+    "concepts": [
+      "书法",
+      "唐代书法",
+      "唐朝",
+      "影响",
+      "祭侄文稿"
+    ],
+    "sources": [],
+    "materials": {
+      "quote": "",
+      "scene": "",
+      "data": ""
+    },
+    "metadata": {
+      "chain_id": "",
+      "version": "v1.0",
+      "inferred": false,
+      "created_at": "2026-08-08",
+      "updated_at": "2026-08-08",
+      "created_by": "",
+      "changelog": [],
+      "note": ""
+    }
+  },
+  {
+    "card_id": "EP01_NODE_003",
+    "type": "node",
+    "tags": [
+      "#书法/技法/篆籀气",
+      "#书法/技法/屋漏痕"
+    ],
+    "front": "【节点】《祭侄文稿》的技法特征",
+    "back": "《祭侄文稿》展现了颜真卿独创的篆籀笔法：中锋行笔、屋漏痕涨墨。与王羲之秀逸流美的书风不同，颜体以筋骨力道胜，其篆籀气来源于对汉隶传统的追溯，被认为与其忠烈人格互为表里。",
+    "concepts": [
+      "书法",
+      "屋漏痕",
+      "技法",
+      "篆籀气",
+      "篆籀笔法"
+    ],
+    "sources": [],
+    "materials": {
+      "quote": "",
+      "scene": "",
+      "data": ""
+    },
+    "metadata": {
+      "chain_id": "",
+      "version": "v1.0",
+      "inferred": false,
+      "created_at": "2026-08-08",
+      "updated_at": "2026-08-08",
+      "created_by": "",
+      "changelog": [],
+      "note": ""
+    }
+  },
+  {
+    "card_id": "EP01_STRATEGY_IMPACT_002",
+    "type": "strategy_impact",
+    "tags": [
+      "#书法/影响/书品即人品",
+      "#历史/影响/后世评价"
+    ],
+    "front": "【影响】为何后世以颜真卿为忠烈书风的代表？",
+    "back": "颜真卿的书法被后世提升到人品即书品的高度。宋代苏轼、清代刘熙载等均以颜体为正气象征。这一评价超越了技法层面，将书法与道德人格直接绑定，形成了书法史独特的忠烈书风传统。",
+    "concepts": [
+      "书品即人品",
+      "书法",
+      "后世评价",
+      "影响"
+    ],
+    "sources": [],
+    "materials": {
+      "quote": "",
+      "scene": "",
+      "data": ""
+    },
+    "metadata": {
+      "chain_id": "",
+      "version": "v1.0",
+      "inferred": false,
+      "created_at": "2026-08-08",
+      "updated_at": "2026-08-08",
+      "created_by": "",
+      "changelog": [],
+      "note": ""
+    }
+  }
+]
