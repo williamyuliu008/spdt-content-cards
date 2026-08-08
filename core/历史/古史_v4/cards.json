@@ -24,7 +24,24 @@
         "#content/经济",
         "#content/意识形态",
         "#content/亚非拉"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_01_02",
@@ -41,7 +58,24 @@
         "#content/政制",
         "#content/战争",
         "#content/社会"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_01_03",
@@ -57,7 +91,24 @@
       "tags": [
         "#content/战争",
         "#content/社会"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "高频（★★★★）"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_01_04",
@@ -74,7 +125,24 @@
         "#content/人物",
         "#content/战争",
         "#content/经济"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "高频（★★★★）；关联数据：1917年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_01_05",
@@ -90,7 +158,24 @@
       "tags": [
         "#content/战争",
         "#content/社会"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "中频（★★★）；关联数据：5万"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界近代_01_01",
@@ -105,7 +190,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/cause"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "L_W4_世界近代_01",
@@ -120,7 +222,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#meta/chain"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_02_01",
@@ -137,7 +256,24 @@
         "#content/战争",
         "#content/意识形态",
         "#content/亚非拉"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1919年；10万"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_02_02",
@@ -154,7 +290,24 @@
         "#content/政制",
         "#content/人物",
         "#content/社会"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_02_03",
@@ -170,7 +323,24 @@
       "tags": [
         "#content/战争",
         "#content/经济"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "高频（★★★★）；关联数据：1921年；1320亿；1920年；1923年；1万"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_02_04",
@@ -186,7 +356,24 @@
       "tags": [
         "#content/意识形态",
         "#content/社会"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_02_05",
@@ -204,7 +391,24 @@
         "#content/人物",
         "#content/国际关系",
         "#content/制度"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "中频（★★★）"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界近代_02_02",
@@ -219,7 +423,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/impact"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "L_W4_世界近代_02",
@@ -234,7 +455,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#meta/chain"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_03_01",
@@ -251,7 +489,24 @@
         "#content/战争",
         "#content/经济",
         "#content/社会"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1915年；500万"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_03_02",
@@ -266,7 +521,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#content/意识形态"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "高频（★★★★）；关联数据：1917年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_03_03",
@@ -283,7 +555,24 @@
         "#content/人物",
         "#content/战争",
         "#content/意识形态"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1917年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_03_04",
@@ -299,7 +588,24 @@
       "tags": [
         "#content/人物",
         "#content/意识形态"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "中频（★★★）；关联数据：1918年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_03_05",
@@ -316,7 +622,24 @@
         "#content/意识形态",
         "#content/国际关系",
         "#content/亚非拉"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界近代_03_01",
@@ -331,7 +654,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/cause"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界近代_03_02",
@@ -346,7 +686,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/impact"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界近代_03_03",
@@ -361,7 +718,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/turning"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "L_W4_世界近代_03",
@@ -376,7 +750,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#meta/chain"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_04_01",
@@ -392,7 +783,24 @@
       "tags": [
         "#content/人物",
         "#content/经济"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "高频（★★★★）；关联数据：1928年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_04_02",
@@ -410,7 +818,24 @@
         "#content/经济",
         "#content/意识形态",
         "#content/社会"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1924年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_04_03",
@@ -427,7 +852,24 @@
         "#content/人物",
         "#content/经济",
         "#content/制度"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1928年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_04_04",
@@ -443,7 +885,24 @@
       "tags": [
         "#content/制度",
         "#content/社会"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1929年；700万"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_04_05",
@@ -459,7 +918,24 @@
       "tags": [
         "#content/人物",
         "#content/意识形态"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "高频（★★★★）；关联数据：1938年；100万"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界近代_04_01",
@@ -474,7 +950,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/cause"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "L_W4_世界近代_04",
@@ -489,7 +982,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#meta/chain"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_05_01",
@@ -504,7 +1014,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#content/经济"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_05_02",
@@ -521,7 +1048,24 @@
         "#content/经济",
         "#content/意识形态",
         "#content/社会"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：3%；25%；1500万；60%；30%"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_05_03",
@@ -536,7 +1080,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#content/经济"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_05_04",
@@ -553,7 +1114,24 @@
         "#content/人物",
         "#content/经济",
         "#content/制度"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1933年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_05_05",
@@ -569,7 +1147,24 @@
       "tags": [
         "#content/制度",
         "#content/社会"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "高频（★★★★）"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界近代_05_01",
@@ -584,7 +1179,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/cause"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注；关联数据：1920年；1929年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "L_W4_世界近代_05",
@@ -599,7 +1211,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#meta/chain"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_06_01",
@@ -617,7 +1246,24 @@
         "#content/意识形态",
         "#content/制度",
         "#content/社会"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_06_02",
@@ -633,7 +1279,24 @@
       "tags": [
         "#content/意识形态",
         "#content/制度"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1932年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_06_03",
@@ -649,7 +1312,24 @@
       "tags": [
         "#content/经济",
         "#content/社会"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：30%；600万"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_06_04",
@@ -665,7 +1345,24 @@
       "tags": [
         "#content/意识形态",
         "#content/社会"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "高频（★★★★）"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_06_05",
@@ -681,7 +1378,24 @@
       "tags": [
         "#content/战争",
         "#content/经济"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1929年；1931年；1937年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界近代_06_01",
@@ -696,7 +1410,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/cause"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界近代_06_02",
@@ -711,7 +1442,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/impact"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注；关联数据：7000万"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界近代_06_03",
@@ -726,7 +1474,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/turning"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "L_W4_世界近代_06",
@@ -741,7 +1506,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#meta/chain"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_07_01",
@@ -756,7 +1538,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#content/战争"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "高频（★★★★）"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_07_02",
@@ -771,7 +1570,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#content/战争"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1930年；1938年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_07_03",
@@ -786,7 +1602,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#content/战争"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1941年；330万；300万"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_07_04",
@@ -802,7 +1635,24 @@
       "tags": [
         "#content/战争",
         "#content/社会"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1941年；2400人"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_07_05",
@@ -817,7 +1667,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#content/战争"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "高频（★★★★）；关联数据：1944年；6万"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界近代_07_01",
@@ -832,7 +1699,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/cause"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "L_W4_世界近代_07",
@@ -847,7 +1731,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#meta/chain"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_08_01",
@@ -863,7 +1764,24 @@
       "tags": [
         "#content/政制",
         "#content/人物"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1943年；1945年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_08_02",
@@ -881,7 +1799,24 @@
         "#content/战争",
         "#content/国际关系",
         "#content/亚非拉"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1945年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_08_03",
@@ -896,7 +1831,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#content/政制"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1945年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_08_04",
@@ -911,7 +1863,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#content/经济"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1944年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_08_05",
@@ -928,7 +1897,24 @@
         "#content/战争",
         "#content/国际关系",
         "#content/社会"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1945年；20万"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界近代_08_01",
@@ -943,7 +1929,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/cause"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界近代_08_02",
@@ -958,7 +1961,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/impact"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界近代_08_03",
@@ -973,7 +1993,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/turning"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "L_W4_世界近代_08",
@@ -988,7 +2025,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#meta/chain"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_09_01",
@@ -1004,7 +2058,24 @@
       "tags": [
         "#content/战争",
         "#content/亚非拉"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1931年；1945年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_09_02",
@@ -1020,7 +2091,24 @@
       "tags": [
         "#content/战争",
         "#content/亚非拉"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_09_03",
@@ -1036,7 +2124,24 @@
       "tags": [
         "#content/战争",
         "#content/亚非拉"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：70%"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_09_04",
@@ -1054,7 +2159,24 @@
         "#content/人物",
         "#content/国际关系",
         "#content/亚非拉"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "高频（★★★★）；关联数据：1943年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界近代_09_05",
@@ -1073,7 +2195,24 @@
         "#content/经济",
         "#content/社会",
         "#content/亚非拉"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：3500万；1800万；1000亿"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界近代_09_02",
@@ -1088,7 +2227,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/impact"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注；关联数据：3500万"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "L_W4_世界近代_09",
@@ -1103,7 +2259,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#meta/chain"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_01_01",
@@ -1119,7 +2292,24 @@
       "tags": [
         "#content/人物",
         "#content/国际关系"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1946年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_01_02",
@@ -1136,7 +2326,24 @@
         "#content/人物",
         "#content/意识形态",
         "#content/国际关系"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1947年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_01_03",
@@ -1152,7 +2359,24 @@
       "tags": [
         "#content/人物",
         "#content/经济"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1947年；130亿；1300亿"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_01_04",
@@ -1169,7 +2393,24 @@
         "#content/政制",
         "#content/战争",
         "#content/国际关系"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_01_05",
@@ -1185,7 +2426,24 @@
       "tags": [
         "#content/战争",
         "#content/国际关系"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "高频（★★★★）；关联数据：1946年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界现代_01_01",
@@ -1200,7 +2458,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/cause"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "L_W4_世界现代_01",
@@ -1215,7 +2490,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#meta/chain"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_02_01",
@@ -1230,7 +2522,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#content/战争"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_02_02",
@@ -1246,7 +2555,24 @@
       "tags": [
         "#content/人物",
         "#content/战争"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1962年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_02_03",
@@ -1261,7 +2587,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#content/战争"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1975年；55万；1975年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_02_04",
@@ -1278,7 +2621,24 @@
         "#content/战争",
         "#content/国际关系",
         "#content/亚非拉"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1989年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_02_05",
@@ -1294,7 +2654,24 @@
       "tags": [
         "#content/战争",
         "#content/经济"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "高频（★★★★）"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界现代_02_02",
@@ -1309,7 +2686,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/impact"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "L_W4_世界现代_02",
@@ -1324,7 +2718,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#meta/chain"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_03_01",
@@ -1343,7 +2754,24 @@
         "#content/科技",
         "#content/制度",
         "#content/社会"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_03_02",
@@ -1362,7 +2790,24 @@
         "#content/经济",
         "#content/制度",
         "#content/社会"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "高频（★★★★）；关联数据：1989年；150亿；5万；5万"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_03_03",
@@ -1378,7 +2823,24 @@
       "tags": [
         "#content/经济",
         "#content/制度"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1985年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_03_04",
@@ -1395,7 +2857,24 @@
         "#content/意识形态",
         "#content/制度",
         "#content/社会"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1989年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_03_05",
@@ -1412,7 +2891,24 @@
         "#content/政制",
         "#content/人物",
         "#content/制度"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1991年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界现代_03_01",
@@ -1427,7 +2923,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/cause"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注；关联数据：1991年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界现代_03_02",
@@ -1442,7 +2955,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/impact"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界现代_03_03",
@@ -1457,7 +2987,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/turning"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "L_W4_世界现代_03",
@@ -1472,7 +3019,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#meta/chain"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注；关联数据：1991年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_04_01",
@@ -1490,7 +3054,24 @@
         "#content/意识形态",
         "#content/社会",
         "#content/亚非拉"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1947年；5亿"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_04_02",
@@ -1506,7 +3087,24 @@
       "tags": [
         "#content/政制",
         "#content/亚非拉"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "高频（★★★★）"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_04_03",
@@ -1522,7 +3120,24 @@
       "tags": [
         "#content/政制",
         "#content/亚非拉"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1980年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_04_04",
@@ -1539,7 +3154,24 @@
         "#content/政制",
         "#content/意识形态",
         "#content/亚非拉"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "高频（★★★★）；关联数据：1960年；1970年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_04_05",
@@ -1556,7 +3188,24 @@
         "#content/意识形态",
         "#content/社会",
         "#content/亚非拉"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "高频（★★★★）；关联数据：60%"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界现代_04_01",
@@ -1571,7 +3220,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/cause"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界现代_04_02",
@@ -1586,7 +3252,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/impact"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注；关联数据：1975年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界现代_04_03",
@@ -1601,7 +3284,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/turning"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "L_W4_世界现代_04",
@@ -1616,7 +3316,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#meta/chain"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注；关联数据：1960年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_05_01",
@@ -1634,7 +3351,24 @@
         "#content/人物",
         "#content/经济",
         "#content/亚非拉"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1949年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_05_02",
@@ -1651,7 +3385,24 @@
         "#content/政制",
         "#content/意识形态",
         "#content/社会"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1960年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_05_03",
@@ -1667,7 +3418,24 @@
       "tags": [
         "#content/政制",
         "#content/亚非拉"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1971年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_05_04",
@@ -1685,7 +3453,24 @@
         "#content/人物",
         "#content/国际关系",
         "#content/亚非拉"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1972年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_05_05",
@@ -1703,7 +3488,24 @@
         "#content/经济",
         "#content/制度",
         "#content/亚非拉"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：1978年；1979年；2001年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界现代_05_01",
@@ -1718,7 +3520,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/cause"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界现代_05_02",
@@ -1733,7 +3552,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/impact"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注；关联数据：1971年；1979年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界现代_05_03",
@@ -1748,7 +3584,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/turning"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "L_W4_世界现代_05",
@@ -1763,7 +3616,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#meta/chain"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_06_01",
@@ -1778,7 +3648,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#content/制度"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：2020年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_06_02",
@@ -1793,7 +3680,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#content/经济"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "高频（★★★★）；关联数据：2008年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_06_03",
@@ -1812,7 +3716,24 @@
         "#content/科技",
         "#content/社会",
         "#content/亚非拉"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：2016年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_06_04",
@@ -1828,7 +3749,24 @@
       "tags": [
         "#content/经济",
         "#content/意识形态"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：2008年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_06_05",
@@ -1844,7 +3782,24 @@
       "tags": [
         "#content/战争",
         "#content/经济"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "高频（★★★★）；关联数据：2008年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界现代_06_01",
@@ -1859,7 +3814,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/cause"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "L_W4_世界现代_06",
@@ -1874,7 +3846,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#meta/chain"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注；关联数据：2008年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_07_01",
@@ -1892,7 +3881,24 @@
         "#content/经济",
         "#content/制度",
         "#content/亚非拉"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_07_02",
@@ -1909,7 +3915,24 @@
         "#content/科技",
         "#content/社会",
         "#content/亚非拉"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：9亿；2010年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_07_03",
@@ -1925,7 +3948,24 @@
       "tags": [
         "#content/经济",
         "#content/亚非拉"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：2001年；2000亿；2014年；4万"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_07_04",
@@ -1941,7 +3981,24 @@
       "tags": [
         "#content/政制",
         "#content/亚非拉"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_07_05",
@@ -1957,7 +4014,24 @@
       "tags": [
         "#content/科技",
         "#content/亚非拉"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界现代_07_01",
@@ -1972,7 +4046,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/cause"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界现代_07_02",
@@ -1987,7 +4078,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/impact"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界现代_07_03",
@@ -2002,7 +4110,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/turning"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "L_W4_世界现代_07",
@@ -2017,7 +4142,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#meta/chain"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_08_01",
@@ -2032,7 +4174,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#content/经济"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）；关联数据：2017年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_08_02",
@@ -2048,7 +4207,24 @@
       "tags": [
         "#content/政制",
         "#content/亚非拉"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_08_03",
@@ -2064,7 +4240,24 @@
       "tags": [
         "#content/科技",
         "#content/国际关系"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "高频（★★★★）；关联数据：2060年"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_08_04",
@@ -2081,7 +4274,24 @@
         "#content/科技",
         "#content/国际关系",
         "#content/亚非拉"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "高频（★★★★）"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "H_W4_世界现代_08_05",
@@ -2099,7 +4309,24 @@
         "#content/意识形态",
         "#content/科技",
         "#content/亚非拉"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "极高频（★★★★★）"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "S_W4_世界现代_08_02",
@@ -2114,7 +4341,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#strategy/impact"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     },
     {
       "card_id": "L_W4_世界现代_08",
@@ -2129,7 +4373,24 @@
       "updated_at": 1786073521,
       "tags": [
         "#meta/chain"
-      ]
+      ],
+      "materials": {
+        "quote": "",
+        "scene": "",
+        "data": "未标注"
+      },
+      "metadata": {
+        "version": "v1.1",
+        "updated_at": "2026-08-08",
+        "note": "materials.data 补全（2026-08-08），来源：back中考频标记自动提取",
+        "changelog": [
+          {
+            "version": "v1.1",
+            "date": "2026-08-08",
+            "change": "补全 materials.data（考频+量化数据）"
+          }
+        ]
+      }
     }
   ]
 }

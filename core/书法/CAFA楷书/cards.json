@@ -16,9 +16,9 @@
       "#domain/cafa"
     ],
     "materials": {
-      "quote": "",
-      "scene": "",
-      "data": ""
+      "quote": "达其情性，形其哀乐。（孙过庭《书谱》）——唐楷的法度严谨，倒逼行书在'法'与'意'之间寻找平衡。",
+      "scene": "唐代书法史脉络：楷书（法度确立）→ 行书（法意平衡）→ 草书（性情抒发）→ 宋代尚意（辩证超越）。",
+      "data": "CAFA书法校考：楷书影响链；唐楷→行书→尚意书风演变关系。"
     },
     "export_tags": [
       "适合_论述题_楷书影响",
@@ -35,13 +35,19 @@
     "sources": [],
     "metadata": {
       "chain_id": "",
-      "version": "v1.0",
+      "version": "v1.1",
       "inferred": false,
       "created_at": "2026-08-08",
       "updated_at": "2026-08-08",
       "created_by": "",
-      "changelog": [],
-      "note": ""
+      "changelog": [
+        {
+          "version": "v1.1",
+          "date": "2026-08-08",
+          "change": "补全 materials.quote / scene / data"
+        }
+      ],
+      "note": "materials 层补全（2026-08-08），来源：书法史论+CAFA书法校考"
     }
   },
   {
@@ -62,9 +68,9 @@
       "#domain/cafa"
     ],
     "materials": {
-      "quote": "",
-      "scene": "",
-      "data": ""
+      "quote": "心正笔正。（颜真卿）；书品即人品。（刘熙载《艺概》）",
+      "scene": "历代忠烈书风传承脉络：颜真卿（唐）→ 苏轼（宋）→ 文天祥（宋）→ 傅山（明）→ 刘鹗（清）。颜体始终与忠烈人格绑定。",
+      "data": "CAFA书法校考：忠烈书风链；宋代苏轼评颜体；清代刘熙载以颜体为正气象征。"
     },
     "export_tags": [
       "适合_论述题_书品即人品",
@@ -81,13 +87,19 @@
     "sources": [],
     "metadata": {
       "chain_id": "",
-      "version": "v1.0",
+      "version": "v1.1",
       "inferred": false,
       "created_at": "2026-08-08",
       "updated_at": "2026-08-08",
       "created_by": "",
-      "changelog": [],
-      "note": ""
+      "changelog": [
+        {
+          "version": "v1.1",
+          "date": "2026-08-08",
+          "change": "补全 materials.quote / scene / data"
+        }
+      ],
+      "note": "materials 层补全（2026-08-08），来源：书法史论+CAFA书法校考"
     }
   },
   {
@@ -108,9 +120,9 @@
       "#domain/cafa"
     ],
     "materials": {
-      "quote": "",
-      "scene": "",
-      "data": ""
+      "quote": "尚意书风：苏轼'我书意造本无法'，米芾'意足我自足，放笔一戏空明月'。",
+      "scene": "宋代书坛。苏轼、米芾等书家在反叛唐楷规范的过程中，开创尚意书风。",
+      "data": "CAFA书法校考：唐楷→尚意辩证关系；苏轼、米芾为尚意代表书家。"
     },
     "export_tags": [
       "适合_论述题_唐楷与宋意",
@@ -128,13 +140,19 @@
     "sources": [],
     "metadata": {
       "chain_id": "",
-      "version": "v1.0",
+      "version": "v1.1",
       "inferred": false,
       "created_at": "2026-08-08",
       "updated_at": "2026-08-08",
       "created_by": "",
-      "changelog": [],
-      "note": ""
+      "changelog": [
+        {
+          "version": "v1.1",
+          "date": "2026-08-08",
+          "change": "补全 materials.quote / scene / data"
+        }
+      ],
+      "note": "materials 层补全（2026-08-08），来源：书法史论+CAFA书法校考"
     }
   }
 ]
