@@ -1,0 +1,197 @@
+# MANIFEST.yaml — 内容项目全局索引
+# 用途：autoclaw（生产 AI）和 Mavis（本机管家）共同读写的"项目状态契约"
+# 更新规则：
+#   - autoclaw：标 in_progress（开始干）→ 改 done（完成）→ 推 Git
+#   - Mavis：跑校验后更新 last_sync + pass_rate
+#   - willi：浏览一眼掌握全局
+#
+# 注意：手动编辑时保持 YAML 格式，缩进用 2 空格
+
+version: v1
+schema_version: v1.0
+last_sync: 2026-08-16T19:10:00+08:00
+
+# ============================================================
+# 学科总览
+# ============================================================
+subjects:
+  历史:
+    status: in_progress
+    domain_file: 历史/_62_concepts.json
+    cards_root: 历史/cards/
+    schema_version: v1.0
+    quality:
+      last_validate: 2026-08-16T19:10:00+08:00
+      pass_rate: 1.0
+      total_concepts: 62
+      done_concepts: 4
+      in_progress_concepts: 0
+      total_subcards: 38
+    notes: |
+      第一个试点的学科，62 概念（11 专题）。
+      已完成 4 件（3 demo + 1 完整版），剩余 58 件。
+
+# ============================================================
+# 跨学科消费场景（应用层）
+# ============================================================
+consumption_profiles:
+  app_training:
+    purpose: 推 rujing APP（高考应试 / 学科速查）
+    target_app: rujing (com.harmonystudio.rujing)
+    status: planned
+    convert_tool: ru_cardpkg_convert.py  # 平台项目里的转换工具
+    notes: |
+      从本征层 v1.0 派生：
+      - 拆 back_detail 短问短答
+      - 生成 Q&A 原子
+      - 映射到 rujing 5 学科枚举
+
+  writing_material:
+    purpose: 写作素材库（编剧 / 创作 / 跨学科缝合）
+    target_app: 写作工具（未确定）
+    status: planned
+    notes: |
+      在 v1.0 基础上加：
+      - materials.data（多链归属）
+      - audience 标签（编剧/学者/学生）
+      - 跨书引用（其他学科/卡片）
+
+  feynman:
+    purpose: 费曼讲解（教学复盘 / 检验真懂）
+    target_app: 教学平台（未确定）
+    status: planned
+    notes: |
+      在 v1.0 基础上加：
+      - teaching_hooks（教学钩子）
+      - 听众画像（年龄/背景/痛点）
+      - 5 岁小孩能懂的简化版
+
+# ============================================================
+# 协作角色与职责（控制流）
+# ============================================================
+roles:
+  autoclaw:
+    name: 生产 AI（另一台电脑）
+    responsibility: 读规范 v1.0 + MANIFEST → 按概念清单产 JSON → 写 MANIFEST → 跑校验 → 推 Git
+    can_do:
+      - 产出新卡片（按 MANIFEST 的 pending 列表）
+      - 标记 in_progress（开始干）
+      - 标记 done（完成）
+      - 跑 _validate_cards.py 校验
+      - 推 Git
+    cannot_do:
+      - 修改规范 v1.0
+      - 修改其他 autoclaw 产出的卡片
+      - 直接推 rujing（这是本机 Mavis 的活）
+      - 决定 status 升级（draft → trial → certified）
+
+  mavis:
+    name: 本机管家
+    responsibility: pull Git → 跑校验 → 同步 MANIFEST 质量数据 → 报告差异 → 推 rujing
+    can_do:
+      - git pull / push
+      - 跑 _validate_cards.py
+      - 更新 MANIFEST 的 last_sync + pass_rate
+      - 推 rujing（消费端）
+      - 修 _tools 路径（与新仓库结构对齐）
+    cannot_do:
+      - 修改 autoclaw 产出的卡片内容
+      - 决定 status 升级
+      - 改规范 v1.0
+
+  willi:
+    name: 决策者
+    responsibility: 拍板规范迭代、跨学科扩展、是否入库/上架、版本号
+    can_do:
+      - 修改规范 v1.0
+      - 决定 status 升级（draft → trial → certified）
+      - 决定推 rujing 时机
+      - 决定跨学科扩展
+    cannot_do:
+      - 替 autoclaw 写卡片（除非 autoclaw 跑不动）
+      - 直接改 Mavis 推过的 rujing 数据
+
+# ============================================================
+# 工作流（控制流机制）
+# ============================================================
+workflow:
+  - step: 1_pull_manifest
+    actor: autoclaw
+    action: 拉 Git 读 MANIFEST
+    output: 知道 done / in_progress / pending
+
+  - step: 2_mark_in_progress
+    actor: autoclaw
+    action: 把要做的概念在 MANIFEST 标 in_progress
+    output: 防止重复生产
+
+  - step: 3_produce_cards
+    actor: autoclaw
+    action: 按规范 v1.0 产 1 套 JSON
+    output: 历史/cards/2026-XX-XX_xxx/ 目录
+
+  - step: 4_local_validate
+    actor: autoclaw
+    action: 跑 _validate_cards.py 校验
+    output: PASS / FAIL
+
+  - step: 5_mark_done
+    actor: autoclaw
+    action: 改 MANIFEST done=true + 时间戳
+    output: MANIFEST 同步
+
+  - step: 6_push_git
+    actor: autoclaw
+    action: git commit + push
+    output: 远端 main 更新
+
+  - step: 7_pull
+    actor: mavis
+    action: 本机 git pull
+    output: 本地拿到新卡
+
+  - step: 8_validate
+    actor: mavis
+    action: 跑 _validate_cards.py
+    output: PASS / FAIL
+
+  - step: 9_update_manifest
+    actor: mavis
+    action: 更新 MANIFEST 的 last_sync + pass_rate
+    output: MANIFEST 质量数据更新
+
+  - step: 10_ship_to_rujing
+    actor: mavis
+    action: 通过 ru_cardpkg_convert.py 推 rujing
+    output: rujing APP 收到卡
+
+  - step: 11_mark_shipped
+    actor: mavis
+    action: MANIFEST 标 shipped_to_rujing + rujing_card_ids
+    output: MANIFEST 闭环
+
+# ============================================================
+# 当前状态快照（2026-08-16）
+# ============================================================
+snapshot:
+  date: 2026-08-16
+  shipped_cards:
+    - chain_id: history/H-M1-5-监察谏议制度
+      chain_title: 监察谏议制度
+      subcards: 8
+      quality: pass
+    - chain_id: history/H-M3-52-启蒙运动
+      chain_title: 启蒙运动
+      subcards: 7
+      quality: pass
+    - chain_id: history/H-M2-37-全民族抗战
+      chain_title: 全民族抗战
+      subcards: 7
+      quality: pass
+    - chain_id: history/H-M1-6-选官制度演变
+      chain_title: 选官制度演变
+      subcards: 8
+      quality: pass
+  total_chains: 4
+  total_subcards: 30
+  shipped_to_rujing: 0  # 消费端转换工具待写
