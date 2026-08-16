@@ -1,64 +1,697 @@
-﻿[
-  {"id":1, "module":"模块一·中国古代史", "topic":"专题1 政治制度演变", "name":"王权与神权", "lines":[2], "star":false, "done":false},
-  {"id":2, "module":"模块一·中国古代史", "topic":"专题1 政治制度演变", "name":"官僚体制初创", "lines":[2], "star":false, "done":false},
-  {"id":3, "module":"模块一·中国古代史", "topic":"专题1 政治制度演变", "name":"中央官制演进", "lines":[2], "star":true, "done":false},
-  {"id":4, "module":"模块一·中国古代史", "topic":"专题1 政治制度演变", "name":"地方治理体制", "lines":[2], "star":false, "done":false},
-  {"id":5, "module":"模块一·中国古代史", "topic":"专题1 政治制度演变", "name":"监察谏议制度", "lines":[2], "star":true, "done":false},
-  {"id":6, "module":"模块一·中国古代史", "topic":"专题1 政治制度演变", "name":"选官制度演变", "lines":[2], "star":true, "done":true, "note":"已做·科举制（2026-0815_三件套-科举制.md），仅覆盖选官制一个子专题"},
-  {"id":7, "module":"模块一·中国古代史", "topic":"专题1 政治制度演变", "name":"行政运作机制", "lines":[2], "star":false, "done":false},
-  {"id":8, "module":"模块一·中国古代史", "topic":"专题1 政治制度演变", "name":"赋役与户籍制度", "lines":[2], "star":false, "done":false},
-  {"id":9, "module":"模块一·中国古代史", "topic":"专题2 经济与社会生活", "name":"农业发展与土地制度", "lines":[1], "star":false, "done":false},
-  {"id":10, "module":"模块一·中国古代史", "topic":"专题2 经济与社会生活", "name":"手工业进步", "lines":[1], "star":true, "done":false},
-  {"id":11, "module":"模块一·中国古代史", "topic":"专题2 经济与社会生活", "name":"商业与城市", "lines":[1], "star":true, "done":false},
-  {"id":12, "module":"模块一·中国古代史", "topic":"专题2 经济与社会生活", "name":"经济重心南移", "lines":[1], "star":false, "done":false},
-  {"id":13, "module":"模块一·中国古代史", "topic":"专题2 经济与社会生活", "name":"社会阶层流动", "lines":[1,2], "star":false, "done":false},
-  {"id":14, "module":"模块一·中国古代史", "topic":"专题2 经济与社会生活", "name":"人口迁徙与族群交融", "lines":[3], "star":false, "done":false},
-  {"id":15, "module":"模块一·中国古代史", "topic":"专题3 思想文化演变", "name":"主流思想变迁", "lines":[3], "star":false, "done":false},
-  {"id":16, "module":"模块一·中国古代史", "topic":"专题3 思想文化演变", "name":"科技成就", "lines":[1], "star":false, "done":false},
-  {"id":17, "module":"模块一·中国古代史", "topic":"专题3 思想文化演变", "name":"文学艺术", "lines":[3], "star":false, "done":false},
-  {"id":18, "module":"模块一·中国古代史", "topic":"专题3 思想文化演变", "name":"史学传统", "lines":[5], "star":false, "done":false},
-  {"id":19, "module":"模块一·中国古代史", "topic":"专题3 思想文化演变", "name":"教育制度", "lines":[2], "star":false, "done":false},
-  {"id":20, "module":"模块一·中国古代史", "topic":"专题4 民族关系与边疆治理", "name":"民族政策与交融", "lines":[3], "star":false, "done":false},
-  {"id":21, "module":"模块一·中国古代史", "topic":"专题4 民族关系与边疆治理", "name":"边疆管辖与开发", "lines":[2], "star":false, "done":false},
-  {"id":22, "module":"模块一·中国古代史", "topic":"专题4 民族关系与边疆治理", "name":"对外交流与冲突", "lines":[3], "star":true, "done":false},
-  {"id":23, "module":"模块二·中国近现代史", "topic":"专题5 晚清变局", "name":"列强侵略与条约体系", "lines":[4], "star":true, "done":false},
-  {"id":24, "module":"模块二·中国近现代史", "topic":"专题5 晚清变局", "name":"太平天国", "lines":[4], "star":false, "done":false},
-  {"id":25, "module":"模块二·中国近现代史", "topic":"专题5 晚清变局", "name":"洋务运动", "lines":[4], "star":true, "done":true, "note":"已做·2026-0815_三件套-洋务运动.md"},
-  {"id":26, "module":"模块二·中国近现代史", "topic":"专题5 晚清变局", "name":"边疆危机与中法/甲午战争", "lines":[4], "star":false, "done":false},
-  {"id":27, "module":"模块二·中国近现代史", "topic":"专题5 晚清变局", "name":"维新变法", "lines":[4], "star":false, "done":false},
-  {"id":28, "module":"模块二·中国近现代史", "topic":"专题5 晚清变局", "name":"义和团运动与清末新政", "lines":[4], "star":false, "done":false},
-  {"id":29, "module":"模块二·中国近现代史", "topic":"专题6 民国初年与社会转型", "name":"辛亥革命与共和制", "lines":[4], "star":false, "done":true, "note":"已做·2026-0815_三件套-辛亥革命.md"},
-  {"id":30, "module":"模块二·中国近现代史", "topic":"专题6 民国初年与社会转型", "name":"北洋军阀统治", "lines":[4], "star":false, "done":false},
-  {"id":31, "module":"模块二·中国近现代史", "topic":"专题6 民国初年与社会转型", "name":"新文化运动与五四运动", "lines":[4], "star":false, "done":false},
-  {"id":32, "module":"模块二·中国近现代史", "topic":"专题6 民国初年与社会转型", "name":"国民革命与北伐", "lines":[4], "star":false, "done":false},
-  {"id":33, "module":"模块二·中国近现代史", "topic":"专题6 民国初年与社会转型", "name":"民族资本主义的短暂春天", "lines":[4], "star":false, "done":false},
-  {"id":34, "module":"模块二·中国近现代史", "topic":"专题7 新民主主义革命", "name":"中共成立与早期革命", "lines":[4], "star":false, "done":false},
-  {"id":35, "module":"模块二·中国近现代史", "topic":"专题7 新民主主义革命", "name":"国共十年对峙", "lines":[4], "star":false, "done":false},
-  {"id":36, "module":"模块二·中国近现代史", "topic":"专题7 新民主主义革命", "name":"局部侵华与抗日救亡", "lines":[4,6], "star":false, "done":false},
-  {"id":37, "module":"模块二·中国近现代史", "topic":"专题7 新民主主义革命", "name":"全民族抗战", "lines":[4,6], "star":false, "done":false},
-  {"id":38, "module":"模块二·中国近现代史", "topic":"专题7 新民主主义革命", "name":"人民解放战争", "lines":[4], "star":false, "done":false},
-  {"id":39, "module":"模块二·中国近现代史", "topic":"专题7 新民主主义革命", "name":"国统区的危机与第二条战线", "lines":[4], "star":false, "done":false},
-  {"id":40, "module":"模块二·中国近现代史", "topic":"专题8 现代中国", "name":"政权巩固与向社会主义过渡", "lines":[2], "star":false, "done":false},
-  {"id":41, "module":"模块二·中国近现代史", "topic":"专题8 现代中国", "name":"社会主义建设道路探索", "lines":[2], "star":false, "done":false},
-  {"id":42, "module":"模块二·中国近现代史", "topic":"专题8 现代中国", "name":"外交政策的演变", "lines":[6], "star":false, "done":false},
-  {"id":43, "module":"模块二·中国近现代史", "topic":"专题8 现代中国", "name":"改革开放", "lines":[1,4], "star":false, "done":false},
-  {"id":44, "module":"模块二·中国近现代史", "topic":"专题8 现代中国", "name":"现代化建设成就", "lines":[2], "star":false, "done":false},
-  {"id":45, "module":"模块二·中国近现代史", "topic":"专题8 现代中国", "name":"一国两制与祖国统一", "lines":[2], "star":false, "done":false},
-  {"id":46, "module":"模块三·世界史", "topic":"专题9 古代文明与中古时期", "name":"古代东方文明", "lines":[3], "star":false, "done":false},
-  {"id":47, "module":"模块三·世界史", "topic":"专题9 古代文明与中古时期", "name":"古希腊罗马", "lines":[3], "star":false, "done":false},
-  {"id":48, "module":"模块三·世界史", "topic":"专题9 古代文明与中古时期", "name":"中古西欧", "lines":[3], "star":false, "done":false},
-  {"id":49, "module":"模块三·世界史", "topic":"专题9 古代文明与中古时期", "name":"中古其他文明", "lines":[3], "star":false, "done":false},
-  {"id":50, "module":"模块三·世界史", "topic":"专题10 近代世界的形成", "name":"大航海时代", "lines":[1], "star":false, "done":false},
-  {"id":51, "module":"模块三·世界史", "topic":"专题10 近代世界的形成", "name":"文艺复兴与宗教改革", "lines":[3], "star":false, "done":false},
-  {"id":52, "module":"模块三·世界史", "topic":"专题10 近代世界的形成", "name":"启蒙运动", "lines":[3], "star":false, "done":false},
-  {"id":53, "module":"模块三·世界史", "topic":"专题10 近代世界的形成", "name":"资产阶级革命浪潮", "lines":[4], "star":false, "done":false},
-  {"id":54, "module":"模块三·世界史", "topic":"专题10 近代世界的形成", "name":"工业革命与社会变革", "lines":[1,4], "star":false, "done":false},
-  {"id":55, "module":"模块三·世界史", "topic":"专题11 20世纪以来的世界", "name":"一战与凡尔赛体系", "lines":[6], "star":false, "done":false},
-  {"id":56, "module":"模块三·世界史", "topic":"专题11 20世纪以来的世界", "name":"二战与雅尔塔体系", "lines":[6], "star":false, "done":false},
-  {"id":57, "module":"模块三·世界史", "topic":"专题11 20世纪以来的世界", "name":"冷战与国际格局演变", "lines":[6], "star":false, "done":false},
-  {"id":58, "module":"模块三·世界史", "topic":"专题11 20世纪以来的世界", "name":"当代世界发展趋势", "lines":[1,6], "star":false, "done":false},
-  {"id":59, "module":"模块四·史学方法", "topic":"专题12 史学方法入门", "name":"时间尺度与历史分期", "lines":[5], "star":true, "done":true, "note":"已做·2026-0815_三件套-时间尺度.md"},
-  {"id":60, "module":"模块四·史学方法", "topic":"专题12 史学方法入门", "name":"史料类型与史料实证", "lines":[5], "star":true, "done":true, "note":"已做·2026-0815_三件套-史料实证.md"},
-  {"id":61, "module":"模块四·史学方法", "topic":"专题12 史学方法入门", "name":"历史解释的多维视角", "lines":[5], "star":true, "done":true, "note":"已做·2026-0815_三件套-多维视角.md"},
-  {"id":62, "module":"模块四·史学方法", "topic":"专题12 史学方法入门", "name":"历史人物的评价方法", "lines":[5], "star":true, "done":true, "note":"已做·2026-0815_三件套-人物评价.md"}
+[
+  {
+    "id": 1,
+    "module": "模块一·中国古代史",
+    "topic": "专题1 政治制度演变",
+    "name": "王权与神权",
+    "lines": [
+      2
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 2,
+    "module": "模块一·中国古代史",
+    "topic": "专题1 政治制度演变",
+    "name": "官僚体制初创",
+    "lines": [
+      2
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 3,
+    "module": "模块一·中国古代史",
+    "topic": "专题1 政治制度演变",
+    "name": "中央官制演进",
+    "lines": [
+      2
+    ],
+    "star": true,
+    "done": false
+  },
+  {
+    "id": 4,
+    "module": "模块一·中国古代史",
+    "topic": "专题1 政治制度演变",
+    "name": "地方治理体制",
+    "lines": [
+      2
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 5,
+    "module": "模块一·中国古代史",
+    "topic": "专题1 政治制度演变",
+    "name": "监察谏议制度",
+    "lines": [
+      2
+    ],
+    "star": true,
+    "done": false
+  },
+  {
+    "id": 6,
+    "module": "模块一·中国古代史",
+    "topic": "专题1 政治制度演变",
+    "name": "选官制度演变",
+    "lines": [
+      2
+    ],
+    "star": true,
+    "done": true,
+    "note": "已做·科举制（2026-0815_三件套-科举制.md），仅覆盖选官制一个子专题"
+  },
+  {
+    "id": 7,
+    "module": "模块一·中国古代史",
+    "topic": "专题1 政治制度演变",
+    "name": "行政运作机制",
+    "lines": [
+      2
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 8,
+    "module": "模块一·中国古代史",
+    "topic": "专题1 政治制度演变",
+    "name": "赋役与户籍制度",
+    "lines": [
+      2
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 9,
+    "module": "模块一·中国古代史",
+    "topic": "专题2 经济与社会生活",
+    "name": "农业发展与土地制度",
+    "lines": [
+      1
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 10,
+    "module": "模块一·中国古代史",
+    "topic": "专题2 经济与社会生活",
+    "name": "手工业进步",
+    "lines": [
+      1
+    ],
+    "star": true,
+    "done": false
+  },
+  {
+    "id": 11,
+    "module": "模块一·中国古代史",
+    "topic": "专题2 经济与社会生活",
+    "name": "商业与城市",
+    "lines": [
+      1
+    ],
+    "star": true,
+    "done": false
+  },
+  {
+    "id": 12,
+    "module": "模块一·中国古代史",
+    "topic": "专题2 经济与社会生活",
+    "name": "经济重心南移",
+    "lines": [
+      1
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 13,
+    "module": "模块一·中国古代史",
+    "topic": "专题2 经济与社会生活",
+    "name": "社会阶层流动",
+    "lines": [
+      1,
+      2
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 14,
+    "module": "模块一·中国古代史",
+    "topic": "专题2 经济与社会生活",
+    "name": "人口迁徙与族群交融",
+    "lines": [
+      3
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 15,
+    "module": "模块一·中国古代史",
+    "topic": "专题3 思想文化演变",
+    "name": "主流思想变迁",
+    "lines": [
+      3
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 16,
+    "module": "模块一·中国古代史",
+    "topic": "专题3 思想文化演变",
+    "name": "科技成就",
+    "lines": [
+      1
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 17,
+    "module": "模块一·中国古代史",
+    "topic": "专题3 思想文化演变",
+    "name": "文学艺术",
+    "lines": [
+      3
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 18,
+    "module": "模块一·中国古代史",
+    "topic": "专题3 思想文化演变",
+    "name": "史学传统",
+    "lines": [
+      5
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 19,
+    "module": "模块一·中国古代史",
+    "topic": "专题3 思想文化演变",
+    "name": "教育制度",
+    "lines": [
+      2
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 20,
+    "module": "模块一·中国古代史",
+    "topic": "专题4 民族关系与边疆治理",
+    "name": "民族政策与交融",
+    "lines": [
+      3
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 21,
+    "module": "模块一·中国古代史",
+    "topic": "专题4 民族关系与边疆治理",
+    "name": "边疆管辖与开发",
+    "lines": [
+      2
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 22,
+    "module": "模块一·中国古代史",
+    "topic": "专题4 民族关系与边疆治理",
+    "name": "对外交流与冲突",
+    "lines": [
+      3
+    ],
+    "star": true,
+    "done": false
+  },
+  {
+    "id": 23,
+    "module": "模块二·中国近现代史",
+    "topic": "专题5 晚清变局",
+    "name": "列强侵略与条约体系",
+    "lines": [
+      4
+    ],
+    "star": true,
+    "done": false
+  },
+  {
+    "id": 24,
+    "module": "模块二·中国近现代史",
+    "topic": "专题5 晚清变局",
+    "name": "太平天国",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 25,
+    "module": "模块二·中国近现代史",
+    "topic": "专题5 晚清变局",
+    "name": "洋务运动",
+    "lines": [
+      4
+    ],
+    "star": true,
+    "done": true,
+    "note": "已做·2026-0815_三件套-洋务运动.md"
+  },
+  {
+    "id": 26,
+    "module": "模块二·中国近现代史",
+    "topic": "专题5 晚清变局",
+    "name": "边疆危机与中法／甲午战争",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 27,
+    "module": "模块二·中国近现代史",
+    "topic": "专题5 晚清变局",
+    "name": "维新变法",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 28,
+    "module": "模块二·中国近现代史",
+    "topic": "专题5 晚清变局",
+    "name": "义和团运动与清末新政",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 29,
+    "module": "模块二·中国近现代史",
+    "topic": "专题6 民国初年与社会转型",
+    "name": "辛亥革命与共和制",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": true,
+    "note": "已做·2026-0815_三件套-辛亥革命.md"
+  },
+  {
+    "id": 30,
+    "module": "模块二·中国近现代史",
+    "topic": "专题6 民国初年与社会转型",
+    "name": "北洋军阀统治",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 31,
+    "module": "模块二·中国近现代史",
+    "topic": "专题6 民国初年与社会转型",
+    "name": "新文化运动与五四运动",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 32,
+    "module": "模块二·中国近现代史",
+    "topic": "专题6 民国初年与社会转型",
+    "name": "国民革命与北伐",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 33,
+    "module": "模块二·中国近现代史",
+    "topic": "专题6 民国初年与社会转型",
+    "name": "民族资本主义的短暂春天",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 34,
+    "module": "模块二·中国近现代史",
+    "topic": "专题7 新民主主义革命",
+    "name": "中共成立与早期革命",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 35,
+    "module": "模块二·中国近现代史",
+    "topic": "专题7 新民主主义革命",
+    "name": "国共十年对峙",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 36,
+    "module": "模块二·中国近现代史",
+    "topic": "专题7 新民主主义革命",
+    "name": "局部侵华与抗日救亡",
+    "lines": [
+      4,
+      6
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 37,
+    "module": "模块二·中国近现代史",
+    "topic": "专题7 新民主主义革命",
+    "name": "全民族抗战",
+    "lines": [
+      4,
+      6
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 38,
+    "module": "模块二·中国近现代史",
+    "topic": "专题7 新民主主义革命",
+    "name": "人民解放战争",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 39,
+    "module": "模块二·中国近现代史",
+    "topic": "专题7 新民主主义革命",
+    "name": "国统区的危机与第二条战线",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 40,
+    "module": "模块二·中国近现代史",
+    "topic": "专题8 现代中国",
+    "name": "政权巩固与向社会主义过渡",
+    "lines": [
+      2
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 41,
+    "module": "模块二·中国近现代史",
+    "topic": "专题8 现代中国",
+    "name": "社会主义建设道路探索",
+    "lines": [
+      2
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 42,
+    "module": "模块二·中国近现代史",
+    "topic": "专题8 现代中国",
+    "name": "外交政策的演变",
+    "lines": [
+      6
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 43,
+    "module": "模块二·中国近现代史",
+    "topic": "专题8 现代中国",
+    "name": "改革开放",
+    "lines": [
+      1,
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 44,
+    "module": "模块二·中国近现代史",
+    "topic": "专题8 现代中国",
+    "name": "现代化建设成就",
+    "lines": [
+      2
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 45,
+    "module": "模块二·中国近现代史",
+    "topic": "专题8 现代中国",
+    "name": "一国两制与祖国统一",
+    "lines": [
+      2
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 46,
+    "module": "模块三·世界史",
+    "topic": "专题9 古代文明与中古时期",
+    "name": "古代东方文明",
+    "lines": [
+      3
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 47,
+    "module": "模块三·世界史",
+    "topic": "专题9 古代文明与中古时期",
+    "name": "古希腊罗马",
+    "lines": [
+      3
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 48,
+    "module": "模块三·世界史",
+    "topic": "专题9 古代文明与中古时期",
+    "name": "中古西欧",
+    "lines": [
+      3
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 49,
+    "module": "模块三·世界史",
+    "topic": "专题9 古代文明与中古时期",
+    "name": "中古其他文明",
+    "lines": [
+      3
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 50,
+    "module": "模块三·世界史",
+    "topic": "专题10 近代世界的形成",
+    "name": "大航海时代",
+    "lines": [
+      1
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 51,
+    "module": "模块三·世界史",
+    "topic": "专题10 近代世界的形成",
+    "name": "文艺复兴与宗教改革",
+    "lines": [
+      3
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 52,
+    "module": "模块三·世界史",
+    "topic": "专题10 近代世界的形成",
+    "name": "启蒙运动",
+    "lines": [
+      3
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 53,
+    "module": "模块三·世界史",
+    "topic": "专题10 近代世界的形成",
+    "name": "资产阶级革命浪潮",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 54,
+    "module": "模块三·世界史",
+    "topic": "专题10 近代世界的形成",
+    "name": "工业革命与社会变革",
+    "lines": [
+      1,
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 55,
+    "module": "模块三·世界史",
+    "topic": "专题11 20世纪以来的世界",
+    "name": "一战与凡尔赛体系",
+    "lines": [
+      6
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 56,
+    "module": "模块三·世界史",
+    "topic": "专题11 20世纪以来的世界",
+    "name": "二战与雅尔塔体系",
+    "lines": [
+      6
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 57,
+    "module": "模块三·世界史",
+    "topic": "专题11 20世纪以来的世界",
+    "name": "冷战与国际格局演变",
+    "lines": [
+      6
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 58,
+    "module": "模块三·世界史",
+    "topic": "专题11 20世纪以来的世界",
+    "name": "当代世界发展趋势",
+    "lines": [
+      1,
+      6
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 59,
+    "module": "模块四·史学方法",
+    "topic": "专题12 史学方法入门",
+    "name": "时间尺度与历史分期",
+    "lines": [
+      5
+    ],
+    "star": true,
+    "done": true,
+    "note": "已做·2026-0815_三件套-时间尺度.md"
+  },
+  {
+    "id": 60,
+    "module": "模块四·史学方法",
+    "topic": "专题12 史学方法入门",
+    "name": "史料类型与史料实证",
+    "lines": [
+      5
+    ],
+    "star": true,
+    "done": true,
+    "note": "已做·2026-0815_三件套-史料实证.md"
+  },
+  {
+    "id": 61,
+    "module": "模块四·史学方法",
+    "topic": "专题12 史学方法入门",
+    "name": "历史解释的多维视角",
+    "lines": [
+      5
+    ],
+    "star": true,
+    "done": true,
+    "note": "已做·2026-0815_三件套-多维视角.md"
+  },
+  {
+    "id": 62,
+    "module": "模块四·史学方法",
+    "topic": "专题12 史学方法入门",
+    "name": "历史人物的评价方法",
+    "lines": [
+      5
+    ],
+    "star": true,
+    "done": true,
+    "note": "已做·2026-0815_三件套-人物评价.md"
+  }
 ]
