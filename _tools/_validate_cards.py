@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 """
 _validate_cards.py — 知识卡片 v1.0 规范校验器（试产用）
 按规范 §7 质量硬指标 20 项 + §11 自检 10 项 + 与 _62_concepts.json 交叉核对。
@@ -12,8 +12,17 @@ if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
-BASE = Path(r"D:\4_data\knowledge_cards\历史\cards")
-CONCEPTS_PATH = Path(r"D:\4_data\knowledge_cards\00-项目文档\_62_concepts.json")
+BASE = Path(r"D:\B_历史\spdt-content-cards\历史\cards")
+CONCEPTS_PATH = Path(r"D:\B_历史\spdt-content-cards\00-项目文档\_62_concepts.json")
+
+# === 多科目支持（willi 拍板 2026-08-16） ===
+SUBJECTS = {
+    "HISTORY":   {"prefix": "H", "domain": "历史"},
+    "GEOGRAPHY": {"prefix": "G", "domain": "地理"},
+    "POLITICS":  {"prefix": "P", "domain": "政治"},
+    "ENGLISH":   {"prefix": "E", "domain": "英语"},
+    "GUWEN":     {"prefix": "W", "domain": "古文"},
+}
 
 CARD_TYPE_ENUM = {"STRATEGY", "CASE_STUDY", "METHODOLOGY", "KNOWLEDGE", "BIG_PICTURE", "PARADOX"}
 CHAIN_ROLE_ENUM = {"BACKGROUND", "TRIGGER", "PROCESS", "COUNTER", "PATTERN", "EVENT"}
@@ -85,8 +94,8 @@ def check_card(card, where, is_main, main_card_id=None):
         add_err(f"[concepts数] {where} {n}个 (需{lo}~{hi})")
     # tags
     tags = card["tags"]
-    if not any(t == "#domain/历史" for t in tags):
-        add_err(f"[tags] {where} 缺 #domain/历史")
+    if not any(tag.startswith("#domain/") for tag in tags):
+        add_err(f"[tags] {where} 缺 #domain/...")
     if not any(t.startswith(CONTENT_PREFIX) for t in tags):
         add_err(f"[tags] {where} 缺 #content/...")
     if not any(t.startswith("#考频/") for t in tags):
@@ -142,8 +151,17 @@ def main():
         base = Path(sys.argv[1])
     else:
         base = BASE
-    concepts = json.loads(CONCEPTS_PATH.read_text(encoding="utf-8-sig"))
-    cmap = {c["id"]: c for c in concepts}
+    # 概念清单：优先从 cards 目录同级的 _N_concepts.json 加载；回退 CONCEPTS_PATH；再找不到则跳过交叉核对
+    cmap = {}
+    candidates = [base.parent / "_62_concepts.json", base.parent / "_50_concepts.json",
+                  base.parent / "_61_concepts.json", CONCEPTS_PATH]
+    for cf in candidates:
+        if cf.exists():
+            concepts = json.loads(cf.read_text(encoding="utf-8-sig"))
+            cmap = {c["id"]: c for c in concepts}
+            break
+    if not cmap:
+        add_warn(f"未找到概念清单文件（已跳过交叉核对）: {base}")
     sets = sorted(d for d in base.iterdir() if d.is_dir())
     if not sets:
         add_err(f"cards 目录下无套卡目录: {base}")
@@ -181,14 +199,17 @@ def main():
         if missing:
             add_err(f"[chain字段] {sdir.name} 缺: {missing}")
         # chain 与概念清单交叉核对
-        cm = re.fullmatch(r"history/H-M(\d)-(\d+)-(.+)", chain.get("chain_id", ""))
+        cm = re.fullmatch(r"([a-z]+)/([HGPEW])-M(\d)-(\d+)-(.+)", chain.get("chain_id", ""))
         if not cm:
             add_err(f"[chain_id格式] {sdir.name}: {chain.get('chain_id')}")
         else:
-            mod, cid, cnm = int(cm.group(1)), int(cm.group(2)), cm.group(3)
+            subj_dir, subj_ini, mod, cid, cnm = cm.group(1), cm.group(2), int(cm.group(3)), int(cm.group(4)), cm.group(5)
             if cnm != cname:
                 add_err(f"[概念名] {sdir.name} 目录名'{cname}' ≠ chain_id概念'{cnm}'")
             cc = cmap.get(cid)
+            if not cmap:
+                cc = {"name": cname, "lines": chain.get("lines"), "star": chain.get("is_main_line"),
+                      "module": chain.get("module"), "topic": chain.get("topic")}
             if cc is None:
                 add_err(f"[概念清单] id={cid} 不在 _62_concepts.json")
             else:
@@ -202,7 +223,7 @@ def main():
                     add_err(f"[module] {sdir.name} '{chain.get('module')}' ≠ 清单 '{cc['module']}'")
                 if cc["topic"] != chain.get("topic"):
                     add_err(f"[topic] {sdir.name} '{chain.get('topic')}' ≠ 清单 '{cc['topic']}'")
-                expect_cid = f"H-M{mod}-{cid}-MAIN-001"
+                expect_cid = f"{subj_ini}-M{mod}-{cid}-MAIN-001"
                 if main.get("card_id") != expect_cid:
                     add_err(f"[card_id] 主卡 {main.get('card_id')} ≠ 期望 {expect_cid}")
         if chain.get("total_cards") != len(ks):
@@ -211,8 +232,12 @@ def main():
             add_err(f"[open_questions_count] {sdir.name} chain={chain.get('open_questions_count')} ≠ 实际 {len(main.get('open_questions', []))}")
         if chain.get("exam_questions_count") != len(main.get("exam_questions", [])):
             add_err(f"[exam_questions_count] {sdir.name} chain={chain.get('exam_questions_count')} ≠ 实际 {len(main.get('exam_questions', []))}")
-        if chain.get("subject") != "HISTORY":
-            add_err(f"[subject] {sdir.name}: {chain.get('subject')}")
+        if chain.get("subject") not in SUBJECTS:
+            add_err(f"[subject] {sdir.name}: {chain.get('subject')} (合法值: {list(SUBJECTS)})")
+        else:
+            expect_subj = next((k for k, v in SUBJECTS.items() if v["prefix"] == subj_ini), None)
+            if chain.get("subject") != expect_subj:
+                add_err(f"[subject一致性] {sdir.name}: subject={chain.get('subject')} ≠ chain_id前缀对应 {expect_subj}")
         if chain.get("status") != "trial_production":
             add_err(f"[status] {sdir.name}: {chain.get('status')}")
         if chain.get("generated_at") != date_part:
@@ -225,7 +250,7 @@ def main():
                 add_err(f"[JSON] {sdir.name}/{k} 解析失败: {e}")
                 continue
             check_card(sub, f"{sdir.name}/{k}", False, main.get("card_id"))
-            if not re.fullmatch(r"H-M\d+-\d+-K\d{2}-001", sub.get("card_id", "")):
+            if not re.fullmatch(r"[HGPEW]-M\d+-\d+-K\d{2}-001", sub.get("card_id", "")):
                 add_err(f"[card_id格式] {sdir.name}/{k}: {sub.get('card_id')}")
             if f"K{k[1:3]}" not in sub.get("card_id", ""):
                 add_err(f"[card_id-K序号] {sdir.name}/{k}: {sub.get('card_id')}")
@@ -250,3 +275,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

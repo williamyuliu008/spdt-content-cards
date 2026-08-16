@@ -1,0 +1,673 @@
+[
+  {
+    "id": 1,
+    "module": "模块一·中国特色社会主义",
+    "topic": "专题1 社会主义与中特",
+    "name": "科学社会主义",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 2,
+    "module": "模块一·中国特色社会主义",
+    "topic": "专题1 社会主义与中特",
+    "name": "社会形态演进",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 3,
+    "module": "模块一·中国特色社会主义",
+    "topic": "专题1 社会主义与中特",
+    "name": "新时代与历史方位",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 4,
+    "module": "模块一·中国特色社会主义",
+    "topic": "专题1 社会主义与中特",
+    "name": "中国梦",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 5,
+    "module": "模块一·中国特色社会主义",
+    "topic": "专题1 社会主义与中特",
+    "name": "四个自信",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 6,
+    "module": "模块二·经济与社会",
+    "topic": "专题2 经济制度与发展",
+    "name": "所有制结构",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 7,
+    "module": "模块二·经济与社会",
+    "topic": "专题2 经济制度与发展",
+    "name": "分配制度",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 8,
+    "module": "模块二·经济与社会",
+    "topic": "专题2 经济制度与发展",
+    "name": "社会主义市场经济体制",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 9,
+    "module": "模块二·经济与社会",
+    "topic": "专题2 经济制度与发展",
+    "name": "新发展理念",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 10,
+    "module": "模块二·经济与社会",
+    "topic": "专题2 经济制度与发展",
+    "name": "现代化经济体系",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 11,
+    "module": "模块二·经济与社会",
+    "topic": "专题2 经济制度与发展",
+    "name": "新质生产力",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": true
+  },
+  {
+    "id": 12,
+    "module": "模块二·经济与社会",
+    "topic": "专题2 经济制度与发展",
+    "name": "双循环新发展格局",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 13,
+    "module": "模块二·经济与社会",
+    "topic": "专题2 经济制度与发展",
+    "name": "高质量发展举措",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 14,
+    "module": "模块二·经济与社会",
+    "topic": "专题2 经济制度与发展",
+    "name": "共同富裕",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 15,
+    "module": "模块二·经济与社会",
+    "topic": "专题2 经济制度与发展",
+    "name": "对外开放",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 16,
+    "module": "模块三·政治与法治",
+    "topic": "专题3 党的领导与民主制度",
+    "name": "党的领导",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 17,
+    "module": "模块三·政治与法治",
+    "topic": "专题3 党的领导与民主制度",
+    "name": "人民代表大会制度",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": true
+  },
+  {
+    "id": 18,
+    "module": "模块三·政治与法治",
+    "topic": "专题3 党的领导与民主制度",
+    "name": "多党合作和政治协商制度",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 19,
+    "module": "模块三·政治与法治",
+    "topic": "专题3 党的领导与民主制度",
+    "name": "民族区域自治制度",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 20,
+    "module": "模块三·政治与法治",
+    "topic": "专题3 党的领导与民主制度",
+    "name": "基层群众自治制度",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 21,
+    "module": "模块三·政治与法治",
+    "topic": "专题3 党的领导与民主制度",
+    "name": "全过程人民民主",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 22,
+    "module": "模块三·政治与法治",
+    "topic": "专题3 党的领导与民主制度",
+    "name": "依法治国",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 23,
+    "module": "模块三·政治与法治",
+    "topic": "专题3 党的领导与民主制度",
+    "name": "科学立法",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 24,
+    "module": "模块三·政治与法治",
+    "topic": "专题3 党的领导与民主制度",
+    "name": "严格执法",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 25,
+    "module": "模块三·政治与法治",
+    "topic": "专题3 党的领导与民主制度",
+    "name": "公正司法",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 26,
+    "module": "模块三·政治与法治",
+    "topic": "专题3 党的领导与民主制度",
+    "name": "全民守法",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 27,
+    "module": "模块三·政治与法治",
+    "topic": "专题3 党的领导与民主制度",
+    "name": "三者有机统一",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 28,
+    "module": "模块四·哲学与文化",
+    "topic": "专题4 哲学",
+    "name": "物质与意识",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": true
+  },
+  {
+    "id": 29,
+    "module": "模块四·哲学与文化",
+    "topic": "专题4 哲学",
+    "name": "规律客观性",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": true
+  },
+  {
+    "id": 30,
+    "module": "模块四·哲学与文化",
+    "topic": "专题4 哲学",
+    "name": "一切从实际出发",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": true
+  },
+  {
+    "id": 31,
+    "module": "模块四·哲学与文化",
+    "topic": "专题4 哲学",
+    "name": "联系观",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": true
+  },
+  {
+    "id": 32,
+    "module": "模块四·哲学与文化",
+    "topic": "专题4 哲学",
+    "name": "发展观",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": true
+  },
+  {
+    "id": 33,
+    "module": "模块四·哲学与文化",
+    "topic": "专题4 哲学",
+    "name": "矛盾观",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": true
+  },
+  {
+    "id": 34,
+    "module": "模块四·哲学与文化",
+    "topic": "专题4 哲学",
+    "name": "实践与认识",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": true
+  },
+  {
+    "id": 35,
+    "module": "模块四·哲学与文化",
+    "topic": "专题4 哲学",
+    "name": "真理",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": true
+  },
+  {
+    "id": 36,
+    "module": "模块四·哲学与文化",
+    "topic": "专题4 哲学",
+    "name": "认识发展过程",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": true
+  },
+  {
+    "id": 37,
+    "module": "模块四·哲学与文化",
+    "topic": "专题4 哲学",
+    "name": "社会存在与社会意识",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": true
+  },
+  {
+    "id": 38,
+    "module": "模块四·哲学与文化",
+    "topic": "专题4 哲学",
+    "name": "社会基本矛盾运动",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": true
+  },
+  {
+    "id": 39,
+    "module": "模块四·哲学与文化",
+    "topic": "专题4 哲学",
+    "name": "人民群众",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": true
+  },
+  {
+    "id": 40,
+    "module": "模块四·哲学与文化",
+    "topic": "专题4 哲学",
+    "name": "价值观与价值判断",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": true
+  },
+  {
+    "id": 41,
+    "module": "模块四·哲学与文化",
+    "topic": "专题5 文化",
+    "name": "文化内涵与功能",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": true
+  },
+  {
+    "id": 42,
+    "module": "模块四·哲学与文化",
+    "topic": "专题5 文化",
+    "name": "文化传承与创新",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": true
+  },
+  {
+    "id": 43,
+    "module": "模块四·哲学与文化",
+    "topic": "专题5 文化",
+    "name": "文化自信与文化强国",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": true
+  },
+  {
+    "id": 44,
+    "module": "模块五·当代国际政治与经济",
+    "topic": "专题6 国际政治经济",
+    "name": "国际关系与国家利益",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 45,
+    "module": "模块五·当代国际政治与经济",
+    "topic": "专题6 国际政治经济",
+    "name": "世界多极化",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 46,
+    "module": "模块五·当代国际政治与经济",
+    "topic": "专题6 国际政治经济",
+    "name": "人类命运共同体",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 47,
+    "module": "模块五·当代国际政治与经济",
+    "topic": "专题6 国际政治经济",
+    "name": "经济全球化",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 48,
+    "module": "模块五·当代国际政治与经济",
+    "topic": "专题6 国际政治经济",
+    "name": "一带一路",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 49,
+    "module": "模块五·当代国际政治与经济",
+    "topic": "专题6 国际政治经济",
+    "name": "我国对外开放",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 50,
+    "module": "模块六·法律与生活",
+    "topic": "专题7 法律常识",
+    "name": "民事法律关系与民法原则",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 51,
+    "module": "模块六·法律与生活",
+    "topic": "专题7 法律常识",
+    "name": "合同",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 52,
+    "module": "模块六·法律与生活",
+    "topic": "专题7 法律常识",
+    "name": "侵权责任",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 53,
+    "module": "模块六·法律与生活",
+    "topic": "专题7 法律常识",
+    "name": "财产权",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 54,
+    "module": "模块六·法律与生活",
+    "topic": "专题7 法律常识",
+    "name": "婚姻家庭",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 55,
+    "module": "模块六·法律与生活",
+    "topic": "专题7 法律常识",
+    "name": "就业与消费者权益",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 56,
+    "module": "模块七·逻辑与思维",
+    "topic": "专题8 逻辑思维",
+    "name": "概念与判断",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 57,
+    "module": "模块七·逻辑与思维",
+    "topic": "专题8 逻辑思维",
+    "name": "演绎推理",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 58,
+    "module": "模块七·逻辑与思维",
+    "topic": "专题8 逻辑思维",
+    "name": "归纳与类比",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 59,
+    "module": "模块七·逻辑与思维",
+    "topic": "专题8 逻辑思维",
+    "name": "辩证思维整体性",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 60,
+    "module": "模块七·逻辑与思维",
+    "topic": "专题8 逻辑思维",
+    "name": "动态性",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  },
+  {
+    "id": 61,
+    "module": "模块七·逻辑与思维",
+    "topic": "专题8 逻辑思维",
+    "name": "创新思维",
+    "lines": [
+      4
+    ],
+    "star": false,
+    "done": false
+  }
+]
