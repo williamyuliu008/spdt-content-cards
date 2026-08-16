@@ -12,8 +12,8 @@ if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
-BASE = Path(r"D:\4_data\knowledge_cards\docs\B_历史\cards")
-CONCEPTS_PATH = Path(r"D:\4_data\knowledge_cards\docs\B_历史\三件套\_62_concepts.json")
+BASE = Path(r"D:\4_data\knowledge_cards\历史\cards")
+CONCEPTS_PATH = Path(r"D:\4_data\knowledge_cards\00-项目文档\_62_concepts.json")
 
 CARD_TYPE_ENUM = {"STRATEGY", "CASE_STUDY", "METHODOLOGY", "KNOWLEDGE", "BIG_PICTURE", "PARADOX"}
 CHAIN_ROLE_ENUM = {"BACKGROUND", "TRIGGER", "PROCESS", "COUNTER", "PATTERN", "EVENT"}
