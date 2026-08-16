@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>知识卡片 v1.0 规范 · 试产测试报告（2026-08-16）</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#ffffff; --ink:#1a2332; --muted:#6b7686; --line:#e3e7ee;
+    --brand:#3b5bdb; --brand-soft:#eef1fe; --ok:#12a150; --ok-soft:#e7f7ee;
+    --warn:#d97706; --warn-soft:#fdf3e3; --err:#dc2626; --err-soft:#fdecec;
+    --radius:14px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; background:var(--bg); color:var(--ink); line-height:1.7; padding:32px 16px;}
+  .wrap{max-width:980px; margin:0 auto;}
+  header{background:linear-gradient(135deg,#1e2a4a 0%,#3b5bdb 100%); color:#fff; border-radius:var(--radius); padding:36px 40px; margin-bottom:24px;}
+  header h1{font-size:26px; font-weight:700; letter-spacing:.5px;}
+  header p{margin-top:10px; color:#c9d4f5; font-size:14px;}
+  .badge{display:inline-block; background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.28); padding:2px 12px; border-radius:999px; font-size:12.5px; margin-right:8px; margin-top:12px;}
+  .metrics{display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-bottom:24px;}
+  .metric{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:18px 20px;}
+  .metric .num{font-size:30px; font-weight:800; color:var(--brand);}
+  .metric .lbl{font-size:13px; color:var(--muted); margin-top:2px;}
+  section{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:26px 30px; margin-bottom:24px;}
+  section h2{font-size:18px; font-weight:700; margin-bottom:16px; display:flex; align-items:center; gap:8px;}
+  section h2::before{content:""; width:4px; height:18px; background:var(--brand); border-radius:2px;}
+  table{width:100%; border-collapse:collapse; font-size:13.5px;}
+  th{background:#f0f2f7; text-align:left; padding:9px 12px; font-weight:600; border-bottom:1px solid var(--line); white-space:nowrap;}
+  td{padding:9px 12px; border-bottom:1px solid var(--line); vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+  .pill{display:inline-block; padding:1px 10px; border-radius:999px; font-size:12px; font-weight:600;}
+  .pill.ok{background:var(--ok-soft); color:var(--ok);}
+  .pill.brand{background:var(--brand-soft); color:var(--brand);}
+  .pill.warn{background:var(--warn-soft); color:var(--warn);}
+  .pill.gray{background:#eef0f4; color:#55607a;}
+  ul.issues{list-style:none;}
+  ul.issues li{padding:12px 14px; border:1px solid var(--line); border-radius:10px; margin-bottom:10px; font-size:13.5px; background:#fafbfd;}
+  ul.issues li b{color:var(--brand);}
+  ul.issues li .tag{display:inline-block; background:var(--warn-soft); color:var(--warn); border-radius:6px; padding:0 8px; font-size:12px; font-weight:600; margin-right:8px;}
+  ul.issues li .tag.fixed{background:var(--ok-soft); color:var(--ok);}
+  pre.tree{background:#0f172a; color:#cbd5e1; border-radius:10px; padding:18px 20px; font-size:12.5px; line-height:1.65; overflow-x:auto; font-family:"Cascadia Code","Consolas",monospace;}
+  .muted{color:var(--muted);}
+  .note{font-size:13px; color:var(--muted); background:#fafbfd; border-left:3px solid var(--brand); padding:10px 14px; border-radius:0 8px 8px 0; margin-top:14px;}
+  .grid2{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+  .flow{display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:13px;}
+  .flow .step{background:var(--brand-soft); color:var(--brand); border-radius:8px; padding:6px 14px; font-weight:600;}
+  .flow .arr{color:var(--muted);}
+  footer{text-align:center; color:var(--muted); font-size:12.5px; margin-top:8px;}
+  @media (max-width:720px){ .metrics{grid-template-columns:repeat(2,1fr);} .grid2{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>知识卡片产出规范 v1.0 · 试产测试报告</h1>
+  <p>测试日期 2026-08-16 ｜ 测试范围：3 套完整卡片（监察谏议制度 / 全民族抗战 / 启蒙运动）｜ 共 28 个 JSON 文件</p>
+  <span class="badge">v1.0 试产</span><span class="badge">20 项硬指标全部通过</span><span class="badge">24 条存疑待审核</span><span class="badge">输出路径：D:\4_data\knowledge_cards\docs\B_历史\cards\</span>
+</header>
+
+<div class="metrics">
+  <div class="metric"><div class="num">3</div><div class="lbl">套卡片（覆盖 3 个模块）</div></div>
+  <div class="metric"><div class="num">28</div><div class="lbl">JSON 文件（3 chain + 3 main + 22 子卡）</div></div>
+  <div class="metric"><div class="num">18</div><div class="lbl">配套练习题（每套 6 道）</div></div>
+  <div class="metric"><div class="num">24</div><div class="lbl">存疑清单条目（每套 8 条）</div></div>
+</div>
+
+<section>
+  <h2>一、三套卡片概览</h2>
+  <table>
+    <tr><th>概念（id）</th><th>模块 / 专题</th><th>主题线</th><th>主线</th><th>主卡类型</th><th>子卡</th><th>练习 / 存疑</th><th>置信度</th></tr>
+    <tr>
+      <td><b>监察谏议制度</b>（5）</td><td>模块一·中国古代史 / 专题1 政治制度演变</td>
+      <td><span class="pill brand">线2 制度与治理</span></td><td><span class="pill brand">★ 主线</span></td>
+      <td>STRATEGY / PATTERN</td><td>8 张</td><td>6 / 8</td><td><span class="pill warn">low</span></td>
+    </tr>
+    <tr>
+      <td><b>全民族抗战</b>（37）</td><td>模块二·中国近现代史 / 专题7 新民主主义革命</td>
+      <td><span class="pill brand">线4 社会转型</span> <span class="pill gray">线6 时政热点</span></td><td><span class="pill gray">非主线</span></td>
+      <td>CASE_STUDY / EVENT</td><td>7 张</td><td>6 / 8</td><td><span class="pill warn">low</span></td>
+    </tr>
+    <tr>
+      <td><b>启蒙运动</b>（52）</td><td>模块三·世界史 / 专题10 近代世界的形成</td>
+      <td><span class="pill brand">线3 文明互动</span></td><td><span class="pill gray">非主线</span></td>
+      <td>CASE_STUDY / EVENT</td><td>7 张</td><td>6 / 8</td><td><span class="pill warn">low</span></td>
+    </tr>
+  </table>
+  <div class="note">选点策略：三套卡分别落在「中国古代史 / 中国近现代史 / 世界史」三个模块，覆盖主题线 2、4、6、3，且含 1 个 ★ 主线概念与 2 个非主线概念——用于检验规范在不同模块、不同主题线下的通用性。置信度按规范 §4.8 算法自评（存疑 5~10 条 → low），是诚实度指标而非知识准确度。</div>
+</section>
+
+<section>
+  <h2>二、校验结果（20 项硬指标 + 交叉核对）</h2>
+  <table>
+    <tr><th>#</th><th>检查项</th><th>通过标准</th><th>结果</th></tr>
+    <tr><td>1</td><td>文件数</td><td>1 chain + 1 main + 6~10 K*.json</td><td><span class="pill ok">8 / 7 / 7 张子卡 ✓</span></td></tr>
+    <tr><td>2~3</td><td>必含字段</td><td>chain 14 字段、main 13 字段、子卡 12 字段</td><td><span class="pill ok">全填 ✓</span></td></tr>
+    <tr><td>4</td><td>front 长度</td><td>30~100 字、以问号结尾</td><td><span class="pill ok">30~36 字 ✓</span></td></tr>
+    <tr><td>5</td><td>back_core 长度</td><td>150~250 字</td><td><span class="pill ok">150~200 字 ✓</span></td></tr>
+    <tr><td>6</td><td>back_detail 长度</td><td>主卡 800~1200 / 子卡 200~350</td><td><span class="pill ok">主卡 ~1000 / 子卡 ~300 ✓</span></td></tr>
+    <tr><td>7</td><td>练习题</td><td>5~6 道，含单选/配对/图表排序/材料解析/开放论述（三层给分）</td><td><span class="pill ok">每套 6 道 ✓</span></td></tr>
+    <tr><td>8</td><td>存疑清单</td><td>5~10 条、每条 ≤50 字</td><td><span class="pill ok">每套 8 条 ✓</span></td></tr>
+    <tr><td>9</td><td>concepts 数</td><td>主卡 5~8 / 子卡 3~5，且须出现在正文</td><td><span class="pill ok">✓</span></td></tr>
+    <tr><td>10~14</td><td>tags / sources / 枚举 / maturity</td><td>含 #domain/历史、#content/...、#考频/、#朝代/；≥1 条 academic；card_type 与 chain_role 6 选 1；RAW</td><td><span class="pill ok">✓</span></td></tr>
+    <tr><td>15</td><td>parent_card</td><td>子卡必填且 = 主卡 card_id</td><td><span class="pill ok">22/22 ✓</span></td></tr>
+    <tr><td>16~18</td><td>JSON / BOM / 文件名</td><td>json.load 可解析；UTF-8 无 BOM；无中文标点</td><td><span class="pill ok">✓</span></td></tr>
+    <tr><td>19</td><td>相对时间表述</td><td>无「同一时期 / 同时 / 不久后」</td><td><span class="pill ok">0 处 ✓</span></td></tr>
+    <tr><td>20</td><td>交叉核对</td><td>chain 与 _62_concepts.json 的 id/name/lines/star/module/topic 一致；total_cards、counts 与实际一致</td><td><span class="pill ok">3/3 ✓</span></td></tr>
+  </table>
+  <div class="note">校验由本次一并交付的 <b>_validate_cards.py</b> 自动执行（可复跑）：初测发现 23 处错误（多为字数越界）→ 全部修复 → 终测 0 错误 0 警告。该脚本可作为规范 §7 所述 _validate_sjt.py 的雏形。</div>
+</section>
+
+<section>
+  <h2>三、规范 v1.0 测试发现（供 v1.1 修订参考）</h2>
+  <ul class="issues">
+    <li><span class="tag">示例笔误</span><b>§3.1 chain.json 示例自相矛盾</b>：顶部示例 chain_id 为 <code>history/H-M1-中央官制演进</code>（缺 id 段），字段详解与 §8.2 为 <code>history/H-M1-3-中央官制演进</code>。本次按字段详解执行，建议 v1.1 统一。</li>
+    <li><span class="tag">规则冲突</span><b>§4.8 confidence 算法与 §3.2 示例矛盾</b>：算法规定存疑 ≥4 条 → low，但示例主卡 10 条存疑标 medium。本次按算法执行（三张主卡均为 low），建议 v1.1 明确以算法为准并修正示例。</li>
+    <li><span class="tag">数字笔误</span><b>子卡字段数 13 vs 12</b>：§3.3 定义子卡为 12 个字段（含 parent_card，无 exam/open_questions），但 §7 检查项 3 与 §11 自检 4 均写「13 个字段」。建议统一为 12。</li>
+    <li><span class="tag">规范缺口</span><b>世界史概念的 #朝代/ 标签无约定</b>：tag 规则只给了中国朝代示例，本次世界史（启蒙运动）用 <code>#朝代/17-18世纪</code>。建议 v1.1 补充世界史时期标签规范（如 #朝代/近代欧洲）。</li>
+    <li><span class="tag">规范缺口</span><b>#考频/ 标签缺少数据依据</b>：规范要求按 2023-2026 上海真题频次定级，但未提供真题统计来源。本次为 AI 估算（⭐⭐⭐/⭐⭐⭐⭐），建议 v1.1 明确：考频标签须经真题核对，或允许 <code>#考频/待核</code> 占位。</li>
+    <li><span class="tag">规范缺口</span><b>exam_questions 的 type 无枚举定义</b>：§4.6 要求 5 种题型，但 JSON 中 type 是自由文本。建议 v1.1 固定枚举（单选/配对/图表排序/材料解析/开放论述）并加校验。</li>
+    <li><span class="tag">执行口径</span><b>「同时」类话语连接词的处理</b>：§7 检查项 20 禁止「同时」，但正文中的「与此同时」是话语连接而非时间相对表述。本次按从严处理全部改写，建议 v1.1 明确词表边界（或给出白名单）。</li>
+    <li><span class="tag">执行口径</span><b>子卡字数上限偏紧</b>：200~350 字对含「定义 + 背景 + 易错点」三段的子卡偏紧，本次多张子卡为此裁剪。若保留三段结构，建议放宽至 200~400 字，或允许易错点不计入。</li>
+    <li><span class="tag">执行口径</span><b>真题锚尚未落地</b>：§5.2 要求练习题尽量锚定 2023-2026 真题，但 schema 无此字段且本次未查真题（不编造）。建议 v1.1 决定：加可选字段 <code>exam_anchor</code>，或明确「真题锚：待补」写入何处。</li>
+    <li><span class="tag">流程建议</span><b>校验脚本应入库</b>：本次交付 _validate_cards.py（20 项 + 概念清单交叉核对 + BOM/文件名检查），建议并入规范作为官方校验器，并在每批产出后自动跑。</li>
+  </ul>
+</section>
+
+<section>
+  <h2>四、产出目录结构</h2>
+  <pre class="tree">D:\4_data\knowledge_cards\docs\B_历史\cards\
+├── _validate_cards.py                          # 校验脚本（本次新增，可复跑）
+├── 2026-08-16_监察谏议制度\
+│   ├── chain.json  main.json  K01~K08.json     # 8 张子卡（10 个文件）
+├── 2026-08-16_全民族抗战\
+│   ├── chain.json  main.json  K01~K07.json     # 7 张子卡（9 个文件）
+└── 2026-08-16_启蒙运动\
+    ├── chain.json  main.json  K01~K07.json     # 7 张子卡（9 个文件）</pre>
+  <div class="flow" style="margin-top:16px;">
+    <span class="step">试产（trial_production）</span><span class="arr">→</span>
+    <span class="step">史实审核 SOP 五查 + 存疑清单核实</span><span class="arr">→</span>
+    <span class="step">命题审核（干扰项 / 三层给分）</span><span class="arr">→</span>
+    <span class="step">certified 入库 → push-to-rujing</span>
+  </div>
+</section>
+
+<footer>知识卡片产出规范 v1.0 试产测试报告 · 由产卡片 AI 生成于 2026-08-16 · 存疑清单 24 条待人工审核</footer>
+
+</div>
+</body>
+</html>

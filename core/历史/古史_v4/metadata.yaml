@@ -1,8 +1,0 @@
-batch_id: 古史_v4
-source: 古史_v4_全18链_标签版.json（P1 cron 输出）
-source_type: 教材/通俗史
-generated_at: 2026-08-07
-card_count: 133
-schema_version: "1.3"
-domain: 历史
-note: P1 cron 批次输出，18条历史 chain，133张卡片。materials 层覆盖率低，建议后续补全。

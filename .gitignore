@@ -1,20 +1,55 @@
+# ============================================================
+# SPDT-Content-Cards .gitignore
+# 只提交"内容本征层"，排除历史存档 + 临时文件
+# ============================================================
+
+# 历史存档（autoclaw 试制前的 B_历史工程等）
+/docs/
+/core/
+/reports/
+/tools/
+/views/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
 # OS
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Editor
+# IDE
+.vscode/
+.idea/
 *.swp
 *.swo
-~*
 
-# Temporary migration output
-*_v1.3.json
-*_backup.json
+# 临时日志
+*.log
+_*.log
 
-# Views (auto-generated, can be regenerated)
-views/
-reports/
+# Syncthing（同步工具临时文件）
+.stfolder/
+.stfolder (1)/
+.stversions/
+syncthing-folder-*.txt
+*syncthing*
+*empty.txt
 
-# Python cache
-__pycache__/
-*.pyc
+# 敏感文件
+.env
+*.key
+*_SECRET_*
+
+# 临时构建
+/_output/
+/_build/
+/_tmp/
+
+# 备份
+*.bak
+*.bak_*
+*_backup_*
