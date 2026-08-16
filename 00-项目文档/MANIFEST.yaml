@@ -21,15 +21,15 @@ subjects:
     cards_root: 历史/cards/
     schema_version: v1.0
     quality:
-      last_validate: 2026-08-16T19:10:00+08:00
+      last_validate: 2026-08-16T19:40:00+08:00
       pass_rate: 1.0
       total_concepts: 62
-      done_concepts: 4
+      done_concepts: 6
       in_progress_concepts: 0
-      total_subcards: 38
+      total_subcards: 55
     notes: |
       第一个试点的学科，62 概念（11 专题）。
-      已完成 4 件（3 demo + 1 完整版），剩余 58 件。
+      已完成 6 件（3 demo + 3 完整版），剩余 56 件。
 
 # ============================================================
 # 跨学科消费场景（应用层）
@@ -192,6 +192,14 @@ snapshot:
       chain_title: 选官制度演变
       subcards: 8
       quality: pass
-  total_chains: 4
-  total_subcards: 30
+    - chain_id: history/H-M2-25-洋务运动
+      chain_title: 洋务运动
+      subcards: 7
+      quality: pass
+    - chain_id: history/H-M2-29-辛亥革命与共和制
+      chain_title: 辛亥革命与共和制
+      subcards: 6
+      quality: pass
+  total_chains: 6
+  total_subcards: 43
   shipped_to_rujing: 0  # 消费端转换工具待写
