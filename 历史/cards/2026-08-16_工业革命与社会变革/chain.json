@@ -1,0 +1,19 @@
+{
+  "chain_id": "history/H-M3-54-工业革命与社会变革",
+  "chain_title": "工业革命与社会变革",
+  "subject": "HISTORY",
+  "domain": "世界近现代史·经济变革",
+  "lines": [
+    1,
+    4
+  ],
+  "module": "模块三·世界史",
+  "topic": "专题10 近代世界的形成",
+  "is_main_line": false,
+  "total_cards": 6,
+  "generated_at": "2026-08-16",
+  "generated_by": "AI（按 v1.0 规范）",
+  "status": "trial_production",
+  "open_questions_count": 5,
+  "exam_questions_count": 6
+}
