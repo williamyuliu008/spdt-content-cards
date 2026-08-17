@@ -1,0 +1,18 @@
+{
+  "chain_id": "history/H-M3-56-二战与雅尔塔体系",
+  "chain_title": "第二次世界大战与雅尔塔体系",
+  "subject": "HISTORY",
+  "domain": "世界现代史·战争与和平",
+  "lines": [
+    6
+  ],
+  "module": "模块三·世界史",
+  "topic": "专题11 20世纪以来的世界",
+  "is_main_line": false,
+  "total_cards": 6,
+  "generated_at": "2026-08-16",
+  "generated_by": "AI（按 v1.0 规范）",
+  "status": "trial_production",
+  "open_questions_count": 5,
+  "exam_questions_count": 6
+}
