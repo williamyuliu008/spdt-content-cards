@@ -1,0 +1,18 @@
+{
+  "chain_id": "history/H-M3-46-古代东方文明",
+  "chain_title": "古代东方文明",
+  "subject": "HISTORY",
+  "domain": "世界古代史·早期文明",
+  "lines": [
+    3
+  ],
+  "module": "模块三·世界史",
+  "topic": "专题9 古代文明与中古时期",
+  "is_main_line": false,
+  "total_cards": 6,
+  "generated_at": "2026-08-16",
+  "generated_by": "AI（按 v1.0 规范）",
+  "status": "trial_production",
+  "open_questions_count": 5,
+  "exam_questions_count": 6
+}
