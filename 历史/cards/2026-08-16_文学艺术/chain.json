@@ -1,0 +1,18 @@
+{
+  "chain_id": "history/H-M1-17-文学艺术",
+  "chain_title": "文学艺术的演变",
+  "subject": "HISTORY",
+  "domain": "中国古代史·思想文化",
+  "lines": [
+    3
+  ],
+  "module": "模块一·中国古代史",
+  "topic": "专题3 思想文化演变",
+  "is_main_line": false,
+  "total_cards": 6,
+  "generated_at": "2026-08-16",
+  "generated_by": "AI（按 v1.0 规范）",
+  "status": "trial_production",
+  "open_questions_count": 5,
+  "exam_questions_count": 6
+}
