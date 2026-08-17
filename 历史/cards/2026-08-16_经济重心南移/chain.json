@@ -1,0 +1,18 @@
+{
+  "chain_id": "history/H-M1-12-经济重心南移",
+  "chain_title": "经济重心南移",
+  "subject": "HISTORY",
+  "domain": "中国古代史·经济",
+  "lines": [
+    1
+  ],
+  "module": "模块一·中国古代史",
+  "topic": "专题2 经济与社会生活",
+  "is_main_line": false,
+  "total_cards": 6,
+  "generated_at": "2026-08-16",
+  "generated_by": "AI（按 v1.0 规范）",
+  "status": "trial_production",
+  "open_questions_count": 5,
+  "exam_questions_count": 6
+}
