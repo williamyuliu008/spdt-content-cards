@@ -16,20 +16,21 @@ last_sync: 2026-08-16T19:10:00+08:00
 # ============================================================
 subjects:
   历史:
-    status: in_progress
+    status: done
     domain_file: 历史/_62_concepts.json
     cards_root: 历史/cards/
     schema_version: v1.0
     quality:
-      last_validate: 2026-08-16T19:40:00+08:00
+      last_validate: 2026-08-17T20:33:00+08:00
       pass_rate: 1.0
       total_concepts: 62
-      done_concepts: 6
+      done_concepts: 62
       in_progress_concepts: 0
-      total_subcards: 55
+      total_subcards: 379
     notes: |
       第一个试点的学科，62 概念（11 专题）。
-      已完成 6 件（3 demo + 3 完整版），剩余 56 件。
+      62 件全部完成（3 demo + 59 完整版），379 子卡，校验全 PASS。
+      2026-08-17 收官。
 
 # ============================================================
 # 跨学科消费场景（应用层）
@@ -174,7 +175,7 @@ workflow:
 # 当前状态快照（2026-08-16）
 # ============================================================
 snapshot:
-  date: 2026-08-16
+  date: 2026-08-17
   shipped_cards:
     - chain_id: history/H-M1-5-监察谏议制度
       chain_title: 监察谏议制度
@@ -200,6 +201,6 @@ snapshot:
       chain_title: 辛亥革命与共和制
       subcards: 6
       quality: pass
-  total_chains: 6
-  total_subcards: 43
+  total_chains: 62
+  total_subcards: 379
   shipped_to_rujing: 0  # 消费端转换工具待写
