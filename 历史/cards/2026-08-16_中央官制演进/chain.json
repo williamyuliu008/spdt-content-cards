@@ -1,0 +1,18 @@
+{
+  "chain_id": "history/H-M1-3-中央官制演进",
+  "chain_title": "中央官制的演进（秦汉—明清）",
+  "subject": "HISTORY",
+  "domain": "中国古代史·制度变迁",
+  "lines": [
+    2
+  ],
+  "module": "模块一·中国古代史",
+  "topic": "专题1 政治制度演变",
+  "is_main_line": true,
+  "total_cards": 6,
+  "generated_at": "2026-08-16",
+  "generated_by": "AI（按 v1.0 规范）",
+  "status": "trial_production",
+  "open_questions_count": 5,
+  "exam_questions_count": 6
+}
