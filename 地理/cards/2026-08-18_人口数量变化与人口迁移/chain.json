@@ -1,0 +1,18 @@
+{
+  "chain_id": "geography/G-M2-18-人口数量变化与人口迁移",
+  "chain_title": "人口数量变化与人口迁移",
+  "subject": "GEOGRAPHY",
+  "domain": "人文地理",
+  "lines": [
+    3
+  ],
+  "module": "模块二·人文地理",
+  "topic": "专题5 人口与城市",
+  "is_main_line": false,
+  "total_cards": 6,
+  "generated_at": "2026-08-18",
+  "generated_by": "AI（按 v1.0 规范）",
+  "status": "trial_production",
+  "open_questions_count": 5,
+  "exam_questions_count": 5
+}
