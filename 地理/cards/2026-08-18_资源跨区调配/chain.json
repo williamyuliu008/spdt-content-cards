@@ -1,0 +1,18 @@
+{
+  "chain_id": "geography/G-M3-29-资源跨区调配",
+  "chain_title": "资源跨区调配",
+  "subject": "GEOGRAPHY",
+  "domain": "区域发展",
+  "lines": [
+    4
+  ],
+  "module": "模块三·区域发展",
+  "topic": "专题8 区域差异与联系",
+  "is_main_line": false,
+  "total_cards": 6,
+  "generated_at": "2026-08-18",
+  "generated_by": "AI（按 v1.0 规范）",
+  "status": "trial_production",
+  "open_questions_count": 5,
+  "exam_questions_count": 5
+}
