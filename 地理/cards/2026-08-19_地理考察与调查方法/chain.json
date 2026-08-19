@@ -1,0 +1,18 @@
+{
+  "chain_id": "geography/G-M5-47-地理考察与调查方法",
+  "chain_title": "地理考察与调查方法",
+  "subject": "GEOGRAPHY",
+  "domain": "地理实践",
+  "lines": [
+    5
+  ],
+  "module": "模块五·地理信息技术与地理实践",
+  "topic": "专题14 地理实践方法",
+  "is_main_line": false,
+  "total_cards": 6,
+  "generated_at": "2026-08-19",
+  "generated_by": "AI（按 v1.0 规范）",
+  "status": "trial_production",
+  "open_questions_count": 5,
+  "exam_questions_count": 5
+}
