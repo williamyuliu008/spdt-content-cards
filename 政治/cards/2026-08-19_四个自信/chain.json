@@ -1,0 +1,18 @@
+{
+  "chain_id": "politics/P-M1-5-四个自信",
+  "chain_title": "四个自信",
+  "subject": "POLITICS",
+  "domain": "模块一·中国特色社会主义",
+  "lines": [
+    4
+  ],
+  "module": "模块一·中国特色社会主义",
+  "topic": "专题1 社会主义与中特",
+  "is_main_line": false,
+  "total_cards": 6,
+  "generated_at": "2026-08-19",
+  "generated_by": "AI（按 v1.0 规范）",
+  "status": "trial_production",
+  "open_questions_count": 5,
+  "exam_questions_count": 5
+}
