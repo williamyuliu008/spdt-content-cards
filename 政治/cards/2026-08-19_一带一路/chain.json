@@ -1,0 +1,18 @@
+{
+  "chain_id": "politics/P-M5-48-一带一路",
+  "chain_title": "一带一路",
+  "subject": "POLITICS",
+  "domain": "当代国际政治与经济",
+  "lines": [
+    4
+  ],
+  "module": "模块五·当代国际政治与经济",
+  "topic": "专题6 国际政治经济",
+  "is_main_line": false,
+  "total_cards": 6,
+  "generated_at": "2026-08-19",
+  "generated_by": "AI（按 v1.0 规范）",
+  "status": "trial_production",
+  "open_questions_count": 5,
+  "exam_questions_count": 5
+}
