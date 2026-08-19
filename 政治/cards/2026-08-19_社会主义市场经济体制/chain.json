@@ -1,0 +1,18 @@
+{
+  "chain_id": "politics/P-M2-8-社会主义市场经济体制",
+  "chain_title": "社会主义市场经济体制",
+  "subject": "POLITICS",
+  "domain": "经济与社会",
+  "lines": [
+    4
+  ],
+  "module": "模块二·经济与社会",
+  "topic": "专题2 经济制度与发展",
+  "is_main_line": false,
+  "total_cards": 6,
+  "generated_at": "2026-08-19",
+  "generated_by": "AI（按 v1.0 规范）",
+  "status": "trial_production",
+  "open_questions_count": 5,
+  "exam_questions_count": 5
+}
