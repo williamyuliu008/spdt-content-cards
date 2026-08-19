@@ -1,0 +1,18 @@
+{
+  "chain_id": "geography/G-M4-42-全球性环境问题",
+  "chain_title": "全球性环境问题",
+  "subject": "GEOGRAPHY",
+  "domain": "资源环境与国家安全",
+  "lines": [
+    6
+  ],
+  "module": "模块四·资源环境与国家安全",
+  "topic": "专题12 环境与生态",
+  "is_main_line": false,
+  "total_cards": 6,
+  "generated_at": "2026-08-19",
+  "generated_by": "AI（按 v1.0 规范）",
+  "status": "trial_production",
+  "open_questions_count": 5,
+  "exam_questions_count": 5
+}
