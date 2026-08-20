@@ -1,0 +1,18 @@
+{
+  "chain_id": "politics/P-M6-55-就业与消费者权益",
+  "chain_title": "就业与消费者权益",
+  "subject": "POLITICS",
+  "domain": "法律与生活",
+  "lines": [
+    4
+  ],
+  "module": "模块六·法律与生活",
+  "topic": "专题7 法律常识",
+  "is_main_line": false,
+  "total_cards": 6,
+  "generated_at": "2026-08-19",
+  "generated_by": "AI（按 v1.0 规范）",
+  "status": "trial_production",
+  "open_questions_count": 5,
+  "exam_questions_count": 5
+}
