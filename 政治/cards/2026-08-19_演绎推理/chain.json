@@ -1,0 +1,18 @@
+{
+  "chain_id": "politics/P-M7-57-演绎推理",
+  "chain_title": "演绎推理",
+  "subject": "POLITICS",
+  "domain": "逻辑与思维",
+  "lines": [
+    4
+  ],
+  "module": "模块七·逻辑与思维",
+  "topic": "专题8 逻辑思维",
+  "is_main_line": false,
+  "total_cards": 6,
+  "generated_at": "2026-08-19",
+  "generated_by": "AI（按 v1.0 规范）",
+  "status": "trial_production",
+  "open_questions_count": 5,
+  "exam_questions_count": 5
+}
