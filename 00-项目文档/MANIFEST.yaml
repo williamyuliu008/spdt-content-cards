@@ -35,6 +35,36 @@ subjects:
 # ============================================================
 # 跨学科消费场景（应用层）
 # ============================================================
+  地理:
+    status: done
+    domain_file: 地理/_50_concepts.json
+    cards_root: 地理/cards/
+    schema_version: v1.0
+    quality:
+      last_validate: 2026-08-19T22:00:00+08:00
+      pass_rate: 1.0
+      total_concepts: 49
+      done_concepts: 49
+      in_progress_concepts: 0
+      total_subcards: 294
+    notes: |
+      49 概念全部完成（2026-08-19），294 子卡，校验全 PASS。
+      已同步学习中心（49 概念全亮）。
+  政治:
+    status: done
+    domain_file: 政治/_61_concepts.json
+    cards_root: 政治/cards/
+    schema_version: v1.0
+    quality:
+      last_validate: 2026-08-19T22:30:00+08:00
+      pass_rate: 1.0
+      total_concepts: 61
+      done_concepts: 61
+      in_progress_concepts: 0
+      total_subcards: 366
+    notes: |
+      61 概念全部完成（2026-08-19），366 子卡，校验全 PASS。
+      已同步学习中心（61 概念全亮）。
 consumption_profiles:
   app_training:
     purpose: 推 rujing APP（高考应试 / 学科速查）
@@ -175,7 +205,7 @@ workflow:
 # 当前状态快照（2026-08-16）
 # ============================================================
 snapshot:
-  date: 2026-08-17
+  date: 2026-08-19
   shipped_cards:
     - chain_id: history/H-M1-5-监察谏议制度
       chain_title: 监察谏议制度
@@ -201,6 +231,6 @@ snapshot:
       chain_title: 辛亥革命与共和制
       subcards: 6
       quality: pass
-  total_chains: 62
-  total_subcards: 379
+  total_chains: 172
+  total_subcards: 1039
   shipped_to_rujing: 0  # 消费端转换工具待写
