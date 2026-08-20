@@ -1,0 +1,1009 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>学习中心 · 五科知识卡片平台</title>
+<style>
+  /* ==================== 设计 Token ==================== */
+  :root {
+    --bg: #F8F5EE;
+    --bg-soft: #F2EEE5;
+    --surface: #FFFFFF;
+    --ink: #2A2620;
+    --ink-soft: #5C5448;
+    --muted: #958A75;
+    --line: #E5DFD2;
+    --line-soft: #F0EAD9;
+    --shadow-sm: 0 1px 2px rgba(60, 50, 30, 0.04);
+    --shadow-md: 0 4px 16px rgba(60, 50, 30, 0.06);
+    --shadow-lg: 0 8px 32px rgba(60, 50, 30, 0.10);
+    --radius-sm: 6px;
+    --radius: 10px;
+    --radius-lg: 14px;
+    --font-serif: "Source Han Serif SC", "Noto Serif CJK SC", "Songti SC", "STSong", "SimSun", "Microsoft YaHei", serif;
+    --font-sans: "Source Han Sans SC", "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", -apple-system, sans-serif;
+    --font-mono: "Source Code Pro", "JetBrains Mono", "Consolas", monospace;
+    /* 默认主题色（由 JS 按学科动态覆盖） */
+    --acc: #2E6B5F;
+    --acc-bg: #E9F2EF;
+    --acc-soft: #D5E5DF;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    font-family: var(--font-sans);
+    background: var(--bg);
+    color: var(--ink);
+    font-size: 15px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  button, input { font-family: inherit; font-size: inherit; color: inherit; }
+  a { color: var(--acc); text-decoration: none; }
+
+  /* ==================== 顶栏 ==================== */
+  header {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+    padding: 12px 24px;
+    display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
+  }
+  .brand {
+    display: flex; align-items: baseline; gap: 8px;
+    font-family: var(--font-serif);
+    font-size: 19px; font-weight: 600; letter-spacing: 1.5px;
+  }
+  .brand small {
+    font-family: var(--font-sans);
+    font-size: 11px; color: var(--muted);
+    font-weight: 400; letter-spacing: 0.5px;
+  }
+  .subj-tabs { display: flex; gap: 4px; flex: 1; flex-wrap: wrap; }
+  .subj-tab {
+    padding: 7px 16px;
+    border-radius: 18px;
+    border: 1.5px solid transparent;
+    background: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.18s ease;
+    display: flex; align-items: center; gap: 5px;
+  }
+  .subj-tab:hover { background: var(--bg-soft); }
+  .subj-tab.active {
+    color: #fff;
+    background: var(--acc);
+    border-color: var(--acc);
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+  .subj-tab .lock { font-size: 10px; opacity: 0.7; }
+  .subj-tab .badge {
+    font-size: 10.5px;
+    background: rgba(255, 255, 255, 0.25);
+    color: inherit;
+    padding: 1px 6px;
+    border-radius: 8px;
+    margin-left: 3px;
+  }
+  .subj-tab:not(.active) .badge {
+    background: var(--line);
+    color: var(--muted);
+  }
+
+  .header-right { display: flex; align-items: center; gap: 8px; }
+  .search-wrap {
+    position: relative;
+    display: flex; align-items: center;
+  }
+  .search {
+    width: 240px;
+    padding: 8px 14px 8px 34px;
+    border: 1.5px solid var(--line);
+    border-radius: 18px;
+    font-size: 13.5px;
+    outline: none;
+    background: var(--bg-soft);
+    transition: all 0.2s;
+  }
+  .search:focus {
+    border-color: var(--acc);
+    background: #FFF;
+    width: 280px;
+  }
+  .search::placeholder { color: var(--muted); }
+  .search-icon {
+    position: absolute; left: 11px; top: 50%; transform: translateY(-50%);
+    color: var(--muted); font-size: 14px; pointer-events: none;
+  }
+  .icon-btn {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    border: 1.5px solid var(--line);
+    background: var(--bg-soft);
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+    transition: all 0.18s;
+  }
+  .icon-btn:hover { background: var(--surface); border-color: var(--acc); color: var(--acc); }
+  .icon-btn.active { background: var(--acc); border-color: var(--acc); color: #fff; }
+
+  /* ==================== 主体布局 ==================== */
+  .layout { display: flex; min-height: calc(100vh - 60px); }
+  aside {
+    width: 320px; flex-shrink: 0;
+    background: var(--surface);
+    border-right: 1px solid var(--line);
+    overflow-y: auto;
+    height: calc(100vh - 60px);
+    position: sticky; top: 60px;
+    padding: 16px 12px 30px;
+  }
+  main {
+    flex: 1;
+    padding: 28px 44px 80px;
+    overflow-y: auto;
+    height: calc(100vh - 60px);
+    max-width: 920px;
+    margin: 0 auto;
+  }
+
+  /* ==================== 侧边栏 ==================== */
+  .sidebar-header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 0 8px 12px;
+    border-bottom: 1px solid var(--line-soft);
+    margin-bottom: 8px;
+  }
+  .sidebar-title { font-size: 13px; color: var(--muted); font-weight: 500; }
+  .progress-text { font-size: 12px; color: var(--muted); }
+  .progress-text strong { color: var(--acc); }
+
+  .module {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--acc);
+    margin: 14px 8px 4px;
+    letter-spacing: 0.5px;
+    text-transform: none;
+  }
+  .topic {
+    font-size: 11.5px;
+    color: var(--muted);
+    margin: 8px 8px 2px;
+    padding-left: 6px;
+  }
+  .concept {
+    display: flex; align-items: center; gap: 8px;
+    padding: 6px 10px 6px 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 13.5px;
+    margin: 1px 0;
+    border: 1px solid transparent;
+    transition: all 0.15s;
+    user-select: none;
+  }
+  .concept:hover { background: var(--bg-soft); }
+  .concept.active {
+    background: var(--acc-bg);
+    border-color: var(--acc);
+    color: var(--acc);
+    font-weight: 600;
+  }
+  .concept .dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: #D5CFC2;
+    flex-shrink: 0;
+    border: 1.5px solid transparent;
+    transition: all 0.15s;
+  }
+  .concept.s1 .dot { background: var(--acc); }
+  .concept.s2 .dot { background: #E8B84B; }
+  .concept.star .dot {
+    background: #FFD56B;
+    border-color: #E8B84B;
+    box-shadow: 0 0 0 2px rgba(232, 184, 75, 0.2);
+  }
+  .concept .name { flex: 1; line-height: 1.4; }
+  .concept .star-icon { font-size: 11px; color: #E8B84B; opacity: 0.6; }
+  .concept.star .star-icon { opacity: 1; }
+  .concept.empty { opacity: 0.55; }
+  .concept.empty .name { color: var(--muted); font-style: italic; }
+
+  /* ==================== 主区 ==================== */
+  .empty {
+    background: var(--surface);
+    border: 1.5px dashed var(--line);
+    border-radius: var(--radius-lg);
+    padding: 80px 30px;
+    text-align: center;
+    color: var(--muted);
+    line-height: 1.8;
+  }
+  .empty .big { font-size: 48px; margin-bottom: 14px; opacity: 0.4; }
+  .empty h3 { color: var(--ink-soft); font-weight: 500; margin-bottom: 6px; }
+
+  .crumb {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 10px;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .crumb .sep { opacity: 0.5; }
+
+  .vhead {
+    display: flex; align-items: flex-start; gap: 16px;
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+  }
+  .vhead h2 {
+    font-family: var(--font-serif);
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: 0.5px;
+    flex: 1;
+    min-width: 0;
+  }
+  .vhead .sub {
+    font-size: 12.5px;
+    color: var(--muted);
+    display: flex; align-items: center; gap: 8px;
+    margin-top: 6px;
+    font-weight: 400;
+  }
+  .vhead .sub .tag {
+    background: var(--acc-bg);
+    color: var(--acc);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-weight: 500;
+  }
+  .vhead .actions { display: flex; gap: 8px; align-items: center; }
+
+  .tabs {
+    display: flex; gap: 4px;
+    margin-bottom: 24px;
+    background: var(--bg-soft);
+    padding: 4px;
+    border-radius: 12px;
+    width: fit-content;
+  }
+  .tab {
+    padding: 9px 22px;
+    border-radius: 9px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ink-soft);
+    transition: all 0.18s;
+  }
+  .tab:hover { color: var(--ink); }
+  .tab.active {
+    background: var(--surface);
+    color: var(--acc);
+    font-weight: 600;
+    box-shadow: var(--shadow-sm);
+  }
+
+  /* ==================== 正文 ==================== */
+  .story .para {
+    font-family: var(--font-serif);
+    font-size: 15.5px;
+    line-height: 2.0;
+    margin-bottom: 16px;
+    text-indent: 2em;
+    color: var(--ink);
+  }
+  .story .para.lead {
+    font-weight: 600;
+    color: var(--acc);
+    font-size: 16.5px;
+    background: linear-gradient(to right, var(--acc-bg), transparent 60%);
+    padding: 12px 18px;
+    border-radius: 8px;
+    text-indent: 0;
+    margin-bottom: 24px;
+  }
+  .story .para strong { color: var(--ink); font-weight: 700; }
+  .story .para em { color: var(--ink-soft); font-style: italic; }
+  .story .para code {
+    font-family: var(--font-mono);
+    background: var(--bg-soft);
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  .story .para h3, .story .para h4 {
+    font-family: var(--font-sans);
+    text-indent: 0;
+    margin: 24px 0 10px;
+    font-weight: 600;
+  }
+  .story .para h3 { font-size: 18px; color: var(--ink); }
+  .story .para h4 { font-size: 16px; color: var(--ink-soft); }
+  .story .para blockquote {
+    background: var(--bg-soft);
+    border-left: 3px solid var(--acc);
+    margin: 12px 0;
+    padding: 8px 14px;
+    color: var(--ink-soft);
+    text-indent: 0;
+  }
+
+  /* ==================== 卡片表 ==================== */
+  .cards-wrap {
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    border: 1px solid var(--line-soft);
+  }
+  table.cards {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+    line-height: 1.6;
+  }
+  table.cards th {
+    background: linear-gradient(to bottom, var(--acc), var(--acc));
+    color: #fff;
+    padding: 11px 12px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+  }
+  table.cards th:first-child { width: 50px; text-align: center; }
+  table.cards td {
+    padding: 12px;
+    border-bottom: 1px solid var(--line-soft);
+    vertical-align: top;
+  }
+  table.cards tbody tr:last-child td { border-bottom: none; }
+  table.cards tbody tr:hover { background: var(--bg-soft); }
+  table.cards td:first-child {
+    text-align: center;
+    font-weight: 600;
+    color: var(--acc);
+    background: var(--bg-soft);
+  }
+  table.cards td strong { color: var(--ink); }
+  table.cards td em { color: var(--ink-soft); font-style: normal; }
+
+  /* ==================== 练习 ==================== */
+  .q-list { display: flex; flex-direction: column; gap: 16px; }
+  .q {
+    background: var(--surface);
+    border: 1px solid var(--line-soft);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.18s;
+  }
+  .q:hover { box-shadow: var(--shadow-md); }
+  .q-head {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 10px;
+  }
+  .q-type {
+    font-size: 11.5px;
+    color: var(--acc);
+    background: var(--acc-bg);
+    padding: 3px 10px;
+    border-radius: 8px;
+    font-weight: 500;
+  }
+  .q-num {
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .q-body {
+    font-size: 14.5px;
+    line-height: 1.85;
+    color: var(--ink);
+  }
+  .q-body strong { color: var(--ink); }
+  .ans-btn {
+    margin-top: 12px;
+    font-size: 13px;
+    color: var(--acc);
+    background: var(--acc-bg);
+    border: none;
+    border-radius: 8px;
+    padding: 6px 14px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.18s;
+  }
+  .ans-btn:hover { background: var(--acc); color: #fff; }
+  .ans {
+    display: none;
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 1.85;
+    background: var(--bg-soft);
+    border-left: 3px solid var(--acc);
+    padding: 12px 16px;
+    border-radius: 0 8px 8px 0;
+    color: var(--ink-soft);
+  }
+  .ans.show { display: block; }
+  .ans strong { color: var(--ink); }
+
+  /* ==================== 弹窗 ==================== */
+  .modal-mask {
+    display: none;
+    position: fixed; inset: 0;
+    background: rgba(20, 18, 12, 0.45);
+    z-index: 100;
+    align-items: center; justify-content: center;
+    backdrop-filter: blur(4px);
+  }
+  .modal-mask.show { display: flex; }
+  .modal {
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    padding: 28px 32px;
+    max-width: 520px;
+    width: 90%;
+    box-shadow: var(--shadow-lg);
+  }
+  .modal h3 { font-size: 18px; margin-bottom: 12px; }
+  .modal p { color: var(--ink-soft); line-height: 1.7; margin-bottom: 8px; }
+  .modal .keys { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0; }
+  .modal .key {
+    background: var(--bg-soft);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    font-family: var(--font-mono);
+  }
+  .modal .close-btn {
+    background: var(--acc);
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+
+  /* ==================== 搜索高亮 ==================== */
+  mark.search-hl {
+    background: #FFEBA1;
+    color: var(--ink);
+    padding: 0 2px;
+    border-radius: 2px;
+  }
+
+  /* ==================== 响应式 ==================== */
+  @media (max-width: 960px) {
+    .layout { flex-direction: column; }
+    aside { width: 100%; height: auto; position: static; max-height: 50vh; }
+    main { height: auto; padding: 20px 18px 60px; }
+    .search { width: 180px; }
+  }
+
+  /* 滚动条美化 */
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--line); border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">学习中心<small>五科知识卡片 · v2.0</small></div>
+  <div class="subj-tabs" id="subjTabs"></div>
+  <div class="header-right">
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input class="search" id="searchBox" placeholder="搜索概念 / 卡片 / 题目…">
+    </div>
+    <button class="icon-btn" id="helpBtn" title="快捷键">⌨</button>
+  </div>
+</header>
+<div class="layout">
+  <aside id="sidebar"></aside>
+  <main id="main"></main>
+</div>
+
+<div class="modal-mask" id="helpModal">
+  <div class="modal">
+    <h3>⌨ 快捷键</h3>
+    <div class="keys">
+      <span class="key">←/→ 或 j/k</span> 上一/下一概念
+      <span class="key">1 / 2 / 3</span> 切 Tab（正文/卡片/练习）
+      <span class="key">f</span> 收藏/取消
+      <span class="key">m</span> 标记已学
+      <span class="key">/</span> 聚焦搜索
+      <span class="key">Esc</span> 关闭弹窗
+    </div>
+    <p style="color:var(--muted);font-size:13px;">收藏、已学状态自动保存在本地（localStorage），换浏览器/清缓存会丢失。</p>
+    <button class="close-btn" id="helpClose">知道了</button>
+  </div>
+</div>
+
+<script>
+/* ============ 学科配置 ============ */
+const SUBJECTS = [
+  { key:'guwen',    name:'古诗文', emoji:'📜', color:'#5A6B8C', bg:'#EEF1F6', status:'building' },
+  { key:'history',  name:'历史',   emoji:'🏛️', color:'#A05A2C', bg:'#F6EFE6', status:'active'   },
+  { key:'geography',name:'地理',   emoji:'🗺️', color:'#2E6B5F', bg:'#E9F2EF', status:'active'   },
+  { key:'politics', name:'政治',   emoji:'⚖️', color:'#8C3A3A', bg:'#F6E9E9', status:'active'   },
+  { key:'english',  name:'英语',   emoji:'🔤', color:'#B0762B', bg:'#F6EFE0', status:'building' },
+];
+
+/* ============ 模块树（五科） ============ */
+const TREES = {
+guwen: [
+  ['模块一 · 文言文基础', [
+    ['专题1 词汇积累', [['实词簇"过"',1],['重点虚词（18）',0],['一词多义与熟词生义',0]]],
+    ['专题2 语法句式', [['断句方法',1],['文言句式（判断/被动/倒装/省略）',0],['翻译六字诀',0]]],
+    ['专题3 文化常识', [['古代官职科举',0],['传统节日礼俗',0]]],
+  ]],
+  ['模块二 · 古诗词鉴赏', [
+    ['专题4 意象与情感', [['送别诗母题',1],['常见意象与情感指向',0],['题材母题（边塞/山水等）',0]]],
+    ['专题5 手法与语言', [['表达技巧',0],['语言风格与炼字',0]]],
+  ]],
+  // 备注：原"模块三 · 三库（待建）"数据格式错误（2 层结构），已移除
+  // 三库内容会随实词/意象/手法卡片生产时独立入库
+],
+history: [
+  ['模块一 · 中国古代史（约35%）', [
+    ['专题1 政治制度演变', [['王权与神权',1],['官僚体制初创',1],['中央官制演进',1],['地方治理体制',1],['监察谏议制度',1],['选官制度演变',1,'★'],['行政运作机制',1],['赋役与户籍制度',1]]],
+    ['专题2 经济与社会生活', [['农业发展与土地制度',1],['手工业进步',1,'★'],['商业与城市',1,'★'],['经济重心南移',1],['社会阶层流动',1],['人口迁徙与族群交融',1]]],
+    ['专题3 思想文化演变', [['主流思想变迁',1],['科技成就',1],['文学艺术',1],['史学传统',1],['教育制度',1]]],
+    ['专题4 民族关系与边疆治理', [['民族政策与交融',1],['边疆管辖与开发',1],['对外交流与冲突',1,'★']]],
+  ]],
+  ['模块二 · 中国近现代史（约40%）', [
+    ['专题5 晚清变局', [['列强侵略与条约体系',1,'★'],['太平天国',1],['洋务运动',1,'★'],['边疆危机与中法/甲午战争',1],['维新变法',1],['义和团运动与清末新政',1]]],
+    ['专题6 民国初年与社会转型', [['辛亥革命与共和制',1],['北洋军阀统治',1],['新文化运动与五四运动',1],['国民革命与北伐',1],['民族资本主义的短暂春天',1]]],
+    ['专题7 新民主主义革命', [['中共成立与早期革命',1],['国共十年对峙',1],['局部侵华与抗日救亡',1],['全民族抗战',1],['人民解放战争',1],['国统区的危机与第二条战线',1]]],
+    ['专题8 现代中国', [['政权巩固与向社会主义过渡',1],['社会主义建设道路探索',1],['外交政策的演变',1],['改革开放',1],['现代化建设成就',1],['一国两制与祖国统一',1]]],
+  ]],
+  ['模块三 · 世界史（约30%）', [
+    ['专题9 古代文明与中古时期', [['古代东方文明',1],['古希腊罗马',1],['中古西欧',1],['中古其他文明',1]]],
+    ['专题10 近代世界的形成', [['大航海时代',1],['文艺复兴与宗教改革',1],['启蒙运动',1],['资产阶级革命浪潮',1],['工业革命与社会变革',1]]],
+    ['专题11 20世纪以来的世界', [['一战与凡尔赛体系',1],['二战与雅尔塔体系',1],['冷战与国际格局演变',1],['当代世界发展趋势',1]]],
+  ]],
+  ['模块四 · 史学方法（专题12）', [
+    ['专题12 史学方法入门', [['时间尺度与历史分期',1,'★'],['史料类型与史料实证',1,'★'],['历史解释的多维视角',1,'★'],['历史人物的评价方法',1,'★']]],
+  ]],
+],
+geography: [
+  ['模块一 · 自然地理基础', [
+    ['专题1 大气与气候', [['大气受热过程',1],['热力环流',1],['大气环流',1],['气压带风带与气候成因',1],['天气系统',1],['气候类型判读',1],['全球气候变化',1]]],
+    ['专题2 水文', [['水循环',1],['陆地水体与河流特征',1],['洋流及其影响',1]]],
+    ['专题3 地貌', [['内力作用与构造地貌',1],['外力作用与风化',1],['流水地貌',1],['风成、冰川与海岸地貌',1]]],
+    ['专题4 整体性·分异·灾害', [['整体性原理',1],['地域分异规律',1],['气象灾害与地质灾害',1]]],
+  ]],
+  ['模块二 · 人文地理', [
+    ['专题5 人口与城市', [['人口数量变化与人口迁移',1],['城市空间结构',1],['城市化进程与问题治理',1]]],
+    ['专题6 产业活动', [['农业区位因素',1],['农业地域类型',1],['工业区位',1],['服务业区位',1],['交通布局与区域发展',1]]],
+    ['专题7 人地关系', [['人地关系演变',1],['可持续发展与生态文明',1]]],
+  ]],
+  ['模块三 · 区域发展', [
+    ['专题8 区域差异与联系', [['区域特征与比较方法',1],['资源跨区调配',1],['产业转移',1]]],
+    ['专题9 区域开发与整治', [['流域综合开发',1],['荒漠化防治',1],['水土流失治理',1]]],
+    ['专题10 国家战略与区域发展', [['长江经济带',1],['京津冀协同与雄安新区',1],['乡村振兴',1],['一带一路',1]]],
+  ]],
+  ['模块四 · 资源、环境与国家安全', [
+    ['专题11 资源与能源', [['自然资源与能源开发',1],['能源结构转型与双碳',1],['能源与资源安全',1]]],
+    ['专题12 环境与生态', [['生态保护与修复',1],['全球性环境问题',1],['环境安全与国家安全',1]]],
+  ]],
+  ['模块五 · 地理信息技术与地理实践', [
+    ['专题13 地理信息技术', [['遥感 RS 及应用',1],['地理信息系统 GIS 及应用',1],['全球导航系统 GNSS 及应用',1]]],
+    ['专题14 地理实践方法', [['地理考察与调查方法',1],['地理实验与观测',1],['地理图表判读方法',1]]],
+  ]],
+],
+politics: [
+  ['模块一 · 中国特色社会主义', [['专题1 社会主义与中特', [['科学社会主义',1],['社会形态演进',1],['新时代与历史方位',1],['中国梦',1],['四个自信',1]]]]],
+  ['模块二 · 经济与社会', [['专题2 经济制度与发展', [['基本经济制度',1],['分配制度',1],['社会主义市场经济体制',1],['新发展理念',1],['现代化经济体系',1],['新质生产力',1],['双循环新发展格局',1],['高质量发展举措',1],['共同富裕',1],['对外开放',1]]]]],
+  ['模块三 · 政治与法治', [['专题3 党的领导与民主制度', [['党的领导',1],['人民代表大会制度',1],['多党合作和政治协商制度',1],['民族区域自治制度',1],['基层群众自治制度',1],['全过程人民民主',1],['依法治国',1],['科学立法',1],['严格执法',1],['公正司法',1],['全民守法',1],['三者有机统一',1]]]]],
+  ['模块四 · 哲学与文化', [['专题4 哲学', [['物质与意识',1],['规律客观性',1],['一切从实际出发',1],['联系观',1],['发展观',1],['矛盾观',1],['实践与认识',1],['真理',1],['认识发展过程',1],['社会存在与社会意识',1],['社会基本矛盾运动',1],['人民群众',1],['价值观与价值判断',1]]],['专题5 文化', [['文化内涵与功能',1],['文化传承与创新',1],['文化自信与文化强国',1]]]]],
+  ['模块五 · 当代国际政治与经济', [['专题6 国际政治经济', [['国际关系与国家利益',1],['世界多极化',1],['人类命运共同体',1],['经济全球化',1],['一带一路',1],['我国对外开放',1]]]]],
+  ['模块六 · 法律与生活', [['专题7 法律常识', [['民事法律关系与民法原则',1],['合同',1],['侵权责任',1],['财产权',1],['婚姻家庭',1],['就业与消费者权益',1]]]]],
+  ['模块七 · 逻辑与思维', [['专题8 逻辑思维', [['概念与判断',1],['演绎推理',1],['归纳与类比',1],['辩证思维整体性',1],['动态性',1],['创新思维',1]]]]],
+],
+english: [
+  ['模块一 · 语法体系', [
+    ['专题1 时态语态', [['时态总览',1],['被动语态',0]]],
+    ['专题2 非谓语', [['不定式',0],['动名词',0],['分词',0]]],
+    ['专题3 三大从句', [['定语从句',1],['名词性从句',0],['状语从句',0]]],
+    ['专题4 特殊结构', [['虚拟语气',0],['倒装',0],['情态动词',0],['介词与固定搭配',0]]],
+  ]],
+  ['模块二 · 词汇积累', [['专题5 词汇库', [['高频词簇',0],['词组搭配',0],['熟词生义',0]]]]],
+  ['模块三 · 题型策略', [['专题6 阅读与完形', [['阅读细节理解题策略',1],['完形填空策略',0],['选词填空策略',0]]]]],
+],
+};
+
+/* ============ 数据（Schema 规范） ============ */
+const DATA = { guwen:{}, history:{}, geography:{}, politics:{}, english:{} };
+
+/* 数据由下方 <script src> 按顺序加载：先 generated，后 curated（覆盖同名） */
+</script>
+
+<!-- ============ 自动转换数据（先加载） ============ -->
+<script src="data/generated/history_gen.js"></script>
+<script src="data/generated/geography_gen.js"></script>
+<script src="data/generated/politics_gen.js"></script>
+
+<!-- ============ 三件套精写（后加载，覆盖同名 key） ============ -->
+<script src="data/curated/history_curated.js"></script>
+<script src="data/curated/geography_curated.js"></script>
+<script src="data/curated/politics_curated.js"></script>
+<script src="data/curated/guwen_curated.js"></script>
+<script src="data/curated/english_curated.js"></script>
+
+<!-- ============ 渲染逻辑 ============ -->
+<script>
+/* ====== 状态 ====== */
+const State = {
+  subject: 'history',
+  concept: null,        // { module, topic, name }
+  tab: 'body',          // body | cards | quiz
+  search: '',
+  stars: JSON.parse(localStorage.getItem('lczx_stars') || '{}'),
+  learned: JSON.parse(localStorage.getItem('lczx_learned') || '{}'),
+};
+
+/* ====== 工具 ====== */
+function saveLocal() {
+  localStorage.setItem('lczx_stars', JSON.stringify(State.stars));
+  localStorage.setItem('lczx_learned', JSON.stringify(State.learned));
+}
+function isStarred(subj, name) { return !!(State.stars[subj] && State.stars[subj][name]); }
+function isLearned(subj, name) { return !!(State.learned[subj] && State.learned[subj][name]); }
+function toggleStar() {
+  const c = State.concept; if (!c) return;
+  if (!State.stars[c.subject]) State.stars[c.subject] = {};
+  if (State.stars[c.subject][c.name]) delete State.stars[c.subject][c.name];
+  else State.stars[c.subject][c.name] = true;
+  saveLocal(); renderSidebar(); renderMain();
+}
+function toggleLearned() {
+  const c = State.concept; if (!c) return;
+  if (!State.learned[c.subject]) State.learned[c.subject] = {};
+  if (State.learned[c.subject][c.name]) delete State.learned[c.subject][c.name];
+  else State.learned[c.subject][c.name] = true;
+  saveLocal(); renderSidebar();
+}
+function escapeHtml(s) {
+  return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+function highlight(text, q) {
+  if (!q) return text;
+  const re = new RegExp('(' + q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+  return text.replace(re, '<mark class="search-hl">$1</mark>');
+}
+
+/* ====== 应用学科主题色 ====== */
+function applySubjectTheme(key) {
+  const s = SUBJECTS.find(x => x.key === key);
+  if (!s) return;
+  document.documentElement.style.setProperty('--acc', s.color);
+  document.documentElement.style.setProperty('--acc-bg', s.bg);
+}
+
+/* ====== 顶栏学科 tabs ====== */
+function renderSubjectTabs() {
+  const el = document.getElementById('subjTabs');
+  el.innerHTML = SUBJECTS.map(s => {
+    const isActive = s.key === State.subject;
+    const count = Object.keys(DATA[s.key] || {}).length;
+    return `<button class="subj-tab ${isActive?'active':''}" data-key="${s.key}" style="${isActive?`background:${s.color};border-color:${s.color};`:''}">
+      ${s.emoji} ${s.name}
+      <span class="badge">${count}</span>
+    </button>`;
+  }).join('');
+  el.querySelectorAll('.subj-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      State.subject = btn.dataset.key;
+      State.concept = null;
+      applySubjectTheme(State.subject);
+      renderSubjectTabs();
+      renderSidebar();
+      renderMain();
+    });
+  });
+}
+
+/* ====== 侧边栏 ====== */
+function renderSidebar() {
+  const el = document.getElementById('sidebar');
+  const tree = TREES[State.subject] || [];
+  const subjData = DATA[State.subject] || {};
+
+  // 统计
+  const total = tree.reduce((s,m) => s + m[1].reduce((s2,t) => s2 + t[1].length, 0), 0);
+  const filled = tree.reduce((s,m) => s + m[1].reduce((s2,t) => s2 + t[1].filter(([n]) => subjData[n]).length, 0), 0);
+  const learnedCount = Object.keys(State.learned[State.subject] || {}).length;
+  const starCount = Object.keys(State.stars[State.subject] || {}).length;
+
+  let html = `<div class="sidebar-header">
+    <span class="sidebar-title">模块树</span>
+    <span class="progress-text">已学 <strong>${learnedCount}</strong> · 收藏 <strong>${starCount}</strong></span>
+  </div>`;
+
+  // 收集已在 TREES 里的概念名（用于去重）
+  const inTreeNames = new Set();
+  tree.forEach(([m, topics]) => topics.forEach(([t, concepts]) => concepts.forEach(([n]) => inTreeNames.add(n))));
+
+  tree.forEach(([moduleName, topics]) => {
+    html += `<div class="module">${moduleName}</div>`;
+    topics.forEach(([topicName, concepts]) => {
+      html += `<div class="topic">${topicName}</div>`;
+      concepts.forEach(([name, status, star]) => {
+        const filled = !!subjData[name];
+        const starred = isStarred(State.subject, name);
+        const learned = isLearned(State.subject, name);
+        const isActive = State.concept && State.concept.name === name;
+        const classes = [
+          'concept',
+          filled ? 's1' : 's2',
+          starred ? 'star' : '',
+          isActive ? 'active' : '',
+          learned ? 'learned' : '',
+          !filled ? 'empty' : ''
+        ].filter(Boolean).join(' ');
+        html += `<div class="${classes}" data-name="${escapeHtml(name)}">
+          <span class="dot"></span>
+          <span class="name">${highlight(escapeHtml(name), State.search)}</span>
+          ${starred ? '<span class="star-icon">★</span>' : ''}
+        </div>`;
+      });
+    });
+  });
+
+  // 📌 收容"在 DATA 里但不在 TREES 里"的概念（通常是三件套精写）
+  const orphans = Object.keys(subjData).filter(n => !inTreeNames.has(n));
+  if (orphans.length) {
+    html += `<div class="module" style="color:#B0762B;">📌 三件套精写（不在标准树）</div>`;
+    orphans.sort().forEach(name => {
+      const data = subjData[name];
+      const isCurated = data && data.tags && data.tags.source === '三件套精写';
+      const starred = isStarred(State.subject, name);
+      const learned = isLearned(State.subject, name);
+      const isActive = State.concept && State.concept.name === name;
+      const classes = [
+        'concept', 's1', 'star',
+        isActive ? 'active' : '',
+        learned ? 'learned' : ''
+      ].filter(Boolean).join(' ');
+      html += `<div class="${classes}" data-name="${escapeHtml(name)}">
+        <span class="dot"></span>
+        <span class="name">${highlight(escapeHtml(name), State.search)}</span>
+        <span style="font-size:10px;color:#B0762B;margin-left:auto;">${isCurated ? '精' : '补'}</span>
+        ${starred ? '<span class="star-icon">★</span>' : ''}
+      </div>`;
+    });
+  }
+
+  el.innerHTML = html;
+  el.querySelectorAll('.concept').forEach(div => {
+    div.addEventListener('click', () => {
+      const name = div.dataset.name;
+      if (!DATA[State.subject][name]) return;  // 未产出的不能点
+      // 找到所属 module/topic
+      const loc = findConceptLocation(State.subject, name);
+      State.concept = { subject: State.subject, name, module: loc.module, topic: loc.topic };
+      State.tab = 'body';
+      renderSidebar();
+      renderMain();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+}
+
+function findConceptLocation(subj, name) {
+  const tree = TREES[subj] || [];
+  for (const [moduleName, topics] of tree) {
+    for (const [topicName, concepts] of topics) {
+      if (concepts.some(c => c[0] === name)) return { module: moduleName, topic: topicName };
+    }
+  }
+  // 找不到：标记为"📌 三件套精写"
+  return { module: '📌 三件套精写', topic: '' };
+}
+
+/* ====== 主区渲染 ====== */
+function renderMain() {
+  const main = document.getElementById('main');
+  const c = State.concept;
+  if (!c) {
+    main.innerHTML = `<div class="empty">
+      <div class="big">${SUBJECTS.find(s=>s.key===State.subject).emoji}</div>
+      <h3>${SUBJECTS.find(s=>s.key===State.subject).name} · 选个概念开始学习</h3>
+      <p>左侧模块树点选 · 也试试顶部搜索</p>
+    </div>`;
+    return;
+  }
+  const data = DATA[c.subject][c.name];
+  if (!data) {
+    main.innerHTML = `<div class="empty"><div class="big">📭</div><h3>${escapeHtml(c.name)}</h3><p>该概念暂未入库</p></div>`;
+    return;
+  }
+  const subj = SUBJECTS.find(s => s.key === c.subject);
+  const starred = isStarred(c.subject, c.name);
+  const learned = isLearned(c.subject, c.name);
+
+  // 头部
+  let html = `<div class="crumb">
+    <span>${subj.emoji} ${subj.name}</span><span class="sep">›</span>
+    <span>${escapeHtml(c.module)}</span><span class="sep">›</span>
+    <span>${escapeHtml(c.topic)}</span>
+  </div>
+  <div class="vhead">
+    <h2>${highlight(escapeHtml(c.name), State.search)}</h2>
+    <div class="actions">
+      <button class="icon-btn ${starred?'active':''}" id="starBtn" title="收藏 (f)">${starred?'★':'☆'}</button>
+      <button class="icon-btn ${learned?'active':''}" id="learnBtn" title="已学 (m)">${learned?'✓':'○'}</button>
+    </div>
+    <div class="sub" style="width:100%">
+      <span class="tag">${escapeHtml(data.tags?.type || '')}</span>
+      <span>${escapeHtml(data.status || '')}</span>
+    </div>
+  </div>
+  <div class="tabs">
+    <button class="tab ${State.tab==='body'?'active':''}" data-tab="body">📖 正文</button>
+    <button class="tab ${State.tab==='cards'?'active':''}" data-tab="cards">📋 卡片（${(data.cards||[]).length}）</button>
+    <button class="tab ${State.tab==='quiz'?'active':''}" data-tab="quiz">✏ 练习（${(data.quiz||[]).length}）</button>
+  </div>`;
+
+  // 内容
+  if (State.tab === 'body') html += renderBody(data);
+  else if (State.tab === 'cards') html += renderCards(data);
+  else if (State.tab === 'quiz') html += renderQuiz(data);
+
+  main.innerHTML = html;
+
+  // 事件
+  document.getElementById('starBtn')?.addEventListener('click', toggleStar);
+  document.getElementById('learnBtn')?.addEventListener('click', toggleLearned);
+  main.querySelectorAll('.tab').forEach(t => {
+    t.addEventListener('click', () => { State.tab = t.dataset.tab; renderMain(); });
+  });
+  main.querySelectorAll('.ans-btn').forEach((btn, i) => {
+    btn.addEventListener('click', () => {
+      const ans = main.querySelectorAll('.ans')[i];
+      ans.classList.toggle('show');
+      btn.textContent = ans.classList.contains('show') ? '隐藏答案' : '显示答案';
+    });
+  });
+}
+
+function renderBody(data) {
+  const body = data.body || [];
+  if (!body.length) return '<div class="empty"><div class="big">📭</div><p>暂无正文</p></div>';
+  return `<div class="story">${body.map(p =>
+    `<div class="para ${p.lead?'lead':''}">${highlight(p.text, State.search)}</div>`
+  ).join('')}</div>`;
+}
+
+function renderCards(data) {
+  const cards = data.cards || [];
+  if (!cards.length) return '<div class="empty"><div class="big">📭</div><p>暂无卡片</p></div>';
+  const headers = (data.tags && data.tags.headers && data.tags.headers.length) ? data.tags.headers : ['#', '考点', '核心要点', '易混辨析', '角度'];
+  // 第一列是 #（如果 headers 第 1 列就是 "#"）
+  const useNum = headers[0] === '#' || headers[0] === '编号';
+  const headHtml = headers.map((h, i) => `<th>${escapeHtml(h)}</th>`).join('');
+  // 表格行：第一列是数字（cards[0] 已经是 #），但 cards[0] 也是数字，所以直接用
+  // 如果 useNum，去掉 cards[0]（避免和 th "#" 重复）—— 但 cards 第一列是自增数字，应该保留
+  const rowsHtml = cards.map(c => {
+    const cells = c.map((cell, i) => `<td>${i === 0 && useNum ? '' : highlight(cell, State.search)}</td>`).join('');
+    return `<tr>${cells}</tr>`;
+  }).join('');
+  return `<div class="cards-wrap"><table class="cards"><thead><tr>${headHtml}</tr></thead><tbody>${rowsHtml}</tbody></table></div>`;
+}
+
+function renderQuiz(data) {
+  const quiz = data.quiz || [];
+  if (!quiz.length) return '<div class="empty"><div class="big">📭</div><p>暂无练习</p></div>';
+  return `<div class="q-list">${quiz.map((q, i) => `
+    <div class="q">
+      <div class="q-head">
+        <span class="q-type">${escapeHtml(q.type || '题')}</span>
+        <span class="q-num">第 ${i+1} 题</span>
+      </div>
+      <div class="q-body">${highlight(q.body, State.search)}</div>
+      <button class="ans-btn">显示答案</button>
+      <div class="ans">${q.ans || '<em style="color:var(--muted)">（无答案）</em>'}</div>
+    </div>
+  `).join('')}</div>`;
+}
+
+/* ====== 搜索 ====== */
+function handleSearch(q) {
+  State.search = q.trim();
+  renderSidebar();
+  if (State.concept) renderMain();
+}
+
+/* ====== 键盘快捷键 ====== */
+function getCurrentConceptList() {
+  // 收集所有有内容的概念（按 TREES 顺序）
+  const tree = TREES[State.subject] || [];
+  const list = [];
+  tree.forEach(([m, topics]) => topics.forEach(([t, concepts]) => concepts.forEach(([n, s]) => {
+    if (DATA[State.subject][n]) list.push({ module: m, topic: t, name: n });
+  })));
+  return list;
+}
+function navigateConcept(dir) {
+  const list = getCurrentConceptList();
+  if (!list.length) return;
+  const idx = list.findIndex(c => c.name === State.concept?.name);
+  let next = idx + dir;
+  if (next < 0) next = 0;
+  if (next >= list.length) next = list.length - 1;
+  State.concept = { subject: State.subject, ...list[next] };
+  State.tab = 'body';
+  renderSidebar(); renderMain();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+document.addEventListener('keydown', (e) => {
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+  if (document.getElementById('helpModal').classList.contains('show') && e.key === 'Escape') {
+    closeHelp(); return;
+  }
+  switch(e.key) {
+    case 'ArrowLeft':
+    case 'k': navigateConcept(-1); e.preventDefault(); break;
+    case 'ArrowRight':
+    case 'j': navigateConcept(1); e.preventDefault(); break;
+    case '1': State.tab='body'; renderMain(); e.preventDefault(); break;
+    case '2': State.tab='cards'; renderMain(); e.preventDefault(); break;
+    case '3': State.tab='quiz'; renderMain(); e.preventDefault(); break;
+    case 'f': toggleStar(); e.preventDefault(); break;
+    case 'm': toggleLearned(); e.preventDefault(); break;
+    case '/':
+      document.getElementById('searchBox').focus();
+      e.preventDefault();
+      break;
+    case 'Escape':
+      if (State.search) { document.getElementById('searchBox').value = ''; handleSearch(''); }
+      break;
+  }
+});
+
+/* ====== 弹窗 ====== */
+function openHelp() { document.getElementById('helpModal').classList.add('show'); }
+function closeHelp() { document.getElementById('helpModal').classList.remove('show'); }
+document.getElementById('helpBtn').addEventListener('click', openHelp);
+document.getElementById('helpClose').addEventListener('click', closeHelp);
+document.getElementById('helpModal').addEventListener('click', (e) => {
+  if (e.target.id === 'helpModal') closeHelp();
+});
+
+/* ====== 搜索框 ====== */
+let searchTimer;
+document.getElementById('searchBox').addEventListener('input', (e) => {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(() => handleSearch(e.target.value), 150);
+});
+
+/* ====== 启动 ====== */
+applySubjectTheme(State.subject);
+renderSubjectTabs();
+renderSidebar();
+renderMain();
+</script>
+</body>
+</html>

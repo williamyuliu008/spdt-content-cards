@@ -1,217 +1,167 @@
-# 知识卡片内容项目（SPDT-Content-Cards）
+﻿# 学习中心 v2.0 · 五科知识卡片平台
 
-> **本项目 = 内容本征层**（与 SPDT-004 平台项目**解耦**）
-> 平台项目：[`williamyuliu008/subject-ebooks-portfolio`](https://github.com/williamyuliu008/subject-ebooks-portfolio)（电子书、HTML、rujing APP 工具链）
-> 内容项目：**本仓库**（规范、案例、SOP、卡片 JSON、校验工具）
-> 关系：内容项目产卡片 JSON → 推 Git → 平台项目拉取后做消费端转换 → 推 rujing APP
+> 重构于 2026-08-20 · 作者：Mavis（mavis） · 维护：雪薇
+> 配套文档：`2026-0816_统一Schema规范.md` / `2026-0820_聚合方案.md`
 
 ---
 
-## 1. 项目目的
+## 一、怎么用
 
-把"知识卡片内容生产"从 SPDT-004 平台项目中**独立**出来，让：
-- **作者/AI** 专注于"内容本征"（规范、案例、卡片 JSON）
-- **平台/工程师** 专注于"消费端"（电子书、HTML、APP 工具链）
+**双击 `学习中心.html` 即可打开**（file:// 零依赖，不需任何服务器/构建）。
 
-两套独立演进，通过 **Git 同步** 解耦。
+打开后：
+- 顶栏切换 5 个学科（古诗文 / 历史 / 地理 / 政治 / 英语）
+- 左侧模块树点概念 · 顶部搜索框
+- 右侧三 Tab：📖 正文 / 📋 卡片 / ✏ 练习
 
----
+**快捷键**（点 ⌨ 按钮或按 ? 看）：
+- `←` / `→` 或 `j` / `k`：上一/下一概念
+- `1` / `2` / `3`：切 Tab
+- `f`：收藏 / 取消
+- `m`：标记已学
+- `/`：聚焦搜索
+- `Esc`：关闭弹窗 / 清空搜索
 
-## 2. 工作流
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│ [作者/AI（任意一台电脑，含 autoclaw）]                          │
-│   ↓ 读 知识卡片产出规范 v1.0                                     │
-│   ↓ 按规范产 JSON 卡片                                          │
-│   ↓ 推 Git（本仓库）                                            │
-└─────────────────────────────────────────────────────────────┘
-                          ↓ git push
-┌─────────────────────────────────────────────────────────────┐
-│ [本仓库] GitHub williamyuliu008/spdt-content-cards           │
-│   ├── 规范/案例/SOP 持续更新                                      │
-│   ├── 历史/cards/ 等学科子目录（每套卡片 1 个目录）                  │
-│   └── _tools/ 校验器                                            │
-└─────────────────────────────────────────────────────────────┘
-                          ↓ git pull
-┌─────────────────────────────────────────────────────────────┐
-│ [本机 Mavis]                                                    │
-│   ↓ 跑 _validate_cards.py 校验新卡片                              │
-│   ↓ 写推 rujing 脚本（消费端，在平台项目里）                          │
-│   ↓ push-to-rujing → rujing APP                                  │
-└─────────────────────────────────────────────────────────────┘
-```
+收藏和已学状态保存在 `localStorage`，**换浏览器或清缓存会丢**。
 
 ---
 
-## 3. 目录结构
+## 二、目录结构
 
 ```
-spdt-content-cards/
-├── README.md                              # 本文件
-├── CHANGELOG.md                           # 规范/案例变更记录
-├── .gitignore                             # 排除规则
-│
-├── 00-项目文档/                           # 规范 + 概念清单 + 上游参考
-│   ├── 知识卡片产出规范_v1.0_给AI的指令.md  # AI 必读的"产出规范"
-│   └── _62_concepts.json                  # 62 概念清单（约束产出范围）
-│
-├── 历史/                                  # 学科子目录（未来：地理/政治/古文/英文）
-│   └── cards/                             # autoclaw 试制 3 套 + 未来 57 套
-│       ├── 2026-08-16_监察谏议制度/
-│       │   ├── chain.json                 # 链元数据
-│       │   ├── main.json                  # 主卡（叙事+练习+存疑）
-│       │   ├── K01.json ~ K08.json        # 子卡（考点表每行 1 张）
-│       ├── 2026-08-16_启蒙运动/
-│       │   ├── chain.json + main.json + K01~K07.json
-│       └── 2026-08-16_全民族抗战/
-│           ├── chain.json + main.json + K01~K07.json
-│
-├── _tools/                                # 内容项目自己的工具
-│   ├── _validate_cards.py                 # 校验脚本（按规范 §7 20 项硬指标）
-│   └── _试产测试报告_2026-08-16.html       # 试产报告（autoclaw 产出）
-│
-├── 案例/                                  # （待建）正式样板
-│   └── （规划中：autoclaw 3 件打包成单文件，作为 v1.0 正式案例）
-│
-├── docs/                                  # 历史存档（不上 Git）
-│   └── B_历史/                            # autoclaw 试制前的 B_历史工程
-│
-├── core/                                  # 历史存档（不上 Git）
-│
-├── reports/                               # 历史存档（不上 Git）
-│
-├── tools/                                 # 历史存档（不上 Git）
-│
-└── views/                                 # 历史存档（不上 Git）
+D:\Z_学习平台\
+├── 学习中心.html                 ← UI 壳（38KB，含 CSS+JS）
+├── data\
+│   ├── curated\                  ← 三件套精写数据（人工维护，质量最高）
+│   │   ├── history_curated.js    (7 条)
+│   │   ├── geography_curated.js  (19 条)
+│   │   ├── politics_curated.js   (23 条)
+│   │   ├── guwen_curated.js      (3 条)
+│   │   └── english_curated.js    (3 条)
+│   └── generated\                ← JSON 自动转换数据（AI 批量生产 + 清洗）
+│       ├── history_gen.js        (62 条)
+│       ├── geography_gen.js      (49 条)
+│       └── politics_gen.js       (61 条)
+├── tools\                        ← 转换器（Python 3）
+│   ├── json2html_converter.py    ← JSON 卡片 → JS DATA（清洗 AI bug）
+│   └── md2html_converter.py      ← Markdown 三件套 → JS DATA
+├── _backup\                      ← 旧文件归档（学习中心 v1 + 老 _generated_*.js）
+└── README.md                     ← 本文件
 ```
 
 ---
 
-## 4. 协作方式
+## 三、数据流程
 
-### 4.1 另一台电脑（autoclaw 或其他 AI）如何贡献
-
-1. **clone 本仓库**：
-   ```bash
-   git clone https://github.com/williamyuliu008/spdt-content-cards.git
-   cd spdt-content-cards
-   ```
-
-2. **必读**：
-   - `00-项目文档/知识卡片产出规范_v1.0_给AI的指令.md`（33KB，详细到字段级）
-   - `历史/cards/` 下的 3 件 autoclaw 试制样板（看实际产出格式）
-
-3. **产出新卡片**：
-   - 读 `_62_concepts.json`，选未做的概念（`done: false`）
-   - 按规范产出 1 套 = `chain.json` + `main.json` + 6~10 张 `K0N.json`
-   - 放到 `历史/cards/2026-XX-XX_{概念名}/` 目录
-   - 跑校验：`python _tools/_validate_cards.py`
-   - 全过后 commit + push
-
-4. **commit 规范**：
-   ```bash
-   git add 历史/cards/2026-08-16_xxx/
-   git commit -m "feat(历史): 新增 xxx 卡片 · 7 张 K 卡 + 1 主卡"
-   git push origin main
-   ```
-
-### 4.2 本机如何消费
-
-1. **拉新内容**：
-   ```bash
-   git pull origin main
-   ```
-
-2. **校验**：
-   ```bash
-   cd spdt-content-cards
-   python _tools/_validate_cards.py
-   ```
-
-3. **推 rujing**（消费端转换）：
-   - 在 SPDT-004 平台项目（`subject-ebooks-portfolio`）里写 `ru_cardpkg_convert.py`
-   - 把本仓库的 `历史/cards/*/main.json` 转为 rujing CardPackage JSON
-   - 调用 `push-to-rujing.ps1`
-
----
-
-## 5. 规范版本与变更
-
-- **v1.0（2026-08-16）**：初版。基于 B_历史 7 件样板 + SPDT-004 v1.3 schema + rujing CardPackage 三方融合
-- **v1.1（规划）**：试产 5 件 demo 后迭代，预期新增/调整：
-  - 字段约束细化
-  - 题型分布的最小集
-  - 跨学科 schema 通用化
-
-变更记录见 `CHANGELOG.md`。
-
----
-
-## 6. 工具说明
-
-### 6.1 `_tools/_validate_cards.py`
-
-**用途**：按规范 §7 质量硬指标 20 项 + §11 自检 10 项 + 与 `_62_concepts.json` 交叉核对，**全自动**校验 1 个或多个套卡目录。
-
-**用法**：
-```bash
-# 校验整个 cards 目录
-python _tools/_validate_cards.py
-
-# 校验指定目录
-python _tools/_validate_cards.py 历史/cards/2026-08-16_xxx/
+```
+┌─────────────────┐     tools/json2html_converter.py     ┌────────────────────┐
+│ spdt-content-   │ ──────────────────────────────────▶  │ data/generated/    │
+│ cards/历史/地理/政治│  (chain.json + main.json + K*.json)│  history_gen.js     │
+└─────────────────┘                                       │  geography_gen.js   │
+                                                           │  politics_gen.js    │
+                                                           └────────────────────┘
+                                                                        ↑
+                                                                        │ 加载顺序：先生成后精写
+                                                                        │  （精写 key 覆盖生成）
+                                                                        ↓
+┌─────────────────┐     tools/md2html_converter.py       ┌────────────────────┐
+│ D:\B_历史\三件套\ │ ─────────────────────────────────▶  │ data/curated/      │
+│ D:\C_地理\三件套\ │  (Markdown → JS, 解析第一/二/三件) │  *_curated.js      │
+│ D:\D_政治\三件套\ │                                       │  (历史/地理/政治)   │
+│ D:\E_古诗文\三件套\│                                       │  (古诗文/英语)     │
+│ D:\F_英语\三件套\ │                                       └────────────────────┘
+└─────────────────┘
+                                                           ┌────────────────────┐
+                                                           │   学习中心.html    │
+                                                           │  (UI 壳，零依赖)  │
+                                                           └────────────────────┘
 ```
 
-**退出码**：
-- `0` = 全部通过
-- `1` = 有错误
-- `2` = 有警告（无错误）
-
-**校验项**（节选）：
-- 文件数（1 chain + 1 main + 6~10 K 卡）
-- 字段完整性（主卡 13 字段、子卡 12 字段）
-- front 30-100 字 + 问号结尾
-- back_core 150-250 字
-- back_detail 800-1200（主卡）/ 200-350（子卡）
-- exam_questions 5-6 道 + 5 种题型 + 开放题三层给分
-- open_questions 5-10 条 + 单条 ≤50 字
-- confidence 与存疑条数一致性
-- 时间相对表述扫描（"同一时期"等禁用词）
-- UTF-8 无 BOM
-- JSON 合法性
-- chain_id 格式 + 与 _62_concepts.json 交叉
+**加载顺序**：`generated/*.js` 先加载（覆盖 DATA[key]）→ `curated/*.js` 后加载（同 key 覆盖 generated）。这样精写版天然优先于自动版。
 
 ---
 
-## 7. 与 SPDT-004 平台项目的关系
+## 四、怎么更新数据
 
-| 维度 | 本项目（内容） | 平台项目（subject-ebooks-portfolio） |
-|:---|:---|:---|
-| **关注点** | 规范、案例、卡片 JSON、校验 | 电子书、HTML、APP、工具链 |
-| **更新频率** | 高（每月数十件） | 低（每季度一迭代） |
-| **贡献者** | 作者、AI（autoclaw 等） | 工程师 |
-| **依赖方向** | 无外部依赖 | 依赖本项目（拉卡片 → 推 rujing） |
+### A. 某个三件套 Markdown 更新了（人工精写）
 
-**解耦的好处**：
-- 内容更新不污染平台代码
-- 平台重构不影响内容生产
-- 多学科可并行（历史/地理/政治各自子目录）
+```powershell
+# 跑全部学科
+python tools\md2html_converter.py --all
+
+# 只跑某个学科
+python tools\md2html_converter.py --subject 历史
+```
+
+**注意**：转换器是**覆盖式**输出，每次跑都会重写整个 JS 文件。HTML 引用了同路径，无需改 HTML。
+
+### B. 某个 JSON 卡片新增/修改了（spdt-content-cards）
+
+```powershell
+python tools\json2html_converter.py --all
+```
+
+### C. 新增一个学科或概念
+
+1. 在 `D:\X_xx\三件套\` 加 `.md` 文件（按 v1.0 规范）
+2. 跑 `python tools\md2html_converter.py --subject Xxx`
+3. 在 HTML 的 `SUBJECTS` 数组加配置（key/name/emoji/color/status）
+4. 在 HTML 的 `TREES['xxx']` 加模块树
+5. 在 HTML 的 `<script src=>` 列表加新的 curated JS
+6. 刷新 HTML
 
 ---
 
-## 8. 当前状态（2026-08-16）
+## 五、命名规范要点
 
-- ✅ 项目结构已建（`00-项目文档/` `历史/cards/` `_tools/`）
-- ✅ 规范 v1.0 已写（33KB）
-- ✅ 62 概念清单已存（10.4KB）
-- ✅ autoclaw 试制 3 套卡片（全过 20 项校验）
-  - 监察谏议制度（id=5，主题线 2 制度与治理）
-  - 启蒙运动（id=52，主题线 3 文明互动）
-  - 全民族抗战（id=37，主题线 4+6 社会转型+时政）
-- ⏳ 剩余 59 套待产（autoclaw 后续推）
-- ⏳ 平台项目消费端转换工具待写（`ru_cardpkg_convert.py`）
+### 5.1 概念名一致性
+
+- **HTML `TREES.xxx` 里的概念名** 必须跟 **`DATA.xxx` 里的 key**（即 Markdown H1 提取的 `concept_name`）**严格一致**
+- 不一致会导致侧边栏的"绿点（已入库）"失效、点击无反应
+- 解决：curated 概念自动归入底部 `📌 三件套精写` section，但点不了
+- 改名后要同步：要么改 TREES、要么改 H1
+
+### 5.2 卡片列数
+
+- 历史 / 地理 / 政治：5 列（[# / 考点 / 核心要点 / 易混辨析 / 角度]）
+- 古诗文：6 列（[# / 义项 / 释义 / 课内例句 / 易混辨析 / 迁移要点]）
+- 英语：6 列（[# / 语法点 / 规则 / 例句 / 易错辨析 / 考点预判]）
+- HTML 渲染时按 `tags.headers` 动态适配，**不丢失列**
+
+### 5.3 状态字段
+
+DATA 条目的 `status` 由转换器自动生成（`"已过审·三件套精写（修订版）（2026-08-16）"`），也支持手工覆盖。
 
 ---
 
-*本项目由 willi + Mavis 共同维护。autoclaw 是首个接入的产卡片 AI。*
+## 六、已知的限制
+
+- **跨学科搜索**：当前只搜当前学科的概念名 / 卡片内容，不跨学科（如搜"现代化"只搜当前学科）
+- **数据未版本化**：所有 DATA 都在 localStorage（收藏 / 已学），JSON/JS 文件本身不存版本号
+- **未做导出**：收藏 / 已学没法导出，浏览器不同步
+- **JSON 卡片未含古诗文 / 英语**：spdt-content-cards 仓库目前只有历史/地理/政治三科 JSON 卡片
+- **数学暂未启动**：聚合方案 4.4 标注为长期目标
+
+---
+
+## 七、迁移到 V1 的对比
+
+| 维度 | v1（2026-08-17 ~ 19）| v2（2026-08-20 重构）|
+|---|---|---|
+| 文件大小 | 1.2 MB 单文件 | 38 KB HTML + 1.8 MB 数据 |
+| 数据更新 | 手动复制粘贴 | 跑转换器一行命令 |
+| 数据源 | inline 死代码 | 外部 JS 模块化 |
+| 视觉 | 简洁米黄 | 现代米黄 + 卡片化 |
+| 交互 | 静态 | 进度 / 收藏 / 搜索 / 快捷键 |
+| Bug | 重复文本、截断 | 转换器自动清洗 |
+| 维护 | 改 HTML 风险大 | UI/数据分离 |
+
+---
+
+## 八、下一步
+
+参考 `2026-0820_聚合方案.md` 的 M1-M4 里程碑：
+- M1：✅ 三科 DATA 重建（替换 172 条已清洗数据）
+- M2：古诗文 JSON 卡片生产（待 spdt-content-cards 支持）
+- M3：英语 JSON 卡片生产（待 spdt-content-cards 支持）
+- M4：数学概念清单 + 卡片生产（长期）
