@@ -2,6 +2,7 @@
   "chain_id": "geography/G-M1-7-全球气候变化",
   "chain_title": "全球气候变化",
   "subject": "GEOGRAPHY",
+  "chain_type": "因果链",
   "domain": "自然地理",
   "lines": [
     2
@@ -11,8 +12,8 @@
   "is_main_line": false,
   "total_cards": 6,
   "generated_at": "2026-08-19",
-  "generated_by": "AI（按 v1.0 规范）",
+  "generated_by": "autoclaw-v1.0",
   "status": "trial_production",
-  "open_questions_count": 5,
+  "open_questions_count": 6,
   "exam_questions_count": 5
 }
