@@ -12,16 +12,39 @@ if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
-BASE = Path(r"D:\B_历史\spdt-content-cards\历史\cards")
-CONCEPTS_PATH = Path(r"D:\B_历史\spdt-content-cards\00-项目文档\_62_concepts.json")
+# === ERR-12 反残留模式（详见 02b_residue_check_v1.0.md） ===
+RESIDUE_PATTERNS = [
+    re.compile(r'补充说明[：:].*?本考点在近三年上海等级考中属高频内容[，,].*?务必结合案例与辨析要点。'),
+    re.compile(r'补充说明[：:].*?本考点在近三年上海等级考中属高频内容[，,].*?务必结合史实与辨析要点。'),
+    re.compile(r'补充说明[：:].*?本考点在近三年上海等级考中属高频内容[，,].*?务必结合史实与辨析要点，做到以史实立论、以方法释史。'),
+    re.compile(r'这一历史考点在专题框架中占有重要位置。'),
+]
 
-# === 多科目支持（willi 拍板 2026-08-16） ===
+def check_residue(text: str) -> list:
+    """ERR-12: 检测 back_detail/back_core 残留模板。返回命中描述列表。"""
+    if not text:
+        return []
+    issues = []
+    for pat in RESIDUE_PATTERNS:
+        m = pat.search(text)
+        if m:
+            issues.append(f'[{pat.pattern[:30]}...] 命中: {m.group()[:60]}')
+    return issues
+
+BASE = Path(r"D:\4_data\knowledge_cards\历史\cards")
+CONCEPTS_PATH = Path(r"D:\4_data\knowledge_cards\00-项目文档\_62_concepts.json")
+
+# === 多科目支持（willi 拍板 2026-08-16，v1.0.1 扩展到 9 学科） ===
 SUBJECTS = {
     "HISTORY":   {"prefix": "H", "domain": "历史"},
     "GEOGRAPHY": {"prefix": "G", "domain": "地理"},
     "POLITICS":  {"prefix": "P", "domain": "政治"},
     "ENGLISH":   {"prefix": "E", "domain": "英语"},
     "GUWEN":     {"prefix": "W", "domain": "古文"},
+    "CALLIGRAPHY": {"prefix": "C", "domain": "书法"},
+    "BIOLOGY":   {"prefix": "B", "domain": "生物"},
+    "CHEMISTRY": {"prefix": "M", "domain": "化学"},
+    "PHYSICS":   {"prefix": "Y", "domain": "物理"},
 }
 
 CARD_TYPE_ENUM = {"STRATEGY", "CASE_STUDY", "METHODOLOGY", "KNOWLEDGE", "BIG_PICTURE", "PARADOX"}
@@ -54,6 +77,9 @@ def scan_text(text, where):
     for w in REL_TIME_SOFT:
         if w in text:
             add_warn(f"[时间相对表述·软] {where} 含 '{w}'，请人工确认非时间相对表述")
+    # ERR-12 反残留检测
+    for iss in check_residue(text):
+        add_err(f"[ERR-12 残留] {where} {iss}")
 
 def check_enums(card, where):
     if card.get("card_type") not in CARD_TYPE_ENUM:
@@ -87,6 +113,11 @@ def check_card(card, where, is_main, main_card_id=None):
     lo, hi = (800, 1200) if is_main else (200, 350)
     if not (lo <= n <= hi):
         add_err(f"[back_detail长度] {where} {n}字 (需{lo}~{hi})")
+    # ERR-12 反残留检测（直接检查 back_core / back_detail）
+    for field in ["back_core", "back_detail"]:
+        if field in card and isinstance(card[field], str):
+            for iss in check_residue(card[field]):
+                add_err(f"[ERR-12 残留] {where} {field} {iss}")
     # concepts
     n = len(card["concepts"])
     lo, hi = (5, 8) if is_main else (3, 5)
@@ -200,6 +231,7 @@ def main():
             add_err(f"[chain字段] {sdir.name} 缺: {missing}")
         # chain 与概念清单交叉核对
         cm = re.fullmatch(r"([a-z]+)/([HGPEW])-M(\d)-(\d+)-(.+)", chain.get("chain_id", ""))
+        subj_ini = None
         if not cm:
             add_err(f"[chain_id格式] {sdir.name}: {chain.get('chain_id')}")
         else:
@@ -250,7 +282,7 @@ def main():
                 add_err(f"[JSON] {sdir.name}/{k} 解析失败: {e}")
                 continue
             check_card(sub, f"{sdir.name}/{k}", False, main.get("card_id"))
-            if not re.fullmatch(r"[HGPEW]-M\d+-\d+-K\d{2}-001", sub.get("card_id", "")):
+            if not re.fullmatch(r"[HGPEWCMYB]-M\d+-\d+-K\d{2}-001", sub.get("card_id", "")):
                 add_err(f"[card_id格式] {sdir.name}/{k}: {sub.get('card_id')}")
             if f"K{k[1:3]}" not in sub.get("card_id", ""):
                 add_err(f"[card_id-K序号] {sdir.name}/{k}: {sub.get('card_id')}")

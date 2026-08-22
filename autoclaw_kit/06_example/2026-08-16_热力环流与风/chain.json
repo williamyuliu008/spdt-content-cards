@@ -1,0 +1,20 @@
+{
+  "chain_id": "geography/G-M1-2-热力环流与风",
+  "chain_title": "热力环流与风",
+  "subject": "GEOGRAPHY",
+  "chain_type": "因果链",
+  "domain": "自然地理·大气与气候",
+  "lines": [
+    "大气受热",
+    "热力环流"
+  ],
+  "module": "模块一·自然地理基础",
+  "topic": "专题1 大气与气候",
+  "is_main_line": true,
+  "total_cards": 6,
+  "generated_at": "2026-08-16",
+  "generated_by": "autoclaw-v1.0",
+  "status": "trial_production",
+  "open_questions_count": 8,
+  "exam_questions_count": 5
+}

@@ -202,7 +202,7 @@ workflow:
     output: MANIFEST 闭环
 
 # ============================================================
-# 当前状态快照（2026-08-16）
+# 当前状态快照（v2.0 闭环阶段）
 # ============================================================
 snapshot:
   date: 2026-08-19
@@ -233,4 +233,91 @@ snapshot:
       quality: pass
   total_chains: 172
   total_subcards: 1039
-  shipped_to_rujing: 0  # 消费端转换工具待写
+
+  # ============================================================
+  # v2.0 闭环字段（详见 PRODUCT_LINE.md v2.0 + LAYERS.md）
+  # ============================================================
+  v2_0_alignment:
+    # 产品线对齐
+    products_aligned: 4          # 4 真产品: P-001 视频 / P-002 知识卡片 / P-003 电子书 / P-004 音频
+    intermediate_aligned: 3     # 3 中间产物: M-001 知识链 / M-002 配置数据 / M-003 视觉素材
+    deprecated: 2                # 2 已废止: v1.0-P-004 微剧本 / v1.0-P-007 Skill (git tag v1.0-final)
+
+    # 分层 + 窗口对齐
+    layer_arch_aligned: 20      # 20 个 pdt 加 layer_arch (L0_stable=4 / L1_evolutionary=9 / L2_experimental=7)
+    governance_docs:
+      - LAYERS.md
+      - WINDOWS.md
+      - PRODUCT_LINE.md
+      - docs/governance/分层治理检查清单.md
+    git_tags:
+      - v1.0-final              # v1.0 历史快照
+      - v2.0                    # v2.0 当前（待 willi 拍板 → v2.0-approved）
+
+    # CI 工具链
+    ci_tools:
+      - tools/layer_lint.py        # 跨层依赖
+      - tools/window_check.py      # 窗口检查
+      - tools/layer_doc_sync.py    # 文档一致性
+      - tools/accuracy_auditor.py  # 4 真产品准确性
+
+  # ============================================================
+  # 准确性审计（accuracy_auditor 实测结果）
+  # ============================================================
+  accuracy_audit:
+    status: completed
+    scope: "4 真产品 P0 样本（v2.0 准出门验证）"
+    results:
+      P-002_知识卡片:
+        total: 93
+        gold: 93
+        silver: 0
+        fail: 0
+        sample: "rujing_2026-08-19_*.json (v6.0 政治样本)"
+      P-003_电子书:
+        total: 1
+        gold: 1
+        silver: 0
+        fail: 0
+        sample: "H-M1_第一章_推恩令_章节试写稿.md"
+      P-004_音频:
+        total: 1
+        gold: 1
+        silver: 0
+        fail: 0
+        sample: "古史_v3_ep01_广播剧旁白原文.txt"
+      P-001_视频:
+        status: deferred
+        reason: "需要 manim 渲染管线（W24 推进）"
+
+  # ============================================================
+  # shipping（P1A 推送状态）
+  # ============================================================
+  shipping:
+    status: completed              # W23 准出门已闭环
+    conversion_ready: 173          # rujing_*.json 已转换（v3 73 + v6 113 + 历史 62 重新转）
+    shipped_to_rujing: 188         # 实测（/subjects 端点）
+    shipped_breakdown:
+      历史: 62 链 441 卡
+      政治: 61 链 427 卡
+      地理: 49 链 345 卡
+      其他: 16 链 80 卡
+    pending: 0                     # 全部 ship
+    success_rate: "100% (173/173)"
+    next_action: "willi 拍板 v2.0-approved"
+
+  # ============================================================
+  # W23 准出门状态
+  # ============================================================
+  w23_status:
+    target: "v2.0 准出门（4 真产品 P0 样本 + P1A 推送闭环）"
+    status: completed
+    p0_completed:
+      - 修 _batch_convert_push.py 漏历史 62 套
+      - accuracy_auditor 修 source_citation bug + 4 真产品全 GOLD
+      - 4 真产品 P0 样本 (P-002 93/93 / P-003 1/1 / P-004 1/1 全 GOLD)
+      - MANIFEST 闭环字段结构
+      - P1A 推送 173 套 100% 成功（DevEco Studio 开启后）
+    p0_blocked: []
+    rujing_app_state: "188 链 1293 卡"
+    next: "willi 拍板 v2.0-approved → 打 tag 锁档"
