@@ -21,15 +21,21 @@ if sys.platform == "win32":
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
 
 # 核心污染 marker：autoclaw 端 LLM 重复模板
-# 所有变体都含 "本考点在近三年上海等级考中属高频内容" + 任意后缀 + 句号
-# 政治学科真实补充说明（"补充说明：本考点常以..."）不含此 marker，不会被误删
+# 模式 A/B/C: 模式 A (案例与辨析) / 模式 B (史实与辨析) / 模式 C (长版) 全部含 "本考点在近三年上海等级考中属高频内容"
 RE_POLLUTION = re.compile(
     r'[\r\n]*补充说明[：:].*?本考点在近三年上海等级考中属高频内容.*?[。]\s*',
     re.DOTALL
 )
-# 旧 regex 漏的尾巴：模式 C 短版的残留
+# 模式 C' 尾巴：旧 regex 漏的短版尾巴
 RE_TAIL = re.compile(
     r'[\r\n]*这一历史考点在专题框架中占有重要位置。\s*'
+)
+# 模式 D/E/F (v1.0.3): 政治学科真实补充说明 - 现按用户实际体验升级为污染
+# 涵盖 "本考点常以..." / "复习时要把..." / "答题框架..." / "注意区分主体..." 等所有 "补充说明：..." 开头段
+# 策略: 检测 "补充说明：..." 任意内容后接换行或 2+ 段堆叠则清; 单独一段若不含具体考点也清
+RE_POLITICAL_SUPPLEMENT = re.compile(
+    r'[\r\n]*补充说明[：:][^。\n]{0,150}[。][\s]*',
+    re.DOTALL
 )
 
 def clean_text(text: str) -> tuple[str, int]:
@@ -37,10 +43,15 @@ def clean_text(text: str) -> tuple[str, int]:
     if not text:
         return text, 0
     n = 0
+    # 模式 A/B/C (上海高考套话)
     new_text, c1 = RE_POLLUTION.subn('', text)
     n += c1
+    # 模式 C' 尾巴
     new_text, c2 = RE_TAIL.subn('', new_text)
     n += c2
+    # 模式 D/E/F (政治学科"补充说明：..."所有变体) - v1.0.3 升级为污染
+    new_text, c3 = RE_POLITICAL_SUPPLEMENT.subn('', new_text)
+    n += c3
     return new_text, n
 
 def process_file(path: Path, dry_run: bool = True) -> dict:
