@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.1.1",
+  "pack_id": "personal_mindflow_principles",
+  "pack_title": "MindFlow 个人 AI 助手设计原则 8 卡",
+  "domain": "个人研究",
+  "total_cards": 8,
+  "total_chains": 1,
+  "generated_at": "2026-09-03T18:30:00",
+  "generated_by": "l2_integration_test@1.0.0",
+  "cards": [
+    {
+      "card_id": "P-NOTE-2026-MindFlow-01",
+      "type": "node",
+      "chain_id": "CHAIN_MindFlow_01",
+      "front": "MindFlow 设计的核心约束是什么？",
+      "back": "MindFlow 的核心约束是「数据本地化」——所有对话、记忆、检索数据均存于用户设备,不依赖云端持久化存储。这一定位直接决定了离线可用性与隐私边界,是后续所有架构决策的起点。",
+      "source_label": "MindFlow 设计原则 v1.0",
+      "sources": [
+        {
+          "type": "human_authored",
+          "ref": "D:/2_products/personal/SPDT-008_PersonalAI/PT-050_MindFlow/docs/design_principles.md#data_localization"
+        }
+      ],
+      "concepts": ["本地优先", "数据本地化", "隐私边界"],
+      "tags": ["#domain/个人研究", "#module/AI助手", "#关联/隐私"],
+      "maturity": "VERIFIED",
+      "version": "1.0.0",
+      "domain": "个人研究",
+      "created_at": "2026-09-03T18:30:00",
+      "updated_at": "2026-09-03T18:30:00"
+    },
+    {
+      "card_id": "P-NOTE-2026-MindFlow-02",
+      "type": "node",
+      "chain_id": "CHAIN_MindFlow_01",
+      "front": "MindFlow 为什么设计为多模态兼容（ChatGPT/Claude/DeepSeek 同一接口）？",
+      "back": "用户在不同任务上偏好不同模型——ChatGPT 适合通用对话、Claude 适合长文分析、DeepSeek 适合中文/编程。多模态兼容让用户在同一个工作流切换,而不是被单一模型绑定;同时降低厂商锁定风险。",
+      "source_label": "MindFlow 设计原则 v1.0",
+      "sources": [
+        {
+          "type": "human_authored",
+          "ref": "D:/2_products/personal/SPDT-008_PersonalAI/PT-050_MindFlow/docs/design_principles.md#multi_model"
+        }
+      ],
+      "concepts": ["多模态", "模型切换", "厂商锁定"],
+      "tags": ["#domain/个人研究", "#module/AI助手", "#关联/可移植性"],
+      "maturity": "VERIFIED",
+      "version": "1.0.0",
+      "domain": "个人研究",
+      "created_at": "2026-09-03T18:30:00",
+      "updated_at": "2026-09-03T18:30:00"
+    },
+    {
+      "card_id": "P-NOTE-2026-MindFlow-03",
+      "type": "node",
+      "chain_id": "CHAIN_MindFlow_01",
+      "front": "MindFlow 如何实现对话的「可检索记忆」？",
+      "back": "MindFlow 自动将每轮对话摘要 + 知识要点存入本地向量库(ChromaDB),通过语义检索可在新对话中自动召回历史相关信息,实现「跨会话记忆」。",
+      "source_label": "MindFlow 架构 v1.0",
+      "sources": [
+        {
+          "type": "human_authored",
+          "ref": "D:/2_products/personal/SPDT-008_PersonalAI/PT-050_MindFlow/docs/architecture.md#semantic_memory"
+        }
+      ],
+      "concepts": ["语义记忆", "向量检索", "ChromaDB"],
+      "tags": ["#domain/个人研究", "#module/AI助手", "#关联/RAG"],
+      "maturity": "VERIFIED",
+      "version": "1.0.0",
+      "domain": "个人研究",
+      "created_at": "2026-09-03T18:30:00",
+      "updated_at": "2026-09-03T18:30:00"
+    },
+    {
+      "card_id": "P-NOTE-2026-MindFlow-04",
+      "type": "strategy_cause",
+      "chain_id": "CHAIN_MindFlow_01",
+      "front": "[CHAIN_MindFlow_01] 为什么 MindFlow 优先采用本地存储而非云端？\n背后驱动力是什么？",
+      "back": "核心驱动力有三层：(1) 隐私边界——对话内容可能含商业机密/医疗/法律等敏感信息,云端持久化意味着把控制权交给第三方; (2) 离线可用——网络中断时 AI 助手不应停摆; (3) 成本可控——本地 ChromaDB 边际成本为零,云端向量库按调用计费会随使用量爆炸。三者叠加 → 本地化是结构性必然。",
+      "source_label": "MindFlow 决策记录",
+      "sources": [
+        {
+          "type": "human_authored",
+          "ref": "D:/2_products/personal/SPDT-008_PersonalAI/PT-050_MindFlow/docs/decisions/001_local_first.md"
+        }
+      ],
+      "concepts": ["本地优先", "隐私", "成本", "离线可用"],
+      "tags": ["#domain/个人研究", "#module/AI助手", "#关联/架构决策"],
+      "maturity": "VERIFIED",
+      "version": "1.0.0",
+      "domain": "个人研究",
+      "created_at": "2026-09-03T18:30:00",
+      "updated_at": "2026-09-03T18:30:00"
+    },
+    {
+      "card_id": "P-NOTE-2026-MindFlow-05",
+      "type": "strategy_cause",
+      "chain_id": "CHAIN_MindFlow_01",
+      "front": "[CHAIN_MindFlow_01] 为什么需要多模态接口抽象层？\n为什么不直接调各家 API？",
+      "back": "直接调各家 API 会导致：(1) 业务代码与厂商 API 强耦合,切换模型需重写; (2) 同一对话流因模型不同而体验割裂; (3) 难以做 A/B 测试或回归验证。MindFlow 抽象出统一接口(消息/工具调用/流式响应),将模型选择下沉为可热切换的适配器,业务层与厂商解耦。",
+      "source_label": "MindFlow 决策记录",
+      "sources": [
+        {
+          "type": "human_authored",
+          "ref": "D:/2_products/personal/SPDT-008_PersonalAI/PT-050_MindFlow/docs/decisions/002_abstract_layer.md"
+        }
+      ],
+      "concepts": ["抽象层", "解耦", "适配器模式"],
+      "tags": ["#domain/个人研究", "#module/AI助手", "#关联/设计模式"],
+      "maturity": "VERIFIED",
+      "version": "1.0.0",
+      "domain": "个人研究",
+      "created_at": "2026-09-03T18:30:00",
+      "updated_at": "2026-09-03T18:30:00"
+    },
+    {
+      "card_id": "P-NOTE-2026-MindFlow-06",
+      "type": "strategy_impact",
+      "chain_id": "CHAIN_MindFlow_01",
+      "front": "[CHAIN_MindFlow_01] 本地优先架构带来了哪些长期影响？\n产生了什么后果？",
+      "back": "本地优先架构带来三层后果：(1) 用户侧——隐私感强,长期使用黏性高,无云服务中断焦虑; (2) 开发侧——功能边界受限于本地算力(小型 LLM 推理需 GPU),复杂任务需云端 LLM 兜底,引入「本地+云端」混合架构复杂度; (3) 商业侧——无法走 SaaS 订阅模式,只能走本地授权或开源,商业天花板较低。三层影响互相制约,决定产品形态。",
+      "source_label": "MindFlow 架构评估",
+      "sources": [
+        {
+          "type": "human_authored",
+          "ref": "D:/2_products/personal/SPDT-008_PersonalAI/PT-050_MindFlow/docs/architecture.md#long_term_impact"
+        }
+      ],
+      "concepts": ["本地优先", "长期影响", "混合架构"],
+      "tags": ["#domain/个人研究", "#module/AI助手", "#关联/商业"],
+      "maturity": "VERIFIED",
+      "version": "1.0.0",
+      "domain": "个人研究",
+      "created_at": "2026-09-03T18:30:00",
+      "updated_at": "2026-09-03T18:30:00"
+    },
+    {
+      "card_id": "P-NOTE-2026-MindFlow-07",
+      "type": "strategy_turning",
+      "chain_id": "CHAIN_MindFlow_01",
+      "front": "[CHAIN_MindFlow_01] 何时应该放弃本地推理转云端 LLM？\n关键转折点是什么？",
+      "back": "关键转折点是「任务复杂度超过本地模型能力上限」——具体表现为: (1) 长上下文(>32K token)超出本地模型窗口; (2) 多步工具调用需高精度(>95% 工具选择准确率); (3) 推理时延 < 2s 要求且无法通过量化/蒸馏满足。此时应主动调用云端 LLM,通过抽象层热切换,业务代码无需改动。",
+      "source_label": "MindFlow 决策记录",
+      "sources": [
+        {
+          "type": "human_authored",
+          "ref": "D:/2_products/personal/SPDT-008_PersonalAI/PT-050_MindFlow/docs/decisions/003_local_to_cloud.md"
+        }
+      ],
+      "concepts": ["本地推理", "云端 LLM", "混合架构", "转折点"],
+      "tags": ["#domain/个人研究", "#module/AI助手", "#关联/决策"],
+      "maturity": "VERIFIED",
+      "version": "1.0.0",
+      "domain": "个人研究",
+      "created_at": "2026-09-03T18:30:00",
+      "updated_at": "2026-09-03T18:30:00"
+    },
+    {
+      "card_id": "P-NOTE-2026-MindFlow-08",
+      "type": "chain",
+      "chain_id": "CHAIN_MindFlow_01",
+      "front": "[CHAIN_MindFlow_01] MindFlow 8 大设计原则全景",
+      "back": "本链聚合 MindFlow 8 大设计原则: (1) 本地优先 (2) 多模态兼容 (3) 知识持久化; 策略层: (4) 三层驱动力(隐私/离线/成本) (5) 抽象层解耦 (6) 长期影响三层; 决策点: (7) 本地→云端转折。核心结论:MindFlow 是「个人数据主权+多模态灵活+本地优先可用」的三角平衡,放弃任何一角都会丧失产品价值。",
+      "source_label": "MindFlow 设计原则汇总",
+      "sources": [
+        {
+          "type": "ai_generated_human_reviewed",
+          "ref": "D:/2_products/personal/SPDT-008_PersonalAI/PT-050_MindFlow/docs/design_principles.md",
+          "verified_by": ["D:/2_products/personal/SPDT-008_PersonalAI/PT-050_MindFlow/docs/decisions/001-003"],
+          "note": "聚合卡,基于节点 01-03 + 策略 04-06 + 转折 07"
+        }
+      ],
+      "concepts": ["设计原则", "三角平衡", "个人AI"],
+      "tags": ["#domain/个人研究", "#module/AI助手", "#关联/全景"],
+      "maturity": "VERIFIED",
+      "version": "1.0.0",
+      "domain": "个人研究",
+      "created_at": "2026-09-03T18:30:00",
+      "updated_at": "2026-09-03T18:30:00"
+    }
+  ]
+}

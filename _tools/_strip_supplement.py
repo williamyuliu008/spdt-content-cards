@@ -37,6 +37,12 @@ RE_POLITICAL_SUPPLEMENT = re.compile(
     r'[\r\n]*补充说明[：:][^。\n]{0,150}[。][\s]*',
     re.DOTALL
 )
+# 模式 G (v1.0.4): "备考提示：本考点..." 等 LLM 习惯模板 (政治 MAIN 卡)
+# 形态: 段首 "备考提示：" + 内容到句号
+RE_EXAM_TIP = re.compile(
+    r'[\r\n]*备考提示[：:][^。\n]{0,200}[。][\s]*',
+    re.DOTALL
+)
 
 def clean_text(text: str) -> tuple[str, int]:
     """返回 (cleaned_text, n_stripped)"""
@@ -52,6 +58,9 @@ def clean_text(text: str) -> tuple[str, int]:
     # 模式 D/E/F (政治学科"补充说明：..."所有变体) - v1.0.3 升级为污染
     new_text, c3 = RE_POLITICAL_SUPPLEMENT.subn('', new_text)
     n += c3
+    # 模式 G (政治"备考提示：..."段) - v1.0.4
+    new_text, c4 = RE_EXAM_TIP.subn('', new_text)
+    n += c4
     return new_text, n
 
 def process_file(path: Path, dry_run: bool = True) -> dict:

@@ -1,0 +1,31 @@
+{
+  "card_id": "WIFI-SMOKE-2026-08-23-001",
+  "maturity": "RAW",
+  "type": "node",
+  "chain_id": "CHAIN_wifi_smoke_test_2026_08_23",
+  "front": "WIFI 通道烟雾测试卡",
+  "back": "这是一张用于 wifi 增量推送功能测试的卡片。",
+  "back_detail": "业务 E2E 测试 场景 D：发送一张新卡到'其他'分类，验证 1302 → 1303 张。\n\n测试预期：wifi 增量推送链路完整跑通，server 接收 + /articles_refresh 兜底 + 0 污染闭环。\n\n测试结论：等待用户手机 rujing APP 验收。",
+  "concepts": [
+    "wifi测试",
+    "增量推送"
+  ],
+  "sources": [],
+  "tags": [
+    "#wifi_smoke",
+    "#E2E_test"
+  ],
+  "domain": "教育",
+  "version": "1.0.0",
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2026-09-06",
+      "change": "v0.4 → v1.2.0 迁移 (auto-fix): 增 knowledge_point (granularity+cognition 推断), ontology_ref 留空, chain_id/tags 清洗"
+    }
+  ],
+  "knowledge_point": {
+    "granularity": "G1",
+    "cognition": "factual"
+  }
+}
