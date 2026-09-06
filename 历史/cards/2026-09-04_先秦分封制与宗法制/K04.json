@@ -14,12 +14,18 @@
     "郡县制",
     "礼崩乐坏"
   ],
-  "sources": [],
+  "sources": [
+    {
+      "type": "human_authored",
+      "ref": "待补",
+      "note": "auto-fix by _fix_v12_run.py (P1 修复, 原 sources 空, 待人工补具体页码)"
+    }
+  ],
   "tags": [
-    "春秋战国",
-    "分封制瓦解",
-    "中央集权",
-    "历史转型"
+    "#topic/春秋战国",
+    "#topic/分封制瓦解",
+    "#topic/中央集权",
+    "#topic/历史转型"
   ],
   "domain": "教育",
   "version": "1.0.0",

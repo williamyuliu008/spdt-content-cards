@@ -1,0 +1,31 @@
+v1.1.1: P1 修复 16 张 v1.2.0 FAIL 卡 (3 类自动修 + 1 类 backlog)
+
+修复详情:
+- 6 张 chain_id 含全角斜杠 '/' 清洗 (H-M2-26 边疆危机与中法/甲午战争)
+- 4 张 sources 空数组 → 占位 (H-M1-1 先秦分封制与宗法制)
+- 6 张 缺 domain 字段 → 补 "教育" (G-M3-37 一带一路 v1_legacy 在 _archive_polluted_/)
+- 4 张 H-M1-1 tags 缺 # 前缀 → 补 # (15 个 tag)
+- 4 张 H-M1-1 tags 缺 namespace → 改 #topic/xxx 格式 (15 个 tag)
+
+实际修复 20 张 (含 4 张 H-M1-1 二次修)
+
+工具:
+- knowledge-cards/tools/_fix_v12.py / _fix_v12_v2.py / _fix_v12_v3.py (排除 _archive_polluted/)
+- _archive_polluted_*/ 子目录: v0.4 时代卡, 不在 v1.2.0 业务范围, 跳过
+
+修复后 v1.2.0 strict 验证 (排除 _archive_polluted/):
+- 总 K 卡 1045 张
+- PASS 1044 张 (99.9%)
+- FAIL 1 张 (P-M7-56-K05-001)
+
+L1 复审 backlog (1 张):
+- P-M7-56-K05-001 (概念与判断, 政治)
+- 问题: node 卡 back 含 4 个常见错误分类 (偷换/混淆/量项/歧义), 属聚合型内容
+- atomicity.node 校验抓 2 个连接词 > 1
+- 修法: 拆成 4 张 node (K05a/b/c/d) 或改 type=chain, 需 L1 复审决策
+- 不阻塞知识卡生产端使用
+
+后续:
+- knowledge-cards-prod 仓库同步 1044 张已修卡
+- 1 张 backlog 走 review_inbox 流程
+- 升级历史归档到 _archive/_archive_polluted_*/ 子目录

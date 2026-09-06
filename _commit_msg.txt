@@ -1,0 +1,27 @@
+﻿v1.1.0: 高考教育知识卡批量升级 v0.4 → v1.2.0 (路径 B 扩展到多域)
+
+升级统计:
+- 历史 383 张 (前置已跑)
+- 地理 345 张 (本次新增, 含 4 张 chain_id 清洗)
+- 政治 427 张 (本次新增, 0 警告)
+- 其他 1 张 (WIFI 烟雾测试)
+合计 1156 张 4_data 教育类知识卡全量升级到 v1.2.0
+
+v1.2.0 增量字段:
+- knowledge_point (granularity + cognition 推断) 覆盖率 92%
+- ontology_ref 留空 (待 SPDT-019 本体草案 v0.3 落地)
+- chain_id 清洗 (替换全角斜杠, 4 张)
+- tags 清洗 (补 # 前缀, 跳过非法字符)
+
+暂存 (不动主流程):
+- _archive/2026Q3/personal_research_mindflow/ (8 张 MindFlow, domain=个人研究)
+- _archive/2026Q3/spdt004_local_v1/ (18 张 cafa v1.0 本地版)
+原文件保留, 物理复制到 archive 防止干扰主资产
+
+迁移脚本:
+- knowledge-cards/tools/_migrate_v04_to_v12.py (参数化, --domain {历史|地理|政治|其他|all})
+- 前身 1_omas/_archive/_scripts/_migrate_cards.py (历史单域, 已废弃)
+
+遗留:
+- 78 张 v1.2.0 FAIL (67 张无 domain 域, 11 张 1 ERROR, 待二次修)
+- 787 张 front 含 '这一问' 重复 (B08 规则待加, 待清洗)

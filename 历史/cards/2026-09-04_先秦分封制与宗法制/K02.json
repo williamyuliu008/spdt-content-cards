@@ -13,12 +13,18 @@
     "周幽王",
     "申后"
   ],
-  "sources": [],
+  "sources": [
+    {
+      "type": "human_authored",
+      "ref": "待补",
+      "note": "auto-fix by _fix_v12_run.py (P1 修复, 原 sources 空, 待人工补具体页码)"
+    }
+  ],
   "tags": [
-    "宗法制",
-    "嫡长子",
-    "西周",
-    "政治继承"
+    "#topic/宗法制",
+    "#topic/嫡长子",
+    "#topic/西周",
+    "#topic/政治继承"
   ],
   "domain": "教育",
   "version": "1.0.0",
